@@ -142,7 +142,8 @@
                         <div class="btn-group">
                             <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
                                 <img src="/MyWWW/Integral/Public/Admin/bracket/images/photos/loggeduser.png" alt="" />
-                                John Doe
+
+                                <?php echo ($data); ?>
                                 <span class="caret"></span>
                             </button>
                             <ul class="dropdown-menu dropdown-menu-usermenu pull-right">
@@ -158,14 +159,26 @@
         </div><!-- headerbar -->
         <div class="contentpanel">
             
- 首页
+    <p><?php echo ($data); ?></p>
+    <table class="table mb30">
+        <thead>
+        <tr>
+            <th>#</th>
+            <th>姓名</th>
+            <th>Last Name</th>
+            <th>Username</th>
+        </tr>
+        </thead>
+        <tbody>
+            <?php $__FOR_START_1822373040__=0;$__FOR_END_1822373040__=10;for($i=$__FOR_START_1822373040__;$i < $__FOR_END_1822373040__;$i+=1){ echo ($i); } ?>
+        </tbody>
+    </table>
 
         </div>
 
     </div><!-- mainpanel -->
 
 </section>
-
 
 <script src="/MyWWW/Integral/Public/Admin/bracket/js/jquery-1.11.1.min.js"></script>
 <script src="/MyWWW/Integral/Public/Admin/bracket/js/jquery-migrate-1.2.1.min.js"></script>

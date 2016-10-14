@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="refresh">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -142,6 +143,7 @@
                         <div class="btn-group">
                             <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
                                 <img src="/MyWWW/Integral/Public/Admin/bracket/images/photos/loggeduser.png" alt="" />
+
                                 John Doe
                                 <span class="caret"></span>
                             </button>
@@ -157,15 +159,14 @@
 
         </div><!-- headerbar -->
         <div class="contentpanel">
-            
- 首页
-
+            -->
+    <!-- -->
+<!--
         </div>
 
     </div><!-- mainpanel -->
 
 </section>
-
 
 <script src="/MyWWW/Integral/Public/Admin/bracket/js/jquery-1.11.1.min.js"></script>
 <script src="/MyWWW/Integral/Public/Admin/bracket/js/jquery-migrate-1.2.1.min.js"></script>

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -6,18 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="__BRACKET__/images/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="/MyWWW/Integral/Public/Admin/bracket/images/favicon.png" type="image/png">
     <title>信息工程学院积分管理系统</title>
-    <link href="__BRACKET__/css/style.default.css" rel="stylesheet">
+    <link href="/MyWWW/Integral/Public/Admin/bracket/css/style.default.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-    <script src="__BRACKET__/js/html5shiv.js"></script>
-    <script src="__BRACKET__/js/respond.min.js"></script>
+    <script src="/MyWWW/Integral/Public/Admin/bracket/js/html5shiv.js"></script>
+    <script src="/MyWWW/Integral/Public/Admin/bracket/js/respond.min.js"></script>
     <![endif]-->
-    <block name="css_link">
+    
 
-    </block>
+    
 
 </head>
 <body>
@@ -32,7 +32,7 @@
     <div class="leftpanel">
         <div class="logopanel" align="center">
             <h1>
-                <!--<img style="height: 30px;width: 30px;" src="__BRACKET__/images/photos/xgxy_logo.jpg" />-->
+                <!--<img style="height: 30px;width: 30px;" src="/MyWWW/Integral/Public/Admin/bracket/images/photos/xgxy_logo.jpg" />-->
                 <span>积分管理系统</span>
             </h1>
         </div>
@@ -40,7 +40,7 @@
         <div class="leftpanelinner">
             <div class="visible-xs hidden-sm hidden-md hidden-lg">
                 <div class="media userlogged">
-                    <img alt="" src="__BRACKET__/images/photos/loggeduser.png" class="media-object">
+                    <img alt="" src="/MyWWW/Integral/Public/Admin/bracket/images/photos/loggeduser.png" class="media-object">
                     <div class="media-body">
                         <h4>John Doe</h4>
                         <span>"Life is so..."</span>
@@ -75,8 +75,8 @@
                     </ul>
                 </li>
 
-                <block name="nav">
-                </block>
+                
+                
             </ul>
         </div><!-- leftpanelinner -->
     </div><!-- leftpanel -->
@@ -90,9 +90,9 @@
                     <li>
                         <div class="btn-group">
                             <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                                <img src="__BRACKET__/images/photos/loggeduser.png" alt="" />
+                                <img src="/MyWWW/Integral/Public/Admin/bracket/images/photos/loggeduser.png" alt="" />
 
-                                <block name="u_name">John Doe</block>
+                                John Doe
                                 <span class="caret"></span>
                             </button>
                             <ul class="dropdown-menu dropdown-menu-usermenu pull-right">
@@ -106,28 +106,28 @@
             </div><!-- header-right -->
         </div><!-- headerbar -->
         <div class="contentpanel">
-            <block name="main">主内容</block>
+            主内容
         </div>
     </div><!-- mainpanel -->
 
 </section>
 
-<script src="__BRACKET__/js/jquery-1.11.1.min.js"></script>
-<script src="__BRACKET__/js/jquery-migrate-1.2.1.min.js"></script>
-<script src="__BRACKET__/js/jquery-ui-1.10.3.min.js"></script>
-<script src="__BRACKET__/js/bootstrap.min.js"></script>
-<script src="__BRACKET__/js/modernizr.min.js"></script>
-<script src="__BRACKET__/js/jquery.sparkline.min.js"></script>
-<script src="__BRACKET__/js/toggles.min.js"></script>
-<script src="__BRACKET__/js/retina.min.js"></script>
-<script src="__BRACKET__/js/jquery.cookies.js"></script>
+<script src="/MyWWW/Integral/Public/Admin/bracket/js/jquery-1.11.1.min.js"></script>
+<script src="/MyWWW/Integral/Public/Admin/bracket/js/jquery-migrate-1.2.1.min.js"></script>
+<script src="/MyWWW/Integral/Public/Admin/bracket/js/jquery-ui-1.10.3.min.js"></script>
+<script src="/MyWWW/Integral/Public/Admin/bracket/js/bootstrap.min.js"></script>
+<script src="/MyWWW/Integral/Public/Admin/bracket/js/modernizr.min.js"></script>
+<script src="/MyWWW/Integral/Public/Admin/bracket/js/jquery.sparkline.min.js"></script>
+<script src="/MyWWW/Integral/Public/Admin/bracket/js/toggles.min.js"></script>
+<script src="/MyWWW/Integral/Public/Admin/bracket/js/retina.min.js"></script>
+<script src="/MyWWW/Integral/Public/Admin/bracket/js/jquery.cookies.js"></script>
 
-<script src="__BRACKET__/js/morris.min.js"></script>
-<script src="__BRACKET__/js/raphael-2.1.0.min.js"></script>
+<script src="/MyWWW/Integral/Public/Admin/bracket/js/morris.min.js"></script>
+<script src="/MyWWW/Integral/Public/Admin/bracket/js/raphael-2.1.0.min.js"></script>
 
-<script src="__BRACKET__/js/custom.js"></script>
+<script src="/MyWWW/Integral/Public/Admin/bracket/js/custom.js"></script>
 <!--弹出框-->
-<script src="__STATIC__/layer/layer.js"></script>
+<script src="/MyWWW/Integral/Public/static/layer/layer.js"></script>
 <script>
     $('#logout_a').on('click',function(e){
         e.preventDefault();
@@ -153,8 +153,8 @@
     var ele = document.getElementById(nm[0]);
     ele.className = 'active';
 </script>
-<block name="js_link">
 
-</block>
+
+
 </body>
 </html>

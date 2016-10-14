@@ -7,11 +7,20 @@ class BaseController extends Controller {
         parent::__construct();
 
         //构造中判断是否登陆。
-        if(is_login()){
-            //--------
-        }else{
-            //--------
+        if(!is_login()){
+            exit();
         }
     }
 
+    function  base(){
+        $stu = D("Office");
+
+        $where[o_ispower] = 1;
+        $info = $stu->where($where)->select();
+        if(is_power()){
+        }
+        dump($info);
+        $this->display();
+
+     }
 }

@@ -142,6 +142,7 @@
                         <div class="btn-group">
                             <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
                                 <img src="/MyWWW/Integral/Public/Admin/bracket/images/photos/loggeduser.png" alt="" />
+
                                 John Doe
                                 <span class="caret"></span>
                             </button>
@@ -158,14 +159,13 @@
         </div><!-- headerbar -->
         <div class="contentpanel">
             
- 首页
+
 
         </div>
 
     </div><!-- mainpanel -->
 
 </section>
-
 
 <script src="/MyWWW/Integral/Public/Admin/bracket/js/jquery-1.11.1.min.js"></script>
 <script src="/MyWWW/Integral/Public/Admin/bracket/js/jquery-migrate-1.2.1.min.js"></script>
