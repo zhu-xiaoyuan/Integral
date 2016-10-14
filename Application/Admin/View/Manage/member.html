@@ -1,7 +1,5 @@
 <extend name="Base:base"/>
-<block name="nav">
-    <li id="member"><a href="member"><i class="fa fa-th-list"></i> <span>成员管理</span></a></li>
-</block>
+
 
 <block name="main">
     <p>成员信息</p>
@@ -32,6 +30,7 @@
 
                 }
             };
+
             var pram = 's_id='+id+'&s_name='+name;
             hxr.open('post','add');
             hxr.setRequestHeader('content-type','application/x-www-form-urlencoded');
@@ -224,6 +223,7 @@
                         <input type="password" id="new_psd"  placeholder="新密码" class="form-control mb15" name="new_psd">
                         <input type="password" id="psd_again"  placeholder="验证新密码" class="form-control mb15" name="psd_again">
                         <p id="warning" style="color: red;margin-top: 0px;display: none;"></p><br/>
+
                         <div type="button" id="dismiss_modal" class="btn btn-default" data-dismiss="modal">关闭</div>
                         <input  type="button"  onclick="modify()" class="btn btn-primary" value="提交">
                     </form>

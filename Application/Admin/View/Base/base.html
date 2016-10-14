@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="__BRACKET__/images/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="__BRACKET__/images/logo.png" type="image/png">
     <title>信息工程学院积分管理系统</title>
     <link href="__BRACKET__/css/style.default.css" rel="stylesheet">
 
@@ -76,6 +76,10 @@
                 </li>
 
                 <block name="nav">
+                    <if condition="$_SESSION['is_power'] eq 1" >
+                        <li id="member"><a href="member"><i class="fa fa-th-list"></i> <span>成员管理</span></a></li>
+                    </if>
+
                 </block>
             </ul>
         </div><!-- leftpanelinner -->

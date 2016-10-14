@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="/MyWWW/Integral/Public/Admin/bracket/images/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="/MyWWW/Integral/Public/Admin/bracket/images/logo.png" type="image/png">
     <title>信息工程学院积分管理系统</title>
     <link href="/MyWWW/Integral/Public/Admin/bracket/css/style.default.css" rel="stylesheet">
 
@@ -76,8 +76,9 @@
                 </li>
 
                 
-    <li id="member"><a href="member"><i class="fa fa-th-list"></i> <span>成员管理</span></a></li>
+                    <?php if($_SESSION['is_power'] == 1): ?><li id="member"><a href="member"><i class="fa fa-th-list"></i> <span>成员管理</span></a></li><?php endif; ?>
 
+                
             </ul>
         </div><!-- leftpanelinner -->
     </div><!-- leftpanel -->
@@ -136,6 +137,7 @@
 
                 }
             };
+
             var pram = 's_id='+id+'&s_name='+name;
             hxr.open('post','add');
             hxr.setRequestHeader('content-type','application/x-www-form-urlencoded');
@@ -325,6 +327,7 @@
                         <input type="password" id="new_psd"  placeholder="新密码" class="form-control mb15" name="new_psd">
                         <input type="password" id="psd_again"  placeholder="验证新密码" class="form-control mb15" name="psd_again">
                         <p id="warning" style="color: red;margin-top: 0px;display: none;"></p><br/>
+
                         <div type="button" id="dismiss_modal" class="btn btn-default" data-dismiss="modal">关闭</div>
                         <input  type="button"  onclick="modify()" class="btn btn-primary" value="提交">
                     </form>
