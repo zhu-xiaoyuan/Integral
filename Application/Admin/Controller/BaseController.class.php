@@ -12,15 +12,4 @@ class BaseController extends Controller {
         }
     }
 
-    function  base(){
-        $stu = D("Office");
-
-        $where[o_ispower] = 1;
-        $info = $stu->where($where)->select();
-        if(is_power()){
-        }
-        dump($info);
-        $this->display();
-
-     }
 }
