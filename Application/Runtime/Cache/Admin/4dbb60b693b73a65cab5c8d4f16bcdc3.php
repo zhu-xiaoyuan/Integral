@@ -6,42 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="/Integral/Public/Admin/bracket/images/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="/MyWWW/Integral/Public/Admin/bracket/images/favicon.png" type="image/png">
+    <title>信息工程学院积分管理系统</title>
+    <link href="/MyWWW/Integral/Public/Admin/bracket/css/style.default.css" rel="stylesheet">
 
-    <title>积分管理系统</title>
-
-    <link href="/Integral/Public/Admin/bracket/css/style.default.css" rel="stylesheet">
-    <script src="/Integral/Public/Admin/bracket/js/jquery-1.11.1.min.js"></script>
-    <script src="/Integral/Public/Admin/bracket/js/jquery-migrate-1.2.1.min.js"></script>
-    <script src="/Integral/Public/Admin/bracket/js/jquery-ui-1.10.3.min.js"></script>
-    <script src="/Integral/Public/Admin/bracket/js/bootstrap.min.js"></script>
-    <script src="/Integral/Public/Admin/bracket/js/modernizr.min.js"></script>
-    <script src="/Integral/Public/Admin/bracket/js/jquery.sparkline.min.js"></script>
-    <script src="/Integral/Public/Admin/bracket/js/toggles.min.js"></script>
-    <script src="/Integral/Public/Admin/bracket/js/retina.min.js"></script>
-    <script src="/Integral/Public/Admin/bracket/js/jquery.cookies.js"></script>
-
-    <script src="/Integral/Public/Admin/bracket/js/morris.min.js"></script>
-    <script src="/Integral/Public/Admin/bracket/js/raphael-2.1.0.min.js"></script>
-
-    <script src="/Integral/Public/Admin/bracket/js/custom.js"></script>
-    <!--弹出框-->
-    <script src="/Integral/Public/static/layer/layer.js"></script>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-    <script src="/Integral/Public/Admin/bracket/js/html5shiv.js"></script>
-    <script src="/Integral/Public/Admin/bracket/js/respond.min.js"></script>
+    <script src="/MyWWW/Integral/Public/Admin/bracket/js/html5shiv.js"></script>
+    <script src="/MyWWW/Integral/Public/Admin/bracket/js/respond.min.js"></script>
     <![endif]-->
     
 
     
-</head>
 
+</head>
 <body>
 
 
-
-<!-- Preloader -->
 <div id="preloader">
     <div id="status"><i class="fa fa-spinner fa-spin"></i></div>
 </div>
@@ -49,19 +30,17 @@
 <section>
 
     <div class="leftpanel">
-        <div class="logopanel">
+        <div class="logopanel" align="center">
             <h1>
-                <img style="height: 40px;width: 40px;margin-top: 0px" src="/Integral/Public/Admin/bracket/images/photos/xgxy_logo.jpg" />
+                <!--<img style="height: 30px;width: 30px;" src="/MyWWW/Integral/Public/Admin/bracket/images/photos/xgxy_logo.jpg" />-->
                 <span>积分管理系统</span>
             </h1>
-        </div><!-- logopanel -->
+        </div>
 
         <div class="leftpanelinner">
-
-            <!-- This is only visible to small devices -->
             <div class="visible-xs hidden-sm hidden-md hidden-lg">
                 <div class="media userlogged">
-                    <img alt="" src="/Integral/Public/Admin/bracket/images/photos/loggeduser.png" class="media-object">
+                    <img alt="" src="/MyWWW/Integral/Public/Admin/bracket/images/photos/loggeduser.png" class="media-object">
                     <div class="media-body">
                         <h4>John Doe</h4>
                         <span>"Life is so..."</span>
@@ -82,12 +61,12 @@
                 <!-- 导入-->
                 <li class="nav-parent"><a href=""><i class="fa fa-edit"></i> <span>信息录入</span></a>
                     <ul class="children">
-                        <li><a href=""><i class="fa fa-caret-right"></i> 积分信息录入</a></li>
+                        <li class="active"><a href=""><i class="fa fa-caret-right"></i> 积分信息录入</a></li>
                         <li><a href=""><i class="fa fa-caret-right"></i> 学生信息录入</a></li>
                     </ul>
                 </li>
 
-                <li class="active"><a href="tables.html"><i class="fa fa-home"></i> <span>查看积分信息</span></a></li>
+                <li><a href=""><i class="fa fa-home"></i> <span>查看积分信息</span></a></li>
                 <!--<li><a href="show"><span class="pull-right badge badge-success">2</span><i class="fa fa-envelope-o"></i> <span>Email</span></a></li>-->
 
                 <li class="nav-parent"><a href=""><i class="glyphicon glyphicon-cog"></i> <span>UI</span></a>
@@ -95,26 +74,23 @@
                         <li><a href=""><i class="fa fa-caret-right"></i></a></li>
                     </ul>
                 </li>
-                <li class="active"><a href="member"><i class="fa fa-th-list"></i> <span>成员管理</span></a></li>
 
+                
+                
             </ul>
-
         </div><!-- leftpanelinner -->
     </div><!-- leftpanel -->
 
     <div class="mainpanel">
-
         <div class="headerbar">
-
-            <a class="menutoggle"><i class="fa fa-bars"></i></a>
-
-
+            <a class="menutoggle"><i class="fa fa-bars">
+            </i></a>
             <div class="header-right">
                 <ul class="headermenu">
                     <li>
                         <div class="btn-group">
                             <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                                <img src="/Integral/Public/Admin/bracket/images/photos/loggeduser.png" alt="" />
+                                <img src="/MyWWW/Integral/Public/Admin/bracket/images/photos/loggeduser.png" alt="" />
 
                                 John Doe
                                 <span class="caret"></span>
@@ -130,15 +106,28 @@
             </div><!-- header-right -->
         </div><!-- headerbar -->
         <div class="contentpanel">
-            
- 首页
-
+            主内容
         </div>
     </div><!-- mainpanel -->
 
 </section>
 
+<script src="/MyWWW/Integral/Public/Admin/bracket/js/jquery-1.11.1.min.js"></script>
+<script src="/MyWWW/Integral/Public/Admin/bracket/js/jquery-migrate-1.2.1.min.js"></script>
+<script src="/MyWWW/Integral/Public/Admin/bracket/js/jquery-ui-1.10.3.min.js"></script>
+<script src="/MyWWW/Integral/Public/Admin/bracket/js/bootstrap.min.js"></script>
+<script src="/MyWWW/Integral/Public/Admin/bracket/js/modernizr.min.js"></script>
+<script src="/MyWWW/Integral/Public/Admin/bracket/js/jquery.sparkline.min.js"></script>
+<script src="/MyWWW/Integral/Public/Admin/bracket/js/toggles.min.js"></script>
+<script src="/MyWWW/Integral/Public/Admin/bracket/js/retina.min.js"></script>
+<script src="/MyWWW/Integral/Public/Admin/bracket/js/jquery.cookies.js"></script>
 
+<script src="/MyWWW/Integral/Public/Admin/bracket/js/morris.min.js"></script>
+<script src="/MyWWW/Integral/Public/Admin/bracket/js/raphael-2.1.0.min.js"></script>
+
+<script src="/MyWWW/Integral/Public/Admin/bracket/js/custom.js"></script>
+<!--弹出框-->
+<script src="/MyWWW/Integral/Public/static/layer/layer.js"></script>
 <script>
     $('#logout_a').on('click',function(e){
         e.preventDefault();
@@ -154,6 +143,15 @@
         });
     })
 
+</script>
+
+<script type="text/javascript">
+    var strUrl=window.location.href;
+    var arrUrl=strUrl.split("/");
+    var strPage=arrUrl[arrUrl.length-1];
+    var nm = strPage.split('.');
+    var ele = document.getElementById(nm[0]);
+    ele.className = 'active';
 </script>
 
 

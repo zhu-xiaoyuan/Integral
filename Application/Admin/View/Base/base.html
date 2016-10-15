@@ -6,10 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="__BRACKET__/images/favicon.png" type="image/png">
-
-    <title>积分管理系统</title>
-
+    <link rel="shortcut icon" href="__BRACKET__/images/logo.png" type="image/png">
+    <title>信息工程学院积分管理系统</title>
     <link href="__BRACKET__/css/style.default.css" rel="stylesheet">
     <script src="__BRACKET__/js/jquery-1.11.1.min.js"></script>
     <script src="__BRACKET__/js/jquery-migrate-1.2.1.min.js"></script>
@@ -35,13 +33,11 @@
     <block name="css_link">
 
     </block>
-</head>
 
+</head>
 <body>
 
 
-
-<!-- Preloader -->
 <div id="preloader">
     <div id="status"><i class="fa fa-spinner fa-spin"></i></div>
 </div>
@@ -49,16 +45,14 @@
 <section>
 
     <div class="leftpanel">
-        <div class="logopanel">
+        <div class="logopanel" align="center">
             <h1>
-                <img style="height: 40px;width: 40px;margin-top: 0px" src="__BRACKET__/images/photos/xgxy_logo.jpg" />
+                <!--<img style="height: 30px;width: 30px;" src="__BRACKET__/images/photos/xgxy_logo.jpg" />-->
                 <span>积分管理系统</span>
             </h1>
-        </div><!-- logopanel -->
+        </div>
 
         <div class="leftpanelinner">
-
-            <!-- This is only visible to small devices -->
             <div class="visible-xs hidden-sm hidden-md hidden-lg">
                 <div class="media userlogged">
                     <img alt="" src="__BRACKET__/images/photos/loggeduser.png" class="media-object">
@@ -83,11 +77,11 @@
                 <li class="nav-parent"><a href=""><i class="fa fa-edit"></i> <span>信息录入</span></a>
                     <ul class="children">
                         <li><a href=""><i class="fa fa-caret-right"></i> 积分信息录入</a></li>
+
                         <li><a href=""><i class="fa fa-caret-right"></i> 学生信息录入</a></li>
                     </ul>
                 </li>
-
-                <li class="active"><a href="tables.html"><i class="fa fa-home"></i> <span>查看积分信息</span></a></li>
+                <li><a href=""><i class="fa fa-home"></i> <span>查看积分信息</span></a></li>
                 <!--<li><a href="show"><span class="pull-right badge badge-success">2</span><i class="fa fa-envelope-o"></i> <span>Email</span></a></li>-->
 
                 <li class="nav-parent"><a href=""><i class="glyphicon glyphicon-cog"></i> <span>UI</span></a>
@@ -95,20 +89,21 @@
                         <li><a href=""><i class="fa fa-caret-right"></i></a></li>
                     </ul>
                 </li>
-                <li class="active"><a href="member"><i class="fa fa-th-list"></i> <span>成员管理</span></a></li>
 
+                <block name="nav">
+                    <if condition="$_SESSION['is_power'] eq 1" >
+                        <li id="member"><a href="member"><i class="fa fa-th-list"></i> <span>成员管理</span></a></li>
+                    </if>
+
+                </block>
             </ul>
-
         </div><!-- leftpanelinner -->
     </div><!-- leftpanel -->
 
     <div class="mainpanel">
-
         <div class="headerbar">
-
-            <a class="menutoggle"><i class="fa fa-bars"></i></a>
-
-
+            <a class="menutoggle"><i class="fa fa-bars">
+            </i></a>
             <div class="header-right">
                 <ul class="headermenu">
                     <li>
@@ -135,8 +130,6 @@
     </div><!-- mainpanel -->
 
 </section>
-
-
 <script>
     $('#logout_a').on('click',function(e){
         e.preventDefault();
@@ -151,7 +144,15 @@
             }
         });
     })
+</script>
 
+<script type="text/javascript">
+    var strUrl=window.location.href;
+    var arrUrl=strUrl.split("/");
+    var strPage=arrUrl[arrUrl.length-1];
+    var nm = strPage.split('.');
+    var ele = document.getElementById(nm[0]);
+    ele.className = 'active';
 </script>
 <block name="js_link">
 
