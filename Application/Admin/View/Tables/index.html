@@ -1,0 +1,260 @@
+<extend name="Base:base"/>
+<block name="css_link">
+    <link href="__BRACKET__/css/jquery.datatables.css" rel="stylesheet">
+    <link href="__BRACKET__/css/pagelist.css" rel="stylesheet">
+</block>
+
+<block name="main">       
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <div class="panel-btns">
+            <a href="" class="minimize">&minus;</a>
+          </div><!-- panel-btns -->
+          <h3 class="panel-title">Data Tables</h3>
+          <div class="search">
+              <form id="searchForm" name="searchform" class="well form-search" action="" method="post"  onSubmit="check();" enctype="multipart/form-data" style="background-color:white;margin-top:15px;">
+              <div style="float:left;">
+                <span>班级：
+                  <input type="text" name="search[c_name]" value="{$search['c_name']}" placeholder="请输入班级" class="input-medium">
+                </span> 
+              </div>
+              <div style="float:left;">                
+                <span>年级：
+                  <input type="text" name="search[s_id]" value="{$search['s_id']}" placeholder="格式：如 2015" class="input-medium">
+                  <select name="" id="">
+                    <option value="">大一 上</option>
+                    <option value="">大一 下</option>
+                    <option value="">大二 上</option>
+                    <option value="">大二 下</option>                    
+                    <option value="">大三 上</option>
+                    <option value="">大三 下</option>
+                  </select>
+                </span>
+              </div>
+              <div style="float:left;">               
+                <span>部室：
+                  <input type="text" name="search[sc_union]" value="{$search['sc_union']}" placeholder="请输入部室" class="input-medium">
+                </span>
+              </div>
+                <div style="float:right;">      
+                  <input type="submit" class="btn" value="搜索" onclick="checkaction(1);"/>
+                  <input type="submit" id="btn" class="btn" value="导出" onclick="checkaction(0);"/>
+                </div>     
+              </form>
+        </div>
+        <br>
+        <hr>
+        <div class="panel-body">         
+          <div class="table-responsive">         
+          <form style="min-width:1030px;">
+          <a class="btn btn-xs btn-info pull-left mr-5" style="float:left;" id="discard" href="javascript:;">删除</a>        
+          <table class="table table-striped" id="table2">
+              <thead>
+                 <tr>
+                    <th><input class="all" type="checkbox"/></th>
+                    <th>学号</th>
+                    <th>姓名</th>
+                    <th>班级</th>
+                    <th>分数</th>
+                    <th>原因</th>
+                    <th>时间</th>
+                    <th>记录者</th>
+                    <th>部室</th>
+                    <th>操作</th>
+                 </tr>
+              </thead>
+              <tbody>
+              <if condition="$list">
+              <foreach name="list" item='vo'>
+                  <tr class="odd gradeX">
+                      <td><input name="delete[]" type="checkbox" value="{$vo.id}"/></td>
+                      <td>{$vo.s_id}</td>
+                      <td>{$vo.s_name}</td>
+                      <td>{$vo.c_name}</td>
+                      <td>{$vo.sc_number}</td>
+                      <td>{$vo.sc_reason}</td>
+                      <td class="center">{$vo.sc_time}</td>
+                      <td class="center">{$vo.sc_who}</td>
+                      <td class="center">{$vo.sc_union}</td>
+                      <td class="center">
+                        <!-- <a id="edit" class="btn btn-xs btn-info mr-5" href="javascript:;" onclick="edit()">修改</a> -->
+                        <a class="btn btn-xs btn-info mr-5" href="javascript:;" data-toggle="modal" data-target="#myModal" onclick="tables(this)" data-id="{$vo.id}">修改</a>
+                        <!-- <a class="btn btn-xs btn-info right mr-5" href="javascript:;" id="discard" data-id="{vo.id}">删除</a> -->
+                      </td>
+                  </tr>
+              </foreach>
+                <else/>
+                  <tr><td colspan="xx" style="">暂无相关信息</td></tr>
+                </if>            
+              </tbody>
+           </table>
+          </form> 
+          </div><!-- table-responsive -->
+          <div class="pagelist">{$page}</div>
+        </div><!-- panel-body -->
+      </div><!-- panel -->        
+    </div><!-- contentpanel -->
+<!-- 修改 -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="myModalLabel">积分修改</h4>
+          </div>
+          <div class="modal-body">
+            <form class="form-horizontal form-bordered" method="post">
+              <div class="form-group">
+                <input type="hidden" name="id">
+                <label class="col-sm-3 control-label" ></label>
+                <div class="col-sm-6">
+                   学号 <input type="text" name="s_id" class="form-control" id="s_id" maxlength="11" />
+                  <span class="Validform_checktip"></span> 
+                  <br>
+                   姓名 <input type="text" name="s_name" class="form-control" id="s_name" maxlength="11"/>
+                  <span class="Validform_checktip"></span>
+                  <br>
+                   班级 <input type="text" name="c_name" class="form-control" id="c_name"/>
+                  <span class="Validform_checktip"></span>
+                  <br>
+                   积分 <input type="text" name="sc_number" class="form-control" id="sc_number"  nullmsg="请填写积分！"/>
+                  <span class="Validform_checktip"></span>
+                  <br>
+                   原因 <input type="text" name="sc_reason" class="form-control" id="sc_reason"/>
+                  <span class="Validform_checktip"></span>
+                  <br>
+                   部室 <input type="text" name="sc_union" class="form-control" id="sc_union"/>
+                  <span class="Validform_checktip"></span>
+                  <br>
+                   时间 <input type="text" naem="sc_time" class="form-control" id="sc_time"/>
+                  <span class="Validform_checktip"></span>
+                  <br>
+                  修改人<input type="text" name="sc_who" class="form-control" id="sc_who"/>
+                  <span class="Validform_checktip"></span>
+                  <input type="hidden" id="edit_id_update">
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary" id="editform">Save changes</button>
+          </div>
+        </div><!-- modal-content -->
+      </div><!-- modal-dialog -->
+    </div><!-- modal -->
+  
+
+<!-- <script src="__BRACKET__/js/jquery-1.11.0.min.js" type="text/javascript"></script>
+<script src="__STATIC__/layer/layer.js"></script> -->
+
+<script>
+ $('.all').click(function() {
+    if($(this).is(':checked')) {
+      $(':checkbox').attr('checked', 'checked');
+    } else {
+      $(':checkbox').removeAttr('checked');
+    }
+  });
+
+  // 删除操作
+  $('#discard').click(function() {
+    if($(':checked').size() > 0) {
+      alert($(':checked').size() );
+      layer.confirm('确定要删除吗？', {
+        btn: ['确定','取消'],
+        shade: false 
+      }, function(){
+        $.post("{:U('Tables/delete')}", {data: $('form').serializeArray()}, function(res) {
+          if(res.state == 1) {
+            layer.msg(res.message, {icon: 1, time: 1000});
+          } else {
+            layer.msg(res.message, {icon: 2, time: 1000});
+          }
+          setTimeout(function() {
+            location.reload();
+          }, 1000);
+        });
+      }, function(){
+        layer.msg('取消了删除操作！', {time: 1000});
+        $(':checkbox').removeAttr('checked');
+      });
+    } else {
+      layer.alert('没有选择！');
+    }
+  });
+</script>
+
+<script>
+function checkaction(v){ 
+  if(v==0){ 
+  document.searchform.action="{:U('admin/Tables/export')}"; 
+  }else{ 
+  document.searchform.action="{:U('admin/Tables/index')}"; 
+  } 
+  searchform.submit(); 
+} 
+</script>
+
+<script type="text/javascript">
+$(function(){
+    //搜索
+    $("#search").click(function(){
+        $("#anu").val('apply/admin');
+        $("#searchForm").submit();
+    });
+    //导出
+    $("#export").click(function(){
+        $("#anu").val('apply/admin/export');
+        $("#searchForm").submit();
+    });
+});
+</script>
+
+<script type="text/javascript">
+    function tables(ss){
+      var edit_id = $(ss).data('id');
+      var url = "{:U('Tables/edit')}";
+      $.post(url,{
+        'edit_id':edit_id
+      },function(msg){
+        if (msg != null ) {
+          alert(msg);
+        };
+        $("#s_id").val(msg.s_id);
+        $("#s_name").val(msg.s_name);
+        $("#c_name").val(msg.c_name);
+        $("#sc_number").val(msg.sc_number);
+        $("#sc_reason").val(msg.sc_reason);
+        $("#sc_time").val(msg.sc_time);
+        $("#sc_union").val(msg.sc_union);
+        $("#sc_who").val(msg.sc_who);
+        $("#edit_id_update").val(msg.id);
+      });
+    };
+
+    $("#editform").click(function(){
+      var url = "{:U('Tables/save')}";
+      $.post(url,{
+        'id':$("#edit_id_update").val(),
+        's_id':$("#s_id").val(),
+        's_name':$("#s_name").val(),
+        'c_name':$("#c_name").val(),
+        'sc_number':$("#sc_number").val(),
+        'sc_reason':$("#sc_reason").val(),
+        'sc_time':$("#sc_time").val(),
+        'sc_union':$("#sc_union").val(),
+        'sc_who':$("#sc_who").val()
+      },function(msg){
+        // layer.confirm('确定修改吗？',{
+        //   btn: ['确定','取消'],
+        //   shade: false 
+        // });
+        layer.alert(msg);
+        s
+      });
+    });
+</script>
+
+
+</block>
