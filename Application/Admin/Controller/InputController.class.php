@@ -8,17 +8,15 @@ class InputController extends BaseController {
     public function input(){
 
     	$model=D('scoredetail');
-        
+
     	if($model->create(I('post.'))){
             if($model->find()){
-                    $model->add($arr);
+                    $model->add(I('post'));
                     $this->success('录入成功！'); 
                     exit;
             }else{
                     $this->error($model->getError());   
                  }
-
-
     	}else{
     		$this->error($model->getError());
     	}
@@ -155,5 +153,4 @@ class InputController extends BaseController {
         }
 
     } 
-
 }
