@@ -9,7 +9,22 @@
     <link rel="shortcut icon" href="/MyWWW/Integral/Public/Admin/bracket/images/logo.png" type="image/png">
     <title>信息工程学院积分管理系统</title>
     <link href="/MyWWW/Integral/Public/Admin/bracket/css/style.default.css" rel="stylesheet">
+    <script src="/MyWWW/Integral/Public/Admin/bracket/js/jquery-1.11.1.min.js"></script>
+    <script src="/MyWWW/Integral/Public/Admin/bracket/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="/MyWWW/Integral/Public/Admin/bracket/js/jquery-ui-1.10.3.min.js"></script>
+    <script src="/MyWWW/Integral/Public/Admin/bracket/js/bootstrap.min.js"></script>
+    <script src="/MyWWW/Integral/Public/Admin/bracket/js/modernizr.min.js"></script>
+    <script src="/MyWWW/Integral/Public/Admin/bracket/js/jquery.sparkline.min.js"></script>
+    <script src="/MyWWW/Integral/Public/Admin/bracket/js/toggles.min.js"></script>
+    <script src="/MyWWW/Integral/Public/Admin/bracket/js/retina.min.js"></script>
+    <script src="/MyWWW/Integral/Public/Admin/bracket/js/jquery.cookies.js"></script>
 
+    <script src="/MyWWW/Integral/Public/Admin/bracket/js/morris.min.js"></script>
+    <script src="/MyWWW/Integral/Public/Admin/bracket/js/raphael-2.1.0.min.js"></script>
+
+    <script src="/MyWWW/Integral/Public/Admin/bracket/js/custom.js"></script>
+    <!--弹出框-->
+    <script src="/MyWWW/Integral/Public/static/layer/layer.js"></script>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="/MyWWW/Integral/Public/Admin/bracket/js/html5shiv.js"></script>
@@ -61,11 +76,11 @@
                 <!-- 导入-->
                 <li class="nav-parent"><a href=""><i class="fa fa-edit"></i> <span>信息录入</span></a>
                     <ul class="children">
-                        <li class="active"><a href=""><i class="fa fa-caret-right"></i> 积分信息录入</a></li>
+                        <li><a href=""><i class="fa fa-caret-right"></i> 积分信息录入</a></li>
+
                         <li><a href=""><i class="fa fa-caret-right"></i> 学生信息录入</a></li>
                     </ul>
                 </li>
-
                 <li><a href=""><i class="fa fa-home"></i> <span>查看积分信息</span></a></li>
                 <!--<li><a href="show"><span class="pull-right badge badge-success">2</span><i class="fa fa-envelope-o"></i> <span>Email</span></a></li>-->
 
@@ -340,23 +355,6 @@
     </div><!-- mainpanel -->
 
 </section>
-
-<script src="/MyWWW/Integral/Public/Admin/bracket/js/jquery-1.11.1.min.js"></script>
-<script src="/MyWWW/Integral/Public/Admin/bracket/js/jquery-migrate-1.2.1.min.js"></script>
-<script src="/MyWWW/Integral/Public/Admin/bracket/js/jquery-ui-1.10.3.min.js"></script>
-<script src="/MyWWW/Integral/Public/Admin/bracket/js/bootstrap.min.js"></script>
-<script src="/MyWWW/Integral/Public/Admin/bracket/js/modernizr.min.js"></script>
-<script src="/MyWWW/Integral/Public/Admin/bracket/js/jquery.sparkline.min.js"></script>
-<script src="/MyWWW/Integral/Public/Admin/bracket/js/toggles.min.js"></script>
-<script src="/MyWWW/Integral/Public/Admin/bracket/js/retina.min.js"></script>
-<script src="/MyWWW/Integral/Public/Admin/bracket/js/jquery.cookies.js"></script>
-
-<script src="/MyWWW/Integral/Public/Admin/bracket/js/morris.min.js"></script>
-<script src="/MyWWW/Integral/Public/Admin/bracket/js/raphael-2.1.0.min.js"></script>
-
-<script src="/MyWWW/Integral/Public/Admin/bracket/js/custom.js"></script>
-<!--弹出框-->
-<script src="/MyWWW/Integral/Public/static/layer/layer.js"></script>
 <script>
     $('#logout_a').on('click',function(e){
         e.preventDefault();
@@ -371,7 +369,6 @@
             }
         });
     })
-
 </script>
 
 <script type="text/javascript">
