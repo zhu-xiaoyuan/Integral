@@ -9,6 +9,8 @@
     <link rel="shortcut icon" href="/Integral/Public/Admin/bracket/images/logo.png" type="image/png">
     <title>信息工程学院积分管理系统</title>
     <link href="/Integral/Public/Admin/bracket/css/style.default.css" rel="stylesheet">
+      <link rel="stylesheet" href="/Integral/Public/Admin/bracket/css/dropzone.css" />
+    <script src="/Integral/Public/Admin/bracket/js/dropzone.min.js"></script>
     <script src="/Integral/Public/Admin/bracket/js/jquery-1.11.1.min.js"></script>
     <script src="/Integral/Public/Admin/bracket/js/jquery-migrate-1.2.1.min.js"></script>
     <script src="/Integral/Public/Admin/bracket/js/jquery-ui-1.10.3.min.js"></script>
