@@ -3,7 +3,7 @@ namespace Admin\Controller;
 class TablesController extends BaseController 
 {
 	//搜索
-	public function _empty($action='index')
+	public function _empty($action='tables')
     {
         $tables = M('scoredetail');
 
@@ -30,7 +30,7 @@ class TablesController extends BaseController
         $total = $tables->where($filter)->count();
 
         if($total){
-            $perNum = 20;
+            $perNum = 30;
             $Page = new \Think\Page($total,$perNum);
             $Page->setConfig('prev', "上一页");//上一页
             $Page->setConfig('next', '下一页');//下一页
@@ -55,7 +55,7 @@ class TablesController extends BaseController
         }
         $this->assign('search', $search);
         $this->assign('list', $list);
-        $this->display('index');
+        $this->display('tables');
     }
     
     //编辑

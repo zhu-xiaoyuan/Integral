@@ -9,6 +9,8 @@
     <link rel="shortcut icon" href="__BRACKET__/images/logo.png" type="image/png">
     <title>信息工程学院积分管理系统</title>
     <link href="__BRACKET__/css/style.default.css" rel="stylesheet">
+      <link rel="stylesheet" href="__BRACKET__/css/dropzone.css" />
+    <script src="__BRACKET__/js/dropzone.min.js"></script>
     <script src="__BRACKET__/js/jquery-1.11.1.min.js"></script>
     <script src="__BRACKET__/js/jquery-migrate-1.2.1.min.js"></script>
     <script src="__BRACKET__/js/jquery-ui-1.10.3.min.js"></script>
@@ -80,7 +82,10 @@
                         <li><a href=""><i class="fa fa-caret-right"></i> 学生信息录入</a></li>
                     </ul>
                 </li>
-                <li><a href=""><i class="fa fa-home"></i> <span>查看积分信息</span></a></li>
+                <block name="tables">
+                    <li id="Tables"><a href="../Tables"><i class="fa fa-home"></i> <span>查看积分信息</span></a></li>
+                </block>   
+            
                 <!--<li><a href="show"><span class="pull-right badge badge-success">2</span><i class="fa fa-envelope-o"></i> <span>Email</span></a></li>-->
 
                 <li class="nav-parent"><a href=""><i class="glyphicon glyphicon-cog"></i> <span>UI</span></a>
@@ -91,9 +96,8 @@
 
                 <block name="nav">
                     <if condition="$_SESSION['is_power'] eq 1" >
-                        <li id="member"><a href="../Manage/member"><i class="fa fa-th-list"></i> <span>成员管理</span></a></li>
+                        <li id="member"><a href="./Manage/member"><i class="fa fa-th-list"></i> <span>成员管理</span></a></li>
                     </if>
-
                 </block>
             </ul>
         </div><!-- leftpanelinner -->
@@ -255,9 +259,10 @@
     var strPage=arrUrl[arrUrl.length-1];
     var nm = strPage.split('.');
     var ele = document.getElementById(nm[0]);
+
     ele.className = 'active';
 </script>
-<block name="js_link">
+<block name="js_link">6
 
 </block>
 </body>

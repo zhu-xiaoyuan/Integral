@@ -9,6 +9,8 @@
     <link rel="shortcut icon" href="/Integral/Public/Admin/bracket/images/logo.png" type="image/png">
     <title>信息工程学院积分管理系统</title>
     <link href="/Integral/Public/Admin/bracket/css/style.default.css" rel="stylesheet">
+      <link rel="stylesheet" href="/Integral/Public/Admin/bracket/css/dropzone.css" />
+    <script src="/Integral/Public/Admin/bracket/js/dropzone.min.js"></script>
     <script src="/Integral/Public/Admin/bracket/js/jquery-1.11.1.min.js"></script>
     <script src="/Integral/Public/Admin/bracket/js/jquery-migrate-1.2.1.min.js"></script>
     <script src="/Integral/Public/Admin/bracket/js/jquery-ui-1.10.3.min.js"></script>
@@ -80,7 +82,10 @@
                         <li><a href=""><i class="fa fa-caret-right"></i> 学生信息录入</a></li>
                     </ul>
                 </li>
-                <li><a href=""><i class="fa fa-home"></i> <span>查看积分信息</span></a></li>
+                
+                    <li id="Tables"><a href="../Tables"><i class="fa fa-home"></i> <span>查看积分信息</span></a></li>
+                   
+            
                 <!--<li><a href="show"><span class="pull-right badge badge-success">2</span><i class="fa fa-envelope-o"></i> <span>Email</span></a></li>-->
 
                 <li class="nav-parent"><a href=""><i class="glyphicon glyphicon-cog"></i> <span>UI</span></a>
@@ -90,8 +95,7 @@
                 </li>
 
                 
-                    <?php if($_SESSION['is_power'] == 1): ?><li id="member"><a href="../Manage/member"><i class="fa fa-th-list"></i> <span>成员管理</span></a></li><?php endif; ?>
-
+                    <?php if($_SESSION['is_power'] == 1): ?><li id="member"><a href="./Manage/member"><i class="fa fa-th-list"></i> <span>成员管理</span></a></li><?php endif; ?>
                 
             </ul>
         </div><!-- leftpanelinner -->
@@ -121,7 +125,153 @@
         </div><!-- headerbar -->
         <div class="contentpanel">
             
- 首页
+ <div class="contentpanel">
+      
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <div class="panel-btns">
+            <a href="" class="panel-close">&times;</a>
+            <a href="" class="minimize">&minus;</a>
+          </div>
+          <h2 class="panel-title">积分录入</h2>
+        </div>
+        <div class="panel-body panel-body-nopadding">
+          
+          <form class="form-horizontal form-bordered">
+            
+            <div class="form-group">
+              <label class="col-sm-3 control-label" > 学号 </label>
+              <div class="col-sm-6">
+                <input type="text" placeholder="学生学号" class="form-control" id="s_id" maxlength="11" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-3 control-label"> 姓名 </label>
+              <div class="col-sm-6">
+                <input type="text" placeholder="学生姓名" class="form-control" id="s_name" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-3 control-label"> 班级 </label>
+              <div class="col-sm-6">
+                <input type="text" placeholder="学生班级" class="form-control" id="c_name" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-3 control-label"> 积分 </label>
+              <div class="col-sm-6">
+                <input type="text" placeholder="积分分数" class="form-control" id="sc_number" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-3 control-label"> 原因 </label>
+              <div class="col-sm-6">
+                <input type="text" placeholder="积分原因" class="form-control" id="sc_reason" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-3 control-label"> 部室 </label>
+              <div class="col-sm-6">
+                <input type="text" placeholder="积分统计的部室" class="form-control" id="sc_union" />
+              </div>
+            </div>
+             <div class="form-group">
+ 				<label class="col-sm-3 control-label" for="disabledinput"> 时间 </label>
+ 				<div class="col-sm-6">
+ 					<input type="text" class="form-control" placeholder="月/日/年"  id="sc_time" />
+ 				</div>
+ 			</div>            
+            <div class="form-group">
+				<label class="col-sm-3 control-label" for="disabledinput"> 录入者</label>
+				<div class="col-sm-6">
+					<input type="text" placeholder="Disabled Input" class="form-control" disabled="" id="sc_who" />
+				</div>
+
+			</div>       
+			</div> 
+          </form>       
+        </div><!-- panel-body -->
+        
+        <div class="panel-footer">
+			 <div class="row">
+				<div class="col-sm-6 col-sm-offset-3">
+				  <button class="btn btn-primary" id="input"> 录 入 </button>&nbsp;
+				  <button class="btn btn-default" id="cancel"> 取 消 </button>
+				</div>
+			 </div>
+		  </div><!-- panel-footer -->     
+      </div><!-- panel -->
+
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <div class="panel-btns">
+            <a href="" class="panel-close">&times;</a>
+            <a href="" class="minimize">&minus;</a>
+          </div>
+          <h4 class="panel-title">报表录入</h4>
+        </div>
+        <div class="panel-body">
+          <h4>报表格式为 .xls或.xlsx</h4>
+          <br />
+          <form action="input/upload/table/scoredetail" class="dropzone" id="dropzone">
+            <div class="fallback">
+              <input name="file" type="file" multiple />
+            </div>
+          </form>
+        </div>
+      </div>
+
+  
+      <script>
+
+          Dropzone.options.dropzone = {
+            //maxFilesize: 2, // MB
+            acceptedFiles: ".xlsx,.xls" ,
+
+          }
+      <script>
+
+          $("#sc_who").val("Hello World");
+          jQuery('#sc_time').datepicker({
+            numberOfMonths: 3,
+            showButtonPanel: true
+          });
+          $("#input").click(function(){
+          		$.ajax({
+          			type:'POST',
+          			url:"<?php echo U('Input/input');?>",
+          			data:{
+          				's_id':$('#s_id').val(),
+          				's_name':$('#s_name').val(),
+                  'c_name':$('#c_name').val(),
+          				'sc_number':$('#sc_number').val(),
+          				'sc_reason':$('#sc_reason').val(),
+          				'sc_time':$('#sc_time').val(),
+          				'sc_who':$('#sc_who').val(),
+          				'sc_union':$('#sc_union').val(),
+          			},
+          			success:function(data){
+          				 if(data.status==0){
+                         layer.msg(data.info,{icon:2});
+                     }else{
+                         layer.msg(data.info,{icon:1});
+
+                         setTimeout(function(){
+                             window.location.reload();
+                         },2000);
+                     }  
+          			}
+          		});
+          }); 
+          $("#cancel").click(function(){
+                  $('#s_id').val("");
+                  $('#s_name').val("");
+                  $('#sc_number').val("");
+                  $('#sc_reason').val("");
+                  $('#sc_time').val("");
+                  $('#sc_union').val("");
+          });         
+      </script>
 
         </div>
     </div><!-- mainpanel -->
@@ -255,9 +405,10 @@
     var strPage=arrUrl[arrUrl.length-1];
     var nm = strPage.split('.');
     var ele = document.getElementById(nm[0]);
+
     ele.className = 'active';
 </script>
-
+6
 
 
 </body>

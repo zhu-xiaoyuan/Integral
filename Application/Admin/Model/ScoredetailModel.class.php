@@ -5,6 +5,7 @@ class ScoredetailModel  extends Model{
 	protected $_validate =array(
 		array('s_id','require','学号不能为空'),
 		array('s_name','require','姓名不能为空！'), 
+		array('c_name','require','班级不能为空！'), 
 		array('sc_number','require','积分不能为空！'),
 		array('sc_reason','require','原因不能为空！'), 
 		array('sc_time','require','时间不能为空！'),

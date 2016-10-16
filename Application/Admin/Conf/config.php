@@ -7,9 +7,8 @@ return array(
         '__CSS__'=>__ROOT__ . '/Public/Admin/css',
         '__IMG__'=>__ROOT__.'/Public/Admin/js',
         '__BRACKET__'=>__ROOT__.'/Public/Admin/bracket'
-
     ),
-
+       
 
         'DB_TYPE'               =>  'mysql',        // 数据库类型
         'DB_HOST'               =>  '127.0.0.1',    // 服务器地址

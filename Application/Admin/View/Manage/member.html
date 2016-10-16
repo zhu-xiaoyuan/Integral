@@ -1,7 +1,13 @@
 <extend name="Base:base"/>
+<<<<<<< HEAD
 <script>
     alert("5e55");
 </script>
+=======
+<block name="tables">
+     <li><a href="../Tables"><i class="fa fa-home"></i> <span>查看积分信息</span></a></li>
+</block>
+>>>>>>> f00c60fb2f0f4c6cf2d21487ac07c2444b015e8e
 <block name="main">
     <p>成员信息</p>
     <script src="__BRACKET__/js/jquery-1.11.1.min.js"></script>
@@ -38,8 +44,8 @@
             hxr.send(pram);
         }
         /*
-        * 删除成员
-        * */
+         * 删除成员
+         */
         function delete_member() {
             var objs = document.getElementsByName("member");
             var prams   = "";
@@ -48,12 +54,12 @@
                     prams = prams+ "&"+objs[i].value+"="+objs[i].value;
                 }
             }
+
             var hxr = new XMLHttpRequest();
             hxr.onreadystatechange= function (){
                 if(hxr.readyState == 4){
                     var table = document.getElementById("member_table");
                     var rlst = hxr.responseText;
-
                     table.innerHTML = rlst;
 
                 }
