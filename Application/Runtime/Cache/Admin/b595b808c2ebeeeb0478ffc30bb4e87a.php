@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -6,32 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="__BRACKET__/images/logo.png" type="image/png">
+    <link rel="shortcut icon" href="/Integral/Public/Admin/bracket/images/logo.png" type="image/png">
     <title>信息工程学院积分管理系统</title>
-    <link href="__BRACKET__/css/style.default.css" rel="stylesheet">
-    <script src="__BRACKET__/js/jquery-1.11.1.min.js"></script>
-    <script src="__BRACKET__/js/jquery-migrate-1.2.1.min.js"></script>
-    <script src="__BRACKET__/js/jquery-ui-1.10.3.min.js"></script>
-    <script src="__BRACKET__/js/bootstrap.min.js"></script>
-    <script src="__BRACKET__/js/modernizr.min.js"></script>
-    <script src="__BRACKET__/js/jquery.sparkline.min.js"></script>
-    <script src="__BRACKET__/js/toggles.min.js"></script>
-    <script src="__BRACKET__/js/retina.min.js"></script>
-    <script src="__BRACKET__/js/jquery.cookies.js"></script>
+    <link href="/Integral/Public/Admin/bracket/css/style.default.css" rel="stylesheet">
+    <script src="/Integral/Public/Admin/bracket/js/jquery-1.11.1.min.js"></script>
+    <script src="/Integral/Public/Admin/bracket/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="/Integral/Public/Admin/bracket/js/jquery-ui-1.10.3.min.js"></script>
+    <script src="/Integral/Public/Admin/bracket/js/bootstrap.min.js"></script>
+    <script src="/Integral/Public/Admin/bracket/js/modernizr.min.js"></script>
+    <script src="/Integral/Public/Admin/bracket/js/jquery.sparkline.min.js"></script>
+    <script src="/Integral/Public/Admin/bracket/js/toggles.min.js"></script>
+    <script src="/Integral/Public/Admin/bracket/js/retina.min.js"></script>
+    <script src="/Integral/Public/Admin/bracket/js/jquery.cookies.js"></script>
 
-    <script src="__BRACKET__/js/morris.min.js"></script>
-    <script src="__BRACKET__/js/raphael-2.1.0.min.js"></script>
+    <script src="/Integral/Public/Admin/bracket/js/morris.min.js"></script>
+    <script src="/Integral/Public/Admin/bracket/js/raphael-2.1.0.min.js"></script>
 
-    <script src="__BRACKET__/js/custom.js"></script>
-    <script src="__STATIC__/layer/layer.js"></script>
+    <script src="/Integral/Public/Admin/bracket/js/custom.js"></script>
+    <script src="/Integral/Public/static/layer/layer.js"></script>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-    <script src="__BRACKET__/js/html5shiv.js"></script>
-    <script src="__BRACKET__/js/respond.min.js"></script>
+    <script src="/Integral/Public/Admin/bracket/js/html5shiv.js"></script>
+    <script src="/Integral/Public/Admin/bracket/js/respond.min.js"></script>
     <![endif]-->
-    <block name="css_link">
+    
 
-    </block>
+    
 
 </head>
 <body>
@@ -46,7 +46,7 @@
     <div class="leftpanel">
         <div class="logopanel" align="center">
             <h1>
-                <!--<img style="height: 30px;width: 30px;" src="__BRACKET__/images/photos/xgxy_logo.jpg" />-->
+                <!--<img style="height: 30px;width: 30px;" src="/Integral/Public/Admin/bracket/images/photos/xgxy_logo.jpg" />-->
                 <span>积分管理系统</span>
             </h1>
         </div>
@@ -54,7 +54,7 @@
         <div class="leftpanelinner">
             <div class="visible-xs hidden-sm hidden-md hidden-lg">
                 <div class="media userlogged">
-                    <img alt="" src="__BRACKET__/images/photos/loggeduser.png" class="media-object">
+                    <img alt="" src="/Integral/Public/Admin/bracket/images/photos/loggeduser.png" class="media-object">
                     <div class="media-body">
                         <h4>John Doe</h4>
                         <span>"Life is so..."</span>
@@ -89,12 +89,10 @@
                     </ul>
                 </li>
 
-                <block name="nav">
-                    <if condition="$_SESSION['is_power'] eq 1" >
-                        <li id="member"><a href="../Manage/member"><i class="fa fa-th-list"></i> <span>成员管理</span></a></li>
-                    </if>
+                
+                    <?php if($_SESSION['is_power'] == 1): ?><li id="member"><a href="../Manage/member"><i class="fa fa-th-list"></i> <span>成员管理</span></a></li><?php endif; ?>
 
-                </block>
+                
             </ul>
         </div><!-- leftpanelinner -->
     </div><!-- leftpanel -->
@@ -108,8 +106,8 @@
                     <li>
                         <div class="btn-group">
                             <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                                <img src="__BRACKET__/images/photos/loggeduser.png" alt="" />
-                                {$_SESSION['o_name']}
+                                <img src="/Integral/Public/Admin/bracket/images/photos/loggeduser.png" alt="" />
+                                <?php echo ($_SESSION['o_name']); ?>
                                 <span class="caret"></span>
                             </button>
                             <ul class="dropdown-menu dropdown-menu-usermenu pull-right">
@@ -122,7 +120,9 @@
             </div><!-- header-right -->
         </div><!-- headerbar -->
         <div class="contentpanel">
-            <block name="main">主内容</block>
+            
+ 首页
+
         </div>
     </div><!-- mainpanel -->
 
@@ -133,14 +133,14 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title">用户 {$_SESSION['o_name']} 修改密码</h4>
+                <h4 class="modal-title">用户 <?php echo ($_SESSION['o_name']); ?> 修改密码</h4>
             </div>
             <div class="modal-body">
                 <div class="row" >
                     <div class="col-md-5" >
                         <form method="post">
                             <br>
-                            <p class="form-control changeUName" style="cursor: not-allowed;">{$_SESSION['o_id']}</p>
+                            <p class="form-control changeUName" style="cursor: not-allowed;"><?php echo ($_SESSION['o_id']); ?></p>
                             <br>
                             <input type="password" class="form-control " id="oldPsd" placeholder="请输入原密码" /><br>
                             <input type="password" class="form-control " id="changeNewPsd" placeholder="请输入要修改的密码" /><br>
@@ -164,7 +164,7 @@
             btn: ['确认', '取消'],
             shadeClose: false,
             yes: function(){
-                window.location.href = '__MODULE__/login/logout';
+                window.location.href = '/Integral/index.php/Admin/login/logout';
             }, no: function(){
 
             }
@@ -257,8 +257,8 @@
     var ele = document.getElementById(nm[0]);
     ele.className = 'active';
 </script>
-<block name="js_link">
 
-</block>
+
+
 </body>
 </html>

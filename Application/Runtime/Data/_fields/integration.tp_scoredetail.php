@@ -1,0 +1,1 @@
+a:8:{i:0;s:4:"s_id";i:1;s:9:"sc_number";i:2;s:9:"sc_reason";i:3;s:7:"sc_time";i:4;s:6:"sc_who";i:5;s:8:"sc_union";s:3:"_pk";s:4:"s_id";s:5:"_type";a:6:{s:4:"s_id";s:11:"varchar(11)";s:9:"sc_number";s:5:"float";s:9:"sc_reason";s:11:"varchar(12)";s:7:"sc_time";s:11:"varchar(16)";s:6:"sc_who";s:10:"varchar(4)";s:8:"sc_union";s:11:"varchar(10)";}}

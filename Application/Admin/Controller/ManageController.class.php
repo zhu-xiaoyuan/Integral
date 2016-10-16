@@ -17,7 +17,7 @@ use Think\Controller;
 define('ONE_CONTENT_NULL_WARNING','输入框不能有空!');
 define('DOUBLE_CONTENT_NULL_WARNING','两个输入框不能为空!');
 define('TOW_CONTENT_UNEQUAL_WARNING','内容必须一致!');
-define('TOW_CONTENT_UNEQUAL_WARNING','修改密码失败!');
+//define('TOW_CONTENT_UNEQUAL_WARNING','修改密码失败!');
 define('STUDENT_NUM_EXISTED','学号已存在!');
 
 class ManageController extends  BaseController
@@ -34,10 +34,12 @@ class ManageController extends  BaseController
 
     }
     function member(){
+
         $data = D('Office');
 //        $where[o_id] = 10001;
 
         $list = $data->where('o_id not like '.'10001')->select();
+
         $this->assign('list',$list);
         $this->display();
     }

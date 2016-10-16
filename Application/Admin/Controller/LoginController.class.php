@@ -1,9 +1,38 @@
 <?php
 namespace Admin\Controller;
-class LoginController extends BaseController {
+use Think\Controller;
+
+class LoginController extends Controller {
     public function index(){
         $this->display();
-//        $this->show('<style type="text/css">*{ padding: 0; margin: 0; } div{ padding: 4px 48px;} body{ background: #fff; font-family: "微软雅黑"; color: #333;font-size:24px} h1{ font-size: 100px; font-weight: normal; margin-bottom: 12px; } p{ line-height: 1.8em; font-size: 36px }</style><div style="padding: 24px 48px;"> <h1>:)</h1><p>欢迎使用 <b>ThinkPHP</b>！</p><br/>[ 您现在访问的是Admin模块的Index控制器 ]</div><script type="text/javascript" src="http://tajs.qq.com/stats?sId=9347272" charset="UTF-8"></script>','utf-8');
     }
 
+//    // 判断登录
+    public function login(){
+        $office = M("office");
+        $map['o_id'] = $_POST['o_id'];
+
+        $result = $office->where($map)->find();
+        if($result) {
+            $data = $office->where($map)->field('o_name,o_ispower')->find();
+            // is_power最高权限
+            if($result['o_psd']==md5($_POST['o_psd'])){
+                // 把id存入session中
+                $_SESSION['o_id'] = $map['o_id'];
+                // 把用户名存入session中
+                $_SESSION['o_name'] = $data['o_name'];
+                $_SESSION['is_power'] = $data['o_ispower'];
+                $this->ajaxReturn(1);//登录成功
+            }else{
+                $this->ajaxReturn(3);//密码错误
+            }
+        }else{
+            $this->ajaxReturn(2);//用户名错误
+        }
+    }
+    // 退出
+    public function logout(){
+        session(null);
+        $this->display('/login/index');
+    }
 }

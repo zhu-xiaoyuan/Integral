@@ -15,11 +15,7 @@
     <![endif]-->
 </head>
 
-<body class="signin">
-
-
-
-
+<body class="signin" style="background: rgb(186,223,242)">
 
 <section>
 
@@ -28,36 +24,19 @@
         <div class="row">
 
             <div class="col-md-7">
-
                 <div class="signin-info">
-                    <div class="logopanel">
-                        <h1><span>[</span> 积分管理系统 <span>]</span></h1>
-                    </div><!-- logopanel -->
-
-                    <div class="mb20"></div>
-
-                    <h5><strong>Welcome to this management system!</strong></h5>
-                    <ul>
-                        <li><i class="fa fa-arrow-circle-o-right mr5"></i> HTML5/CSS3 Valid</li>
-                        <li><i class="fa fa-arrow-circle-o-right mr5"></i> Retina Ready</li>
-                        <li><i class="fa fa-arrow-circle-o-right mr5"></i> WYSIWYG CKEditor</li>
-                        <li><i class="fa fa-arrow-circle-o-right mr5"></i> and much more...</li>
-                    </ul>
-                    <div class="mb20"></div>
-
+                    <img src="__BRACKET__/images/img/log.jpg" width="318px" height="230px" alt="">
                 </div><!-- signin0-info -->
-
             </div><!-- col-sm-7 -->
 
             <div class="col-md-5">
 
-                <form method="post" action="index.html">
+                <form method="post">
                     <h4 class="nomargin">登陆系统</h4>
 
-                    <input type="text" class="form-control uname" placeholder="账号" />
-                    <input type="password" class="form-control pword" placeholder="密码" />
-
-                    <button class="btn btn-success btn-block">Sign In</button>
+                    <input type="text" class="form-control " id="uname" name="name" placeholder="账号" />
+                    <input type="password" class="form-control " id="pword" name="psd" placeholder="密码" />
+                    <button type="button" class="btn btn-success btn-block" onclick="loginBtn()">Sign In</button>
 
                 </form>
             </div><!-- col-sm-5 -->
@@ -79,6 +58,52 @@
 
 
 <script src="__BRACKET__/js/jquery-1.11.1.min.js"></script>
+<script>
+    document.onkeydown=function(event){
+        var e = event || window.event || arguments.callee.caller.arguments[0];
+        if(e && e.keyCode==13){
+
+            loginBtn();
+
+        }
+    };
+    function loginBtn() {
+        var oid = $.trim($("#uname").val());
+        var opsd = $("#pword").val();
+        if ($.trim(oid) == '') {
+            $("#uname").css("border","1px solid red");
+            clearPrompt("#uname");
+        }else{
+            if ($.trim(opsd) == '') {
+                $("#pword").css("border","1px solid red");
+                clearPrompt("#pword");
+            }else{
+                $.post("/Integral/index.php/Admin/login/login",
+                        {
+                            o_id:oid,
+                            o_psd:opsd
+                        },function(data){
+                            if (data==1) {
+
+                                window.location.href="/Integral/index.php/Admin/Index/index";
+                            }else if(data==2) {
+                                $("#uname").css("border","1px solid red");
+                                clearPrompt("#uname");
+                            }else{
+                                $("#pword").css("border","1px solid red");
+                                clearPrompt("#pword");
+                            }
+                        }
+                );
+            }
+        }
+    }
+    function clearPrompt($show){
+        setTimeout(function(){
+            $($show).css("border","1px solid #ccc");
+        },3000);
+    }
+</script>
 
 </body>
 </html>
