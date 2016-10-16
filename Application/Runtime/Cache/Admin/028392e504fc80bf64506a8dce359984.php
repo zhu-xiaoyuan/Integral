@@ -2,31 +2,43 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="refresh">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="/Integral/Public/Admin/bracket/images/favicon.png" type="image/png">
-
-    <title>积分管理系统</title>
-
+    <link rel="shortcut icon" href="/Integral/Public/Admin/bracket/images/logo.png" type="image/png">
+    <title>信息工程学院积分管理系统</title>
     <link href="/Integral/Public/Admin/bracket/css/style.default.css" rel="stylesheet">
+    <script src="/Integral/Public/Admin/bracket/js/jquery-1.11.1.min.js"></script>
+    <script src="/Integral/Public/Admin/bracket/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="/Integral/Public/Admin/bracket/js/jquery-ui-1.10.3.min.js"></script>
+    <script src="/Integral/Public/Admin/bracket/js/bootstrap.min.js"></script>
+    <script src="/Integral/Public/Admin/bracket/js/modernizr.min.js"></script>
+    <script src="/Integral/Public/Admin/bracket/js/jquery.sparkline.min.js"></script>
+    <script src="/Integral/Public/Admin/bracket/js/toggles.min.js"></script>
+    <script src="/Integral/Public/Admin/bracket/js/retina.min.js"></script>
+    <script src="/Integral/Public/Admin/bracket/js/jquery.cookies.js"></script>
 
+    <script src="/Integral/Public/Admin/bracket/js/morris.min.js"></script>
+    <script src="/Integral/Public/Admin/bracket/js/raphael-2.1.0.min.js"></script>
+
+    <script src="/Integral/Public/Admin/bracket/js/custom.js"></script>
+    <!--弹出框-->
+    <script src="/Integral/Public/static/layer/layer.js"></script>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="/Integral/Public/Admin/bracket/js/html5shiv.js"></script>
     <script src="/Integral/Public/Admin/bracket/js/respond.min.js"></script>
     <![endif]-->
     
-  	<link href="/Integral/Public/Admin/bracket/css/jquery.datatables.css" rel="stylesheet">
-  	<link href="/Integral/Public/Admin/bracket/css/pagelist.css" rel="stylesheet">
+    <link href="/Integral/Public/Admin/bracket/css/jquery.datatables.css" rel="stylesheet">
+    <link href="/Integral/Public/Admin/bracket/css/pagelist.css" rel="stylesheet">
+
 
 </head>
-
 <body>
 
 
-
-<!-- Preloader -->
 <div id="preloader">
     <div id="status"><i class="fa fa-spinner fa-spin"></i></div>
 </div>
@@ -34,14 +46,14 @@
 <section>
 
     <div class="leftpanel">
-
-        <div class="logopanel">
-            <h1><span>[</span> 积分管理系统 <span>]</span></h1>
-        </div><!-- logopanel -->
+        <div class="logopanel" align="center">
+            <h1>
+                <!--<img style="height: 30px;width: 30px;" src="/Integral/Public/Admin/bracket/images/photos/xgxy_logo.jpg" />-->
+                <span>积分管理系统</span>
+            </h1>
+        </div>
 
         <div class="leftpanelinner">
-
-            <!-- This is only visible to small devices -->
             <div class="visible-xs hidden-sm hidden-md hidden-lg">
                 <div class="media userlogged">
                     <img alt="" src="/Integral/Public/Admin/bracket/images/photos/loggeduser.png" class="media-object">
@@ -53,96 +65,53 @@
 
                 <h5 class="sidebartitle actitle">Account</h5>
                 <ul class="nav nav-pills nav-stacked nav-bracket mb30">
-                    <li><a href="profile.html"><i class="fa fa-user"></i> <span>Profile</span></a></li>
+                    <li><a href=""><i class="fa fa-user"></i> <span>Profile</span></a></li>
                     <li><a href=""><i class="fa fa-cog"></i> <span>Account Settings</span></a></li>
                     <li><a href=""><i class="fa fa-question-circle"></i> <span>Help</span></a></li>
-                    <li><a href="signout.html"><i class="fa fa-sign-out"></i> <span>Sign Out</span></a></li>
+                    <li><a href=""><i class="fa fa-sign-out"></i> <span>Sign Out</span></a></li>
                 </ul>
             </div>
 
-            <h5 class="sidebartitle">Navigation</h5>
+            <h5 class="sidebartitle">信息工程学院</h5>
             <ul class="nav nav-pills nav-stacked nav-bracket">
-                <li class="active"><a href="index.html"><i class="fa fa-home"></i> <span>Dashboard</span></a></li>
-                <li><a href="email.html"><span class="pull-right badge badge-success">2</span><i class="fa fa-envelope-o"></i> <span>Email</span></a></li>
-                <li class="nav-parent"><a href=""><i class="fa fa-edit"></i> <span>Forms</span></a>
+                <!-- 导入-->
+                <li class="nav-parent"><a href=""><i class="fa fa-edit"></i> <span>信息录入</span></a>
                     <ul class="children">
-                        <li><a href="general-forms.html"><i class="fa fa-caret-right"></i> General Forms</a></li>
-                        <li><a href="form-layouts.html"><i class="fa fa-caret-right"></i> Form Layouts</a></li>
-                        <li><a href="form-validation.html"><i class="fa fa-caret-right"></i> Form Validation</a></li>
-                        <li><a href="form-wizards.html"><i class="fa fa-caret-right"></i> Form Wizards</a></li>
-                        <li><a href="wysiwyg.html"><i class="fa fa-caret-right"></i> Text Editor</a></li>
-                        <li><a href="code-editor.html"><i class="fa fa-caret-right"></i> Code Editor</a></li>
-                        <li><a href="x-editable.html"><i class="fa fa-caret-right"></i> X-Editable</a></li>
-                    </ul>
-                </li>
-                <li class="nav-parent"><a href=""><i class="fa fa-suitcase"></i> <span>UI Elements</span></a>
-                    <ul class="children">
-                        <li><a href="buttons.html"><i class="fa fa-caret-right"></i> Buttons</a></li>
-                        <li><a href="icons.html"><span class="pull-right badge badge-danger">updated</span><i class="fa fa-caret-right"></i> Icons</a></li>
-                        <li><a href="typography.html"><i class="fa fa-caret-right"></i> Typography</a></li>
-                        <li><a href="alerts.html"><i class="fa fa-caret-right"></i> Alerts &amp; Notifications</a></li>
-                        <li><a href="modals.html"><i class="fa fa-caret-right"></i> Modals</a></li>
-                        <li><a href="tabs-accordions.html"><i class="fa fa-caret-right"></i> Tabs &amp; Accordions</a></li>
-                        <li><a href="sliders.html"><i class="fa fa-caret-right"></i> Sliders</a></li>
-                        <li><a href="graphs.html"><i class="fa fa-caret-right"></i> Graphs &amp; Charts</a></li>
-                        <li><a href="widgets.html"><i class="fa fa-caret-right"></i> Panels &amp; Widgets</a></li>
-                        <li><a href="extras.html"><i class="fa fa-caret-right"></i> Extras</a></li>
-                    </ul>
-                </li>
-                <li><a href="<?php echo U('Tables/tables');?>"><i class="fa fa-th-list"></i> <span>Tables</span></a></li>
-                <li class="nav-parent"><a href=""><i class="fa fa-bug"></i> <span>Bug Tracker</span></a>
-                    <ul class="children">
-                        <li><a href="bug-tracker.html"><i class="fa fa-caret-right"></i> Summary</a></li>
-                        <li><a href="bug-issues.html"><i class="fa fa-caret-right"></i> Issues</a></li>
-                        <li><a href="view-issue.html"><i class="fa fa-caret-right"></i> View Issue</a></li>
-                    </ul>
-                </li>
-                <li><a href="maps.html"><i class="fa fa-map-marker"></i> <span>Maps</span></a></li>
-                <li class="nav-parent"><a href=""><i class="fa fa-file-text"></i> <span>Pages</span></a>
-                    <ul class="children">
-                        <li><a href="calendar.html"><i class="fa fa-caret-right"></i> Calendar</a></li>
-                        <li><a href="media-manager.html"><i class="fa fa-caret-right"></i> Media Manager</a></li>
-                        <li><a href="timeline.html"><i class="fa fa-caret-right"></i> Timeline</a></li>
-                        <li><a href="blog-list.html"><i class="fa fa-caret-right"></i> Blog List</a></li>
-                        <li><a href="blog-single.html"><i class="fa fa-caret-right"></i> Blog Single</a></li>
-                        <li><a href="people-directory.html"><i class="fa fa-caret-right"></i> People Directory</a></li>
-                        <li><a href="profile.html"><i class="fa fa-caret-right"></i> Profile</a></li>
-                        <li><a href="invoice.html"><i class="fa fa-caret-right"></i> Invoice</a></li>
-                        <li><a href="search-results.html"><i class="fa fa-caret-right"></i> Search Results</a></li>
-                        <li><a href="blank.html"><i class="fa fa-caret-right"></i> Blank Page</a></li>
-                        <li><a href="notfound.html"><i class="fa fa-caret-right"></i> 404 Page</a></li>
-                        <li><a href="locked.html"><i class="fa fa-caret-right"></i> Locked Screen</a></li>
-                        <li><a href="signin.html"><i class="fa fa-caret-right"></i> Sign In</a></li>
-                        <li><a href="signup.html"><i class="fa fa-caret-right"></i> Sign Up</a></li>
-                    </ul>
-                </li>
-                <li class="nav-parent"><a href="layouts.html"><i class="fa fa-laptop"></i> <span>Skins &amp; Layouts</span></a>
-                    <ul class="children">
-                        <li><a href="layouts.html"><i class="fa fa-caret-right"></i> General Layouts</a></li>
-                        <li><a href="horizontal-menu.html"><i class="fa fa-caret-right"></i> Top Menu</a></li>
-                        <li><a href="horizontal-menu2.html"><i class="fa fa-caret-right"></i> Top Menu w/ Sidebar</a></li>
-                        <li><a href="fixed-width.html"><i class="fa fa-caret-right"></i> Fixed Width Page</a></li>
-                        <li><a href="fixed-width2.html"><i class="fa fa-caret-right"></i> Fixed Width w/ Menu</a></li>
-                    </ul>
-                </li>
-            </ul>
+                        <li><a href=""><i class="fa fa-caret-right"></i> 积分信息录入</a></li>
 
+                        <li><a href=""><i class="fa fa-caret-right"></i> 学生信息录入</a></li>
+                    </ul>
+                </li>
+                
+  <li class="active"><a href="../Tables"><i class="fa fa-home"></i> <span>查看积分信息</span></a></li>
+   
+            
+                <!--<li><a href="show"><span class="pull-right badge badge-success">2</span><i class="fa fa-envelope-o"></i> <span>Email</span></a></li>-->
+
+                <li class="nav-parent"><a href=""><i class="glyphicon glyphicon-cog"></i> <span>UI</span></a>
+                    <ul class="children">
+                        <li><a href=""><i class="fa fa-caret-right"></i></a></li>
+                    </ul>
+                </li>
+
+                
+                    <?php if($_SESSION['is_power'] == 1): ?><li id="member"><a href="./Manage/member"><i class="fa fa-th-list"></i> <span>成员管理</span></a></li><?php endif; ?>
+                
+            </ul>
         </div><!-- leftpanelinner -->
     </div><!-- leftpanel -->
 
     <div class="mainpanel">
-
         <div class="headerbar">
-
-            <a class="menutoggle"><i class="fa fa-bars"></i></a>
-
-
+            <a class="menutoggle"><i class="fa fa-bars">
+            </i></a>
             <div class="header-right">
                 <ul class="headermenu">
                     <li>
                         <div class="btn-group">
                             <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
                                 <img src="/Integral/Public/Admin/bracket/images/photos/loggeduser.png" alt="" />
+
                                 John Doe
                                 <span class="caret"></span>
                             </button>
@@ -155,147 +124,252 @@
 
                 </ul>
             </div><!-- header-right -->
-
         </div><!-- headerbar -->
         <div class="contentpanel">
-            
-<div class="pageheader">
-    <h2><i class="fa fa-table"></i> Tables </h2>
-</div>
- 	<div class="panel panel-default">
- 		<div class="panel-heading">
- 			<div class="panel-btns">
- 				<a href="" class="minimize">&minus;</a>
- 			</div>
- 			<h3 class="panel-title">积分表</h3>
- 		</div>
-			
- 		<div class="panel-body">
- 			<div class="table-responsive">
- 			<div class="table-responsive">
-	 			<label>班级</label><input type="text" name="key">
-	 			<label>年级</label><input type="text" name="key">
-	 			<label>部室</label><input type="text" name="key">
-			<hr>
- 				<table class="table table-striped" id="table1">
-              		<thead>
-	                <tr>
-	                	<th><input class="allChoose" name="" type="checkbox"></th>
-	                    <th>学号</th>
-	                    <th>姓名</th>
-	                    <th>班级</th>
-	                    <th>积分分数</th>
-	                    <th>积分原因</th>
-	                    <th>记录时间</th>
-	                    <th>录入者</th>
-	                    <th>部室</th>
-	                    <th>操作</th>
-	                </tr>
-              	</thead>
-              	<tbody>
-              	<?php if(is_array($select)): foreach($select as $key=>$vo): ?><tr class="odd gradeX">
-	                	<td><input name="id[]" value="" type="checkbox"></td>
-	                    <td><?php echo ($vo["s_id"]); ?></td>
-	                    <td><?php echo ($vo["s_name"]); ?></td>
-	                    <td><?php echo ($vo["c_name"]); ?></td>
-	                    <td><?php echo ($vo["sc_number"]); ?></td>
-	                    <td><?php echo ($vo["sc_reason"]); ?></td>
-	                    <td class="center"><?php echo (date("Y-m-d",$vo["sc_time"])); ?></td>
-	                    <td class="center"><?php echo ($vo["sc_who"]); ?></td>
-	                    <td class="center"><?php echo ($vo["sc_union"]); ?></td>
-	                    <td class="center"><a href="">修改</a> / <a id="del" href="#">删除</a></td>
-	                </tr><?php endforeach; endif; ?>             
-              	</tbody>
-           		</table>
-           		<div class="pagelist"> <?php echo ($page); ?></div>
- 			</div>
- 		</div>
- 		<div class="export" style="float:right;"><a href="<?php echo U('Tables/export');?>">导出</a></div>
- 	</div>
- </div>
+                   
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <div class="panel-btns">
+            <a href="" class="minimize">&minus;</a>
+          </div><!-- panel-btns -->
+          <h3 class="panel-title">Data Tables</h3>
+          <div class="search">
+              <form id="searchForm" name="searchform" class="well form-search" method="post"  onSubmit="check();" enctype="multipart/form-data" style="background-color:white;margin-top:15px;">
+              <div style="float:left;">
+                <span>班级：
+                  <input type="text" name="search[c_name]" value="<?php echo ($search['c_name']); ?>" placeholder="请输入班级" class="input-medium">
+                </span> 
+              </div>
+              <div style="float:left;">                
+                <span>年级：
+                  <input type="text" name="search[s_id]" value="<?php echo ($search['s_id']); ?>" placeholder="格式：如 2015" class="input-medium">
+                  <!-- <select name="schoolyear" id="term">
+                  <?php if(is_array($list)): foreach($list as $key=>$vo): ?><option value="<?php echo ($vo["schoolyear"]); ?>"></option><?php endforeach; endif; ?>
+                  </select> -->
+                </span>
+              </div>
+              <div style="float:left;">               
+                <span>部室：
+                  <input type="text" name="search[sc_union]" value="<?php echo ($search['sc_union']); ?>" placeholder="请输入部室" class="input-medium">
+                </span>
+              </div>
+                <div style="float:right;">      
+                  <input type="submit" class="btn" value="搜索" onclick="checkaction(1);"/>
+                  <input type="submit" id="btn" class="btn" value="导出" onclick="checkaction(0);"/>
+                </div>     
+              </form>
+        </div>
+        <br>
+        <hr>
+        <div class="panel-body">         
+          <div class="table-responsive" id="list">         
+          <form style="min-width:1030px;">
+          <a class="btn btn-xs btn-info pull-left mr-5" style="float:left;" id="discard" href="javascript:;">删除</a>        
+          <table class="table table-striped" id="table2">
+              <thead>
+                  <tr>
+                    <th><input class="all" type="checkbox"/></th>
+                    <th>学号</th>
+                    <th>姓名</th>
+                    <th>班级</th>
+                    <th>分数</th>
+                    <th>原因</th>
+                    <th>时间</th>
+                    <th>记录者</th>
+                    <th>部室</th>
+                    <th>操作</th>
+                  </tr>
+              </thead>
+              <tbody>
+              <?php if($list): if(is_array($list)): foreach($list as $key=>$vo): ?><tr class="odd gradeX">
+                      <td><input name="delete[]" type="checkbox" value="<?php echo ($vo["id"]); ?>"/></td>
+                      <td><?php echo ($vo["s_id"]); ?></td>
+                      <td><?php echo ($vo["s_name"]); ?></td>
+                      <td><?php echo ($vo["c_name"]); ?></td>
+                      <td><?php echo ($vo["sc_number"]); ?></td>
+                      <td><?php echo ($vo["sc_reason"]); ?></td>
+                      <td class="center"><?php echo ($vo["sc_time"]); ?></td>
+                      <td class="center"><?php echo ($vo["sc_who"]); ?></td>
+                      <td class="center"><?php echo ($vo["sc_union"]); ?></td>
+                      <td class="center">
+                        <!-- <a id="edit" class="btn btn-xs btn-info mr-5" href="javascript:;" onclick="edit()">修改</a> -->
+                        <a class="btn btn-xs btn-info mr-5" href="javascript:void(0);" data-toggle="modal" data-target="#myModal" onclick="tables(this)" data-id="<?php echo ($vo["id"]); ?>">修改</a>
+                        <!-- <a class="btn btn-xs btn-info right mr-5" href="javascript:;" id="discard" data-id="{vo.id}">删除</a> -->
+                      </td>
+                  </tr><?php endforeach; endif; ?>
+                <?php else: ?>
+                  <tr><td colspan="xx" style="">暂无相关信息</td></tr><?php endif; ?>            
+              </tbody>
+           </table>
+          </form> 
+          </div><!-- table-responsive -->
+          <div class="pagelist"><?php echo ($page); ?></div>
+        </div><!-- panel-body -->
+      </div><!-- panel -->        
+    </div><!-- contentpanel -->
+<!-- 修改 -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="myModalLabel">积分修改</h4>
+          </div>
+          <div class="modal-body">
+            <form class="form-horizontal form-bordered" method="post">
+              <div class="form-group">
+                <input type="hidden" name="id">
+                <label class="col-sm-3 control-label" ></label>
+                <div class="col-sm-6">
+                   学号 <input type="text" disabled="" name="s_id" class="form-control" id="s_id" maxlength="11" />
+                  <span class="Validform_checktip"></span> 
+                  <br>
+                   姓名 <input type="text" disabled="" name="s_name" class="form-control" id="s_name" maxlength="11"/>
+                  <span class="Validform_checktip"></span>
+                  <br>
+                   班级 <input type="text" disabled="" name="c_name" class="form-control" id="c_name"/>
+                  <span class="Validform_checktip"></span>
+                  <br>
+                   积分 <input type="text" name="sc_number" class="form-control" id="sc_number"  nullmsg="请填写积分！"/>
+                  <span class="Validform_checktip"></span>
+                  <br>
+                   原因 <input type="text" name="sc_reason" class="form-control" id="sc_reason"/>
+                  <span class="Validform_checktip"></span>
+                  <br>
+                   部室 <input type="text" disabled="" name="sc_union" class="form-control" id="sc_union"/>
+                  <span class="Validform_checktip"></span>
+                  <br>
+                   时间 <input type="text" naem="sc_time" class="form-control" id="sc_time"/>
+                  <span class="Validform_checktip"></span>
+                  <br>
+                  修改人<input type="text" name="sc_who" class="form-control" id="sc_who"/>
+                  <span class="Validform_checktip"></span>
+                  <input type="hidden" id="edit_id_update">
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary" id="editform">Save changes</button>
+          </div>
+        </div><!-- modal-content -->
+      </div><!-- modal-dialog -->
+    </div><!-- modal -->
+  
 
+<!-- <script src="/Integral/Public/Admin/bracket/js/jquery-1.11.0.min.js" type="text/javascript"></script>
+<script src="/Integral/Public/static/layer/layer.js"></script> -->
+<script src="/Integral/Public/Admin/bracket/js/jquery.datatables.min.js"></script>
+<script src="/Integral/Public/Admin/bracket/js/select2.min.js"></script>
 <script>
-  jQuery(document).ready(function() {
-    
-    "use strict";
-    
-    jQuery('#table1').dataTable();
-    
-    jQuery('#table2').dataTable({
-      "sPaginationType": "full_numbers"
-    });
-    
-    // Select2
-    jQuery('select').select2({
-        minimumResultsForSearch: -1
-    });
-    
-    jQuery('select').removeClass('form-control');
-    
-    // Delete row in a table
-    jQuery('.delete-row').click(function(){
-      var c = confirm("Continue delete?");
-      if(c)
-        jQuery(this).closest('tr').fadeOut(function(){
-          jQuery(this).remove();
+ $('.all').click(function() {
+    if($(this).is(':checked')) {
+      $(':checkbox').attr('checked', 'checked');
+    } else {
+      $(':checkbox').removeAttr('checked');
+    }
+  });
+
+  // 删除操作
+  $('#discard').click(function() {
+    if($(':checked').size() > 0) {
+      alert($(':checked').size() );
+      layer.confirm('确定要删除吗？', {
+        btn: ['确定','取消'],
+        shade: false 
+      }, function(){
+        $.post("<?php echo U('Tables/delete');?>", {data: $('form').serializeArray()}, function(res) {
+          if(res.state == 1) {
+            layer.msg(res.message, {icon: 1, time: 1000});
+          } else {
+            layer.msg(res.message, {icon: 2, time: 1000});
+          }
+          setTimeout(function() {
+            location.reload();
+          }, 1000);
         });
-        
-        return false;
-    });
-    
-    // Show aciton upon row hover
-    jQuery('.table-hidaction tbody tr').hover(function(){
-      jQuery(this).find('.table-action-hide a').animate({opacity: 1});
-    },function(){
-      jQuery(this).find('.table-action-hide a').animate({opacity: 0});
-    });
-   
+      }, function(){
+        layer.msg('取消了删除操作！', {time: 1000});
+        $(':checkbox').removeAttr('checked');
+      });
+    } else {
+      layer.alert('没有选择！');
+    }
   });
 </script>
+
 <script>
-	$(document).ready(function(){   
-    $("#del").click(function(){   
-        var data = $(this).attr('data');   
-            $.ajax({   
-                url:"<?php echo U('Tables/tablesDelete');?>",                                           
-                data:"id="+data,                                            
-                type:'post',                                            
-                cache:false,                                            
-                beforeSend:function(){                                               
-                return confirm("确定删除？");                                          
-                },  
-                success:function(){                                               
-                window.location.reload();                                            
-                }  
-            });  
-        })  
-  	})
+function checkaction(v){ 
+  if(v==0){ 
+  document.searchform.action="<?php echo U('admin/Tables/export');?>"; 
+  }else{ 
+  document.searchform.action="<?php echo U('admin/Tables/tables');?>"; 
+  } 
+  searchform.submit(); 
+} 
+</script>
+
+<script type="text/javascript">
+    function tables(ss){
+      var edit_id = $(ss).data('id');
+      var url = "<?php echo U('Tables/edit');?>";
+      $.post(url,{
+        'edit_id':edit_id
+      },function(msg){
+        // if (msg != null ) {
+        //   alert(msg);
+        // };
+        $("#s_id").val(msg.s_id);
+        $("#s_name").val(msg.s_name);
+        $("#c_name").val(msg.c_name);
+        $("#sc_number").val(msg.sc_number);
+        $("#sc_reason").val(msg.sc_reason);
+        $("#sc_time").val(msg.sc_time);
+        $("#sc_union").val(msg.sc_union);
+        $("#sc_who").val(msg.sc_who);
+        $("#edit_id_update").val(msg.id);
+      });
+    };
+
+    $("#editform").click(function(){
+      var url = "<?php echo U('Tables/save');?>";
+      $.post(url,{
+        'id':$("#edit_id_update").val(),
+        's_id':$("#s_id").val(),
+        's_name':$("#s_name").val(),
+        'c_name':$("#c_name").val(),
+        'sc_number':$("#sc_number").val(),
+        'sc_reason':$("#sc_reason").val(),
+        'sc_time':$("#sc_time").val(),
+        'sc_union':$("#sc_union").val(),
+        'sc_who':$("#sc_who").val()
+      },function(msg){
+        // layer.confirm('确定修改吗？',{
+        //   btn: ['确定','取消'],
+        //   shade: false 
+        // });
+        layer.alert(msg);
+          
+      });
+      layer.close();
+      // window.location.href = 'tables';
+    });
+</script>
+<script>
+  // function list (id) {
+  //   var id = id;
+  //     $.get('Tables/_empty', {'p':id}, function(data){ 
+  //       $("#list").replaceWith("<div  id='list'>"+data+"</div>"); //user一定要和tpl中的一致
+  //   });
+  // }
 </script>
 
 
         </div>
-
     </div><!-- mainpanel -->
 
 </section>
-
-
-<script src="/Integral/Public/Admin/bracket/js/jquery-1.11.1.min.js"></script>
-<script src="/Integral/Public/Admin/bracket/js/jquery-migrate-1.2.1.min.js"></script>
-<script src="/Integral/Public/Admin/bracket/js/jquery-ui-1.10.3.min.js"></script>
-<script src="/Integral/Public/Admin/bracket/js/bootstrap.min.js"></script>
-<script src="/Integral/Public/Admin/bracket/js/modernizr.min.js"></script>
-<script src="/Integral/Public/Admin/bracket/js/jquery.sparkline.min.js"></script>
-<script src="/Integral/Public/Admin/bracket/js/toggles.min.js"></script>
-<script src="/Integral/Public/Admin/bracket/js/retina.min.js"></script>
-<script src="/Integral/Public/Admin/bracket/js/jquery.cookies.js"></script>
-
-<script src="/Integral/Public/Admin/bracket/js/morris.min.js"></script>
-<script src="/Integral/Public/Admin/bracket/js/raphael-2.1.0.min.js"></script>
-
-<script src="/Integral/Public/Admin/bracket/js/custom.js"></script>
-<!--弹出框-->
-<script src="/Integral/Public/static/layer/layer.js"></script>
 <script>
     $('#logout_a').on('click',function(e){
         e.preventDefault();
@@ -312,6 +386,16 @@
     })
 </script>
 
+<script type="text/javascript">
+    var strUrl=window.location.href;
+    var arrUrl=strUrl.split("/");
+    var strPage=arrUrl[arrUrl.length-1];
+    var nm = strPage.split('.');
+    var ele = document.getElementById(nm[0]);
+
+    ele.className = 'active';
+</script>
+6
 
 
 </body>
