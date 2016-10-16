@@ -10,6 +10,24 @@
     <title>Bracket Responsive Bootstrap3 Admin</title>
 
     <link href="__BRACKET__/css/style.default.css" rel="stylesheet">
+    <link rel="stylesheet" href="__BRACKET__/css/dropzone.css" />
+    <script src="__BRACKET__/js/dropzone.min.js"></script>
+    <script src="__BRACKET__/js/jquery-1.11.1.min.js"></script>
+    <script src="__BRACKET__/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="__BRACKET__/js/jquery-ui-1.10.3.min.js"></script>
+    <script src="__BRACKET__/js/bootstrap.min.js"></script>
+    <script src="__BRACKET__/js/modernizr.min.js"></script>
+    <script src="__BRACKET__/js/jquery.sparkline.min.js"></script>
+    <script src="__BRACKET__/js/toggles.min.js"></script>
+    <script src="__BRACKET__/js/retina.min.js"></script>
+    <script src="__BRACKET__/js/jquery.cookies.js"></script>
+
+    <script src="__BRACKET__/js/morris.min.js"></script>
+    <script src="__BRACKET__/js/raphael-2.1.0.min.js"></script>
+
+    <script src="__BRACKET__/js/custom.js"></script>
+    <!--弹出框-->
+    <script src="__STATIC__/layer/layer.js"></script>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -62,7 +80,7 @@
             <h5 class="sidebartitle">Navigation</h5>
             <ul class="nav nav-pills nav-stacked nav-bracket">
                 <li class="active"><a href="index.html"><i class="fa fa-home"></i> <span>Dashboard</span></a></li>
-                <li><a href="email.html"><span class="pull-right badge badge-success">2</span><i class="fa fa-envelope-o"></i> <span>Email</span></a></li>
+                <li><a href="input.html"><span class="pull-right badge badge-success">2</span><i class="fa fa-envelope-o"></i> <span>input</span></a></li>
                 <li class="nav-parent"><a href=""><i class="fa fa-edit"></i> <span>Forms</span></a>
                     <ul class="children">
                         <li><a href="general-forms.html"><i class="fa fa-caret-right"></i> General Forms</a></li>
@@ -165,22 +183,6 @@
 </section>
 
 
-<script src="__BRACKET__/js/jquery-1.11.1.min.js"></script>
-<script src="__BRACKET__/js/jquery-migrate-1.2.1.min.js"></script>
-<script src="__BRACKET__/js/jquery-ui-1.10.3.min.js"></script>
-<script src="__BRACKET__/js/bootstrap.min.js"></script>
-<script src="__BRACKET__/js/modernizr.min.js"></script>
-<script src="__BRACKET__/js/jquery.sparkline.min.js"></script>
-<script src="__BRACKET__/js/toggles.min.js"></script>
-<script src="__BRACKET__/js/retina.min.js"></script>
-<script src="__BRACKET__/js/jquery.cookies.js"></script>
-
-<script src="__BRACKET__/js/morris.min.js"></script>
-<script src="__BRACKET__/js/raphael-2.1.0.min.js"></script>
-
-<script src="__BRACKET__/js/custom.js"></script>
-<!--弹出框-->
-<script src="__STATIC__/layer/layer.js"></script>
 <script>
     $('#logout_a').on('click',function(e){
         e.preventDefault();
@@ -196,6 +198,7 @@
         });
     })
 </script>
+
 <block name="js_link">
 
 </block>
