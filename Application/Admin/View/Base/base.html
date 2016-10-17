@@ -74,25 +74,12 @@
 
             <h5 class="sidebartitle">信息工程学院</h5>
             <ul class="nav nav-pills nav-stacked nav-bracket">
-                <!-- 导入-->
-                <li class="nav-parent"><a href=""><i class="fa fa-edit"></i> <span>信息录入</span></a>
-                    <ul class="children">
-                        <li><a href="__ROOT__/Admin/input"><i class="fa fa-caret-right"></i> 积分信息录入</a></li>
-                        <li><a href="__ROOT__/Admin/class"><i class="fa fa-caret-right"></i> 学生信息录入</a></li>
-                    </ul>
-                </li>
+
                 <block name="tables">
                     <li id="Tables"><a href="__ROOT__/Admin/Tables"><i class="fa fa-home"></i> <span>查看积分信息</span></a></li>
-                </block>   
-            
-                <!--<li><a href="show"><span class="pull-right badge badge-success">2</span><i class="fa fa-envelope-o"></i> <span>Email</span></a></li>-->
-
-                <li class="nav-parent"><a href=""><i class="glyphicon glyphicon-cog"></i> <span>UI</span></a>
-                    <ul class="children">
-                        <li><a href=""><i class="fa fa-caret-right"></i></a></li>
-                    </ul>
-                </li>
-
+                </block>
+                <li id="input"><a href="__ROOT__/Admin/input"><i class="fa fa-th-list"></i> <span>积分信息录入</span></a></li>
+                <li id="class"><a href="__ROOT__/Admin/class"><i class="fa fa-th-list"></i> <span>学生信息录入</span></a></li>
                 <block name="nav">
                     <if condition="$_SESSION['is_power'] eq 1" >
                         <li id="member"><a href="__ROOT__/Admin/Manage/member"><i class="fa fa-th-list"></i> <span>成员管理</span></a></li>
@@ -261,8 +248,7 @@
 
     ele.className = 'active';
 </script>
-<block name="js_link">6
-
+<block name="js_link">
 </block>
 </body>
 </html>

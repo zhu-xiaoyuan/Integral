@@ -74,12 +74,13 @@ class ManageController extends  BaseController
         if($_POST['s_id'] && $_POST['s_name']){
 
             $insert = Array();
-            $insert['o_id'] =    $_POST['s_id'];
+            $insert['o_id']   =    $_POST['s_id'];
             $insert['o_name'] =  $_POST['s_name'];
-            $insert['o_psd'] =   DEFAULT_PSD;
+            $insert['o_psd']  =   '123456';
             $insert['o_ispower'] = 0;
 
             $bo = $data->add($insert);
+
             $rtn = array();
             if($bo){
                 $data = $this->get_HTML();
@@ -89,8 +90,6 @@ class ManageController extends  BaseController
                 $rtn['status'] = 0;
                 $rtn['warn']   = STUDENT_NUM_EXISTED;
             }
-
-
         }else{
             $rtn['status'] = 0;
             $rtn['warn']   = ONE_CONTENT_NULL_WARNING;
