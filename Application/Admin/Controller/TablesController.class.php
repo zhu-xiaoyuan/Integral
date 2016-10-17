@@ -47,12 +47,14 @@ class TablesController extends BaseController
 
         $list = $tables->where($filter)->order('id desc')->limit($Page->firstRow.','.$Page->listRows)->select();
 
+//        dump($list);
         if($action == 'export'){
             if(!$list){
                 $this->ajaxReturn('没有搜索结果，无法导出数据');
             }
             $this->export($list);
         }
+
         $this->assign('search', $search);
         $this->assign('list', $list);
         $this->display('tables');
