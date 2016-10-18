@@ -1,17 +1,17 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="__BRACKET__/images/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="/Integral/Public/Admin/bracket/images/favicon.png" type="image/png">
     <title>登陆</title>
-    <link href="__BRACKET__/css/style.default.css" rel="stylesheet">
+    <link href="/Integral/Public/Admin/bracket/css/style.default.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-    <script src="__BRACKET__/js/html5shiv.js"></script>
-    <script src="__BRACKET__/js/respond.min.js"></script>
+    <script src="/Integral/Public/Admin/bracket/js/html5shiv.js"></script>
+    <script src="/Integral/Public/Admin/bracket/js/respond.min.js"></script>
     <![endif]-->
 </head>
 
@@ -25,7 +25,7 @@
 
             <div class="col-md-7">
                 <div class="signin-info">
-                    <img src="__BRACKET__/images/img/log.jpg" width="318px" height="230px" alt="">
+                    <img src="/Integral/Public/Admin/bracket/images/img/log.jpg" width="318px" height="230px" alt="">
                 </div><!-- signin0-info -->
             </div><!-- col-sm-7 -->
 
@@ -57,7 +57,7 @@
 </section>
 
 
-<script src="__BRACKET__/js/jquery-1.11.1.min.js"></script>
+<script src="/Integral/Public/Admin/bracket/js/jquery-1.11.1.min.js"></script>
 <script>
     document.onkeydown=function(event){
         var e = event || window.event || arguments.callee.caller.arguments[0];

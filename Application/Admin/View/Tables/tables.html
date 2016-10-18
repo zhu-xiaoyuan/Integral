@@ -17,12 +17,12 @@
               <form id="searchForm" name="searchform" class="well form-search" method="post"  onSubmit="check();" enctype="multipart/form-data" style="background-color:white;margin-top:15px;">
               <div style="float:left;">
                 <span>班级：
-                  <input type="text" name="search[c_name]" value="{$search['c_name']}" placeholder="请输入班级" class="input-medium">
+                  <input class="form-control" type="text" name="search[c_name]" value="{$search['c_name']}" placeholder="请输入班级" class="input-medium">
                 </span> 
               </div>
               <div style="float:left;">                
                 <span>年级：
-                  <input type="text" name="search[s_id]" value="{$search['s_id']}" placeholder="格式：如 2015" class="input-medium">
+                  <input class="form-control" type="text" name="search[s_id]" value="{$search['s_id']}" placeholder="格式：如 2015" class="input-medium">
                   <!-- <select name="schoolyear" id="term">
                   <foreach name="list" item='vo'>
                     <option value="{$vo.schoolyear}"></option>
@@ -32,7 +32,7 @@
               </div>
               <div style="float:left;">               
                 <span>部室：
-                  <input type="text" name="search[sc_union]" value="{$search['sc_union']}" placeholder="请输入部室" class="input-medium">
+                  <input class="form-control" type="text" name="search[sc_union]" value="{$search['sc_union']}" placeholder="请输入部室" class="input-medium">
                 </span>
               </div>
                 <div style="float:right;">      
@@ -51,12 +51,12 @@
               <thead>
                   <tr>
                     <th><input class="all" type="checkbox"/></th>
-                    <th>学号</th>
+                    <th width="50px">学号</th>
                     <th>姓名</th>
                     <th>班级</th>
                     <th>分数</th>
                     <th>原因</th>
-                    <th>时间</th>
+                    <th width="100px">时间</th>
                     <th>记录者</th>
                     <th>部室</th>
                     <th>操作</th>

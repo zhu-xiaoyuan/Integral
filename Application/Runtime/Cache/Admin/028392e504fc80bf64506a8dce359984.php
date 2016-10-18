@@ -32,8 +32,9 @@
     <script src="/Integral/Public/Admin/bracket/js/respond.min.js"></script>
     <![endif]-->
     
+    <link href="/Integral/Public/Admin/bracket/css/jquery.datatables.css" rel="stylesheet">
+    <link href="/Integral/Public/Admin/bracket/css/pagelist.css" rel="stylesheet">
 
-    
 
 </head>
 <body>
@@ -103,86 +104,245 @@
             </div><!-- header-right -->
         </div><!-- headerbar -->
         <div class="contentpanel">
-            
-    <p>成员信息</p>
-
-    <table class="table table-dark md30" id="member_table">
-        <tbody>
-
-            <!--<form action="delete" method="post">-->
-                    <?php if(is_array($list)): foreach($list as $key=>$v): ?><tr id="<?php echo ($v["o_id"]); ?>">
-                            <td>
-                                <div class="ckbox ckbox-success">
-                                    <input type="checkbox" name="member" value="<?php echo ($v["o_id"]); ?>" id="<?php echo ($v["o_id"]); ?>+1">
-                                    <label for="<?php echo ($v["o_id"]); ?>+1"></label>
-                                </div>
-                            </td>
-                            <td>
-                                <?php echo ($v["o_id"]); ?>
-                            </td>
-                            <td>
-                                <?php echo ($v["o_name"]); ?>
-                            </td>
-                            <td align="right">
-                                <div onclick="exchange(this)" id="<?php echo ($v["o_name"]); ?>:<?php echo ($v["o_id"]); ?>" class="btn btn-primary btn-xs" data-toggle="modal" data-target=".bs-example-modal-sm" style="height: 30px;">修改密码</div>
-                            </td>
-                        </tr><?php endforeach; endif; ?>
-                <tr>
-                    <td colspan="4" align="center">
-                        <input style="width: 100px" class="btn btn-primary" onclick="delete_member()" type="button" value="删除">
-                        &nbsp;&nbsp;&nbsp;&nbsp;
-                        <div class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-                            添加账户
-                        </div>
-                    </td>
-                </tr>
-            <!--</form>-->
-        </tbody>
-    </table>
-
+                   
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <div class="panel-btns">
+            <a href="" class="minimize">&minus;</a>
+          </div><!-- panel-btns -->
+          <h3 class="panel-title">Data Tables</h3>
+          <div class="search">
+              <form id="searchForm" name="searchform" class="well form-search" method="post"  onSubmit="check();" enctype="multipart/form-data" style="background-color:white;margin-top:15px;">
+              <div style="float:left;">
+                <span>班级：
+                  <input class="form-control" type="text" name="search[c_name]" value="<?php echo ($search['c_name']); ?>" placeholder="请输入班级" class="input-medium">
+                </span> 
+              </div>
+              <div style="float:left;">                
+                <span>年级：
+                  <input class="form-control" type="text" name="search[s_id]" value="<?php echo ($search['s_id']); ?>" placeholder="格式：如 2015" class="input-medium">
+                  <!-- <select name="schoolyear" id="term">
+                  <?php if(is_array($list)): foreach($list as $key=>$vo): ?><option value="<?php echo ($vo["schoolyear"]); ?>"></option><?php endforeach; endif; ?>
+                  </select> -->
+                </span>
+              </div>
+              <div style="float:left;">               
+                <span>部室：
+                  <input class="form-control" type="text" name="search[sc_union]" value="<?php echo ($search['sc_union']); ?>" placeholder="请输入部室" class="input-medium">
+                </span>
+              </div>
+                <div style="float:right;">      
+                  <input type="submit" class="btn" value="搜索" onclick="checkaction(1);"/>
+                  <input type="submit" id="btn" class="btn" value="导出" onclick="checkaction(0);"/>
+                </div>     
+              </form>
+        </div>
+        <br>
+        <hr>
+        <div class="panel-body">         
+          <div class="table-responsive" id="list">         
+          <form style="min-width:1030px;">
+          <a class="btn btn-xs btn-info pull-left mr-5" style="float:left;" id="discard" href="javascript:;">删除</a>        
+          <table class="table table-striped" id="table2">
+              <thead>
+                  <tr>
+                    <th><input class="all" type="checkbox"/></th>
+                    <th width="50px">学号</th>
+                    <th>姓名</th>
+                    <th>班级</th>
+                    <th>分数</th>
+                    <th>原因</th>
+                    <th width="100px">时间</th>
+                    <th>记录者</th>
+                    <th>部室</th>
+                    <th>操作</th>
+                  </tr>
+              </thead>
+              <tbody>
+              <?php if($list): if(is_array($list)): foreach($list as $key=>$vo): ?><tr class="odd gradeX">
+                      <td><input name="delete[]" type="checkbox" value="<?php echo ($vo["id"]); ?>"/></td>
+                      <td><?php echo ($vo["s_id"]); ?></td>
+                      <td><?php echo ($vo["s_name"]); ?></td>
+                      <td><?php echo ($vo["c_name"]); ?></td>
+                      <td><?php echo ($vo["sc_number"]); ?></td>
+                      <td><?php echo ($vo["sc_reason"]); ?></td>
+                      <td class="center"><?php echo ($vo["sc_time"]); ?></td>
+                      <td class="center"><?php echo ($vo["sc_who"]); ?></td>
+                      <td class="center"><?php echo ($vo["sc_union"]); ?></td>
+                      <td class="center">
+                        <!-- <a id="edit" class="btn btn-xs btn-info mr-5" href="javascript:;" onclick="edit()">修改</a> -->
+                        <a class="btn btn-xs btn-info mr-5" href="javascript:void(0);" data-toggle="modal" data-target="#myModal" onclick="tables(this)" data-id="<?php echo ($vo["id"]); ?>">修改</a>
+                        <!-- <a class="btn btn-xs btn-info right mr-5" href="javascript:;" id="discard" data-id="{vo.id}">删除</a> -->
+                      </td>
+                  </tr><?php endforeach; endif; ?>
+                <?php else: ?>
+                  <tr><td colspan="xx" style="">暂无相关信息</td></tr><?php endif; ?>            
+              </tbody>
+           </table>
+          </form> 
+          </div><!-- table-responsive -->
+          <div class="pagelist"><?php echo ($page); ?></div>
+        </div><!-- panel-body -->
+      </div><!-- panel -->        
+    </div><!-- contentpanel -->
+<!-- 修改 -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title" id="myModalLabel">添加账户</h4>
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="myModalLabel">积分修改</h4>
+          </div>
+          <div class="modal-body">
+            <form class="form-horizontal form-bordered" method="post">
+              <div class="form-group">
+                <input type="hidden" name="id">
+                <label class="col-sm-3 control-label" ></label>
+                <div class="col-sm-6">
+                   学号 <input type="text" disabled="" name="s_id" class="form-control" id="s_id" maxlength="11" />
+                  <span class="Validform_checktip"></span> 
+                  <br>
+                   姓名 <input type="text" disabled="" name="s_name" class="form-control" id="s_name" maxlength="11"/>
+                  <span class="Validform_checktip"></span>
+                  <br>
+                   班级 <input type="text" disabled="" name="c_name" class="form-control" id="c_name"/>
+                  <span class="Validform_checktip"></span>
+                  <br>
+                   积分 <input type="text" name="sc_number" class="form-control" id="sc_number"  nullmsg="请填写积分！"/>
+                  <span class="Validform_checktip"></span>
+                  <br>
+                   原因 <input type="text" name="sc_reason" class="form-control" id="sc_reason"/>
+                  <span class="Validform_checktip"></span>
+                  <br>
+                   部室 <input type="text" disabled="" name="sc_union" class="form-control" id="sc_union"/>
+                  <span class="Validform_checktip"></span>
+                  <br>
+                   时间 <input type="text" naem="sc_time" class="form-control" id="sc_time"/>
+                  <span class="Validform_checktip"></span>
+                  <br>
+                  修改人<input type="text" name="sc_who" class="form-control" id="sc_who"/>
+                  <span class="Validform_checktip"></span>
+                  <input type="hidden" id="edit_id_update">
                 </div>
-                <form action="add" method="post">
-                    <div class="modal-body">
-                            <input type="text" id="o_id" placeholder="学号" class="form-control mb15" name="s_id">
-                            <input type="text" id="o_name" placeholder="姓名" class="form-control mb15" name="s_name">
-                        <p id="add_warning" style="color: red;margin-top: 0px;display: none;"></p><br/>
-                    </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary" id="editform">Save changes</button>
+          </div>
+        </div><!-- modal-content -->
+      </div><!-- modal-dialog -->
+    </div><!-- modal -->
+  
 
-                    <div class="modal-footer">
-                        <div type="button" id="Enter" class="btn btn-default" data-dismiss="modal">关闭</div>
-                        <input  type="button" onclick="add_member()" class="btn btn-primary" value="提交">
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
+<!-- <script src="/Integral/Public/Admin/bracket/js/jquery-1.11.0.min.js" type="text/javascript"></script>
+<script src="/Integral/Public/static/layer/layer.js"></script> -->
+<script src="/Integral/Public/Admin/bracket/js/jquery.datatables.min.js"></script>
+<script src="/Integral/Public/Admin/bracket/js/select2.min.js"></script>
+<script>
+ $('.all').click(function() {
+    if($(this).is(':checked')) {
+      $(':checkbox').attr('checked', 'checked');
+    } else {
+      $(':checkbox').removeAttr('checked');
+    }
+  });
 
-    <div  class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-sm">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button aria-hidden="true" data-dismiss="modal" class="close" type="button">&times;</button>
-                    <h5 align="center" id="h5_name" class="modal-title">修改密码</h5>
-                </div>
-                <div class="modal-body" align="center">
-                    <form action="">
-                        <input type="hidden" id="h_id">
-                        <input type="password" id="new_psd"  placeholder="新密码" class="form-control mb15" name="new_psd">
-                        <input type="password" id="psd_again"  placeholder="验证新密码" class="form-control mb15" name="psd_again">
-                        <p id="warning" style="color: red;display: none;"></p><br/>
-                        <div type="button" id="dismiss_modal" class="btn btn-default" data-dismiss="modal">关闭</div>
-                        <input  type="button"  onclick="modify()" class="btn btn-primary" value="提交">
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
+  // 删除操作
+  $('#discard').click(function() {
+    if($(':checked').size() > 0) {
+      alert($(':checked').size() );
+      layer.confirm('确定要删除吗？', {
+        btn: ['确定','取消'],
+        shade: false 
+      }, function(){
+        $.post("<?php echo U('Tables/delete');?>", {data: $('form').serializeArray()}, function(res) {
+          if(res.state == 1) {
+            layer.msg(res.message, {icon: 1, time: 1000});
+          } else {
+            layer.msg(res.message, {icon: 2, time: 1000});
+          }
+          setTimeout(function() {
+            location.reload();
+          }, 1000);
+        });
+      }, function(){
+        layer.msg('取消了删除操作！', {time: 1000});
+        $(':checkbox').removeAttr('checked');
+      });
+    } else {
+      layer.alert('没有选择！');
+    }
+  });
+</script>
+
+<script>
+function checkaction(v){ 
+  if(v==0){ 
+  document.searchform.action="<?php echo U('admin/Tables/export');?>"; 
+  }else{ 
+  document.searchform.action="<?php echo U('admin/Tables/tables');?>"; 
+  } 
+  searchform.submit(); 
+} 
+</script>
+
+<script type="text/javascript">
+    function tables(ss){
+      var edit_id = $(ss).data('id');
+      var url = "<?php echo U('Tables/edit');?>";
+      $.post(url,{
+        'edit_id':edit_id
+      },function(msg){
+        // if (msg != null ) {
+        //   alert(msg);
+        // };
+        $("#s_id").val(msg.s_id);
+        $("#s_name").val(msg.s_name);
+        $("#c_name").val(msg.c_name);
+        $("#sc_number").val(msg.sc_number);
+        $("#sc_reason").val(msg.sc_reason);
+        $("#sc_time").val(msg.sc_time);
+        $("#sc_union").val(msg.sc_union);
+        $("#sc_who").val(msg.sc_who);
+        $("#edit_id_update").val(msg.id);
+      });
+    };
+
+    $("#editform").click(function(){
+      var url = "<?php echo U('Tables/save');?>";
+      $.post(url,{
+        'id':$("#edit_id_update").val(),
+        's_id':$("#s_id").val(),
+        's_name':$("#s_name").val(),
+        'c_name':$("#c_name").val(),
+        'sc_number':$("#sc_number").val(),
+        'sc_reason':$("#sc_reason").val(),
+        'sc_time':$("#sc_time").val(),
+        'sc_union':$("#sc_union").val(),
+        'sc_who':$("#sc_who").val()
+      },function(msg){
+        // layer.confirm('确定修改吗？',{
+        //   btn: ['确定','取消'],
+        //   shade: false 
+        // });
+        layer.alert(msg);
+          
+      });
+      layer.close();
+      // window.location.href = 'tables';
+    });
+</script>
+<script>
+  // function list (id) {
+  //   var id = id;
+  //     $.get('Tables/_empty', {'p':id}, function(data){ 
+  //       $("#list").replaceWith("<div  id='list'>"+data+"</div>"); //user一定要和tpl中的一致
+  //   });
+  // }
+</script>
+
 
         </div>
     </div><!-- mainpanel -->
@@ -322,150 +482,6 @@
 
 </script>
 
-    <script type="text/javascript">
-        const MODIFY_PASSWORD_FAILED      = "修改密码失败!";
-        var table = document.getElementById("member_table");
-        /*
-         * 添加成员
-         * */
-        function add_member(){
-            var id = document.getElementById('o_id').value;
-            var name = document.getElementById('o_name').value;
-            var hxr = new XMLHttpRequest();
-
-            hxr.onreadystatechange = function (){
-                if(hxr.readyState == 4){
-                    var table = document.getElementById("member_table");
-                    var  rlt = JSON.parse(hxr.responseText);
-
-                    if(rlt.status ==1 ){
-                        table.innerHTML = rlt.data;
-                        set_input_null();
-                        dismiss_fade_modal();
-                    }else{
-                        show_add_Warning(rlt.warn);
-                    }
-
-                }
-            };
-
-            var pram = 's_id='+id+'&s_name='+name;
-            hxr.open('post','add');
-            hxr.setRequestHeader('content-type','application/x-www-form-urlencoded');
-            hxr.send(pram);
-        }
-        /*
-         * 删除成员
-         */
-        function delete_member() {
-            var objs = document.getElementsByName("member");
-            var prams   = "";
-            for (var i = 0; i < objs.length; i++) {
-                if (objs[i].checked) {
-                    prams = prams+ "&"+objs[i].value+"="+objs[i].value;
-                }
-            }
-
-            var hxr = new XMLHttpRequest();
-            hxr.onreadystatechange= function (){
-                if(hxr.readyState == 4){
-                    var table = document.getElementById("member_table");
-                    var rlst = hxr.responseText;
-                    table.innerHTML = rlst;
-
-                }
-            };
-            hxr.open('post','delete');
-            hxr.setRequestHeader('content-type','application/x-www-form-urlencoded');
-            hxr.send(prams);
-        }
-        function exchange(ele){
-            var info         = ele.getAttribute('id');
-            var doc          = document.getElementById('h_id');
-            var title        = document.getElementById('h5_name');
-            var infos        = info.split(":");
-            doc.value        = infos[1];
-            title.innerHTML  = "修改"+infos[0]+"的密码";
-        }
-        /*
-         * 修改密码
-         * */
-        function modify(){
-
-            var o_id = document.getElementById('h_id').value;
-            var psd  = document.getElementById('new_psd').value;
-            var psd_again = document.getElementById('psd_again').value;
-
-            psd = psd.trim();
-            psd_again.trim();
-
-            var ajax = new XMLHttpRequest();
-            ajax.onreadystatechange = function (){
-                if(ajax.readyState == 4){
-                    var  rlt = ajax.responseText;
-
-                    if(rlt == "success"){
-                        set_input_null();
-                        dismiss_fade_modal();
-                    }else if(rlt == "fail"){
-                        showWarning(MODIFY_PASSWORD_FAILED);
-                    }else{
-                        showWarning(rlt);
-                    }
-                }
-            };
-
-            var info_str = "id=" + o_id + "&psd=" + psd +"&psd_again=" + psd_again;
-
-            ajax.open('post','modify_psd');
-            ajax.setRequestHeader('content-type','application/x-www-form-urlencoded');
-            ajax.send(info_str);
-        }
-        /*
-         *显示警告
-         * */
-        function showWarning(warning){
-
-            var doc = document.getElementById('warning');
-
-            doc.innerHTML = warning;
-            doc.style.display = "inline";
-
-            var time = setTimeout(function (){
-                doc.innerHTML = "";
-                doc.style.display = "none";
-                clearTimeout(time);
-                return;
-            },5000);
-        }
-        function show_add_Warning(warning){
-
-            var doc = document.getElementById('add_warning');
-
-            doc.innerHTML = warning;
-            doc.style.display = "inline";
-
-            var time = setTimeout(function (){
-                doc.innerHTML = "";
-                doc.style.display = "none";
-                clearTimeout(time);
-                return 0;
-            },5000);
-        }
-        /*
-         *消失fade
-         * */
-        function dismiss_fade_modal(){
-            var fade = document.getElementById('dismiss_modal');
-            var fade1 = document.getElementById('Enter');
-            fade.click();
-            fade1.click();
-        }
-        function set_input_null(){
-            document.getElementById('new_psd').value = "";
-            document.getElementById('psd_again').value = "";
-        }
-    </script>
 
 </body>
 </html>

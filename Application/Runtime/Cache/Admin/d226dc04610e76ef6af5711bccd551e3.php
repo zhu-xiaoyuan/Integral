@@ -58,30 +58,23 @@
                 <div class="media userlogged">
                     <img alt="" src="/Integral/Public/Admin/bracket/images/photos/loggeduser.png" class="media-object">
                     <div class="media-body">
-                        <h4>John Doe</h4>
-                        <span>"Life is so..."</span>
+                        <h4> <?php echo ($_SESSION['o_name']); ?></h4>
                     </div>
                 </div>
 
-                <h5 class="sidebartitle actitle">Account</h5>
                 <ul class="nav nav-pills nav-stacked nav-bracket mb30">
-                    <li><a href=""><i class="fa fa-user"></i> <span>Profile</span></a></li>
-                    <li><a href=""><i class="fa fa-cog"></i> <span>Account Settings</span></a></li>
-                    <li><a href=""><i class="fa fa-question-circle"></i> <span>Help</span></a></li>
-                    <li><a href=""><i class="fa fa-sign-out"></i> <span>Sign Out</span></a></li>
+                    <li><a href='#'  data-toggle="modal" data-target="#mymodal-data"><i class="glyphicon glyphicon-user"></i>修改密码</a></li>
+                    <li><a href="#" id="logout_a" onclick="logOut()"><i class="glyphicon glyphicon-log-out"></i>退出</a></li>
                 </ul>
             </div>
 
             <h5 class="sidebartitle">信息工程学院</h5>
             <ul class="nav nav-pills nav-stacked nav-bracket">
-
+                <li id="Tables"><a href="/Integral/index.php/Admin/Tables"><i class="fa fa-home"></i> <span>查看积分信息</span></a></li>
+                <li id="input"><a href="/Integral/index.php/Admin/input"><i class="fa fa-th-list"></i> <span>积分信息录入</span></a></li>
+                <li id="class"><a href="/Integral/index.php/Admin/class"><i class="fa fa-th-list"></i> <span>学生信息录入</span></a></li>
                 
-                    <li id="Tables"><a href="/Integral/Admin/Tables"><i class="fa fa-home"></i> <span>查看积分信息</span></a></li>
-                
-                <li id="input"><a href="/Integral/Admin/input"><i class="fa fa-th-list"></i> <span>积分信息录入</span></a></li>
-                <li id="class"><a href="/Integral/Admin/class"><i class="fa fa-th-list"></i> <span>学生信息录入</span></a></li>
-                
-                    <?php if($_SESSION['is_power'] == 1): ?><li id="member"><a href="/Integral/Admin/Manage/member"><i class="fa fa-th-list"></i> <span>成员管理</span></a></li><?php endif; ?>
+                    <?php if($_SESSION['is_power'] == 1): ?><li id="member"><a href="/Integral/index.php/Admin/Manage/member"><i class="fa fa-th-list"></i> <span>成员管理</span></a></li><?php endif; ?>
                 
             </ul>
         </div><!-- leftpanelinner -->
@@ -352,9 +345,11 @@
     var arrUrl=strUrl.split("/");
     var strPage=arrUrl[arrUrl.length-1];
     var nm = strPage.split('.');
-    var ele = document.getElementById(nm[0]);
-
+    var ele = document.getElementById(nm[0] + "");
+//    alert(ele);
     ele.className = 'active';
+
+
 </script>
 
 

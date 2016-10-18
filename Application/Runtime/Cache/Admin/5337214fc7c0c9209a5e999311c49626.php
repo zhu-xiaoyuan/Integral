@@ -104,85 +104,151 @@
         </div><!-- headerbar -->
         <div class="contentpanel">
             
-    <p>成员信息</p>
-
-    <table class="table table-dark md30" id="member_table">
-        <tbody>
-
-            <!--<form action="delete" method="post">-->
-                    <?php if(is_array($list)): foreach($list as $key=>$v): ?><tr id="<?php echo ($v["o_id"]); ?>">
-                            <td>
-                                <div class="ckbox ckbox-success">
-                                    <input type="checkbox" name="member" value="<?php echo ($v["o_id"]); ?>" id="<?php echo ($v["o_id"]); ?>+1">
-                                    <label for="<?php echo ($v["o_id"]); ?>+1"></label>
-                                </div>
-                            </td>
-                            <td>
-                                <?php echo ($v["o_id"]); ?>
-                            </td>
-                            <td>
-                                <?php echo ($v["o_name"]); ?>
-                            </td>
-                            <td align="right">
-                                <div onclick="exchange(this)" id="<?php echo ($v["o_name"]); ?>:<?php echo ($v["o_id"]); ?>" class="btn btn-primary btn-xs" data-toggle="modal" data-target=".bs-example-modal-sm" style="height: 30px;">修改密码</div>
-                            </td>
-                        </tr><?php endforeach; endif; ?>
-                <tr>
-                    <td colspan="4" align="center">
-                        <input style="width: 100px" class="btn btn-primary" onclick="delete_member()" type="button" value="删除">
-                        &nbsp;&nbsp;&nbsp;&nbsp;
-                        <div class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-                            添加账户
-                        </div>
-                    </td>
-                </tr>
-            <!--</form>-->
-        </tbody>
-    </table>
-
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title" id="myModalLabel">添加账户</h4>
+ <div class="contentpanel">
+      
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <div class="panel-btns">
+            <a href="" class="panel-close">&times;</a>
+            <a href="" class="minimize">&minus;</a>
+          </div>
+          <h2 class="panel-title">积分录入</h2>
+        </div>
+        <div class="panel-body panel-body-nopadding">
+          
+          <form class="form-horizontal form-bordered">
+            
+                <div class="form-group">
+                  <label class="col-sm-3 control-label" > 学号 </label>
+                  <div class="col-sm-6">
+                    <input type="text" placeholder="学生学号" class="form-control" id="s_id" maxlength="11" />
+                  </div>
                 </div>
-                <form action="add" method="post">
-                    <div class="modal-body">
-                            <input type="text" id="o_id" placeholder="学号" class="form-control mb15" name="s_id">
-                            <input type="text" id="o_name" placeholder="姓名" class="form-control mb15" name="s_name">
-                        <p id="add_warning" style="color: red;margin-top: 0px;display: none;"></p><br/>
+                <div class="form-group">
+                  <label class="col-sm-3 control-label"> 姓名 </label>
+                  <div class="col-sm-6">
+                    <input type="text" placeholder="学生姓名" class="form-control" id="s_name" />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-sm-3 control-label"> 班级 </label>
+                  <div class="col-sm-6">
+                    <input type="text" placeholder="学生班级" class="form-control" id="c_name" />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-sm-3 control-label"> 积分 </label>
+                  <div class="col-sm-6">
+                    <input type="text" placeholder="积分分数" class="form-control" id="sc_number" />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-sm-3 control-label"> 原因 </label>
+                  <div class="col-sm-6">
+                    <input type="text" placeholder="积分原因" class="form-control" id="sc_reason" />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-sm-3 control-label"> 部室 </label>
+                  <div class="col-sm-6">
+                    <input type="text" placeholder="积分统计的部室" class="form-control" id="sc_union" />
+                  </div>
+                </div>
+                 <div class="form-group">
+                    <label class="col-sm-3 control-label" for="disabledinput"> 时间 </label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" placeholder="月/日/年"  id="sc_time" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label" for="disabledinput"> 录入者</label>
+                    <div class="col-sm-6">
+                        <input type="text" placeholder="Disabled Input" class="form-control" disabled="" id="sc_who" />
                     </div>
 
-                    <div class="modal-footer">
-                        <div type="button" id="Enter" class="btn btn-default" data-dismiss="modal">关闭</div>
-                        <input  type="button" onclick="add_member()" class="btn btn-primary" value="提交">
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
+                </div>
 
-    <div  class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-sm">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button aria-hidden="true" data-dismiss="modal" class="close" type="button">&times;</button>
-                    <h5 align="center" id="h5_name" class="modal-title">修改密码</h5>
-                </div>
-                <div class="modal-body" align="center">
-                    <form action="">
-                        <input type="hidden" id="h_id">
-                        <input type="password" id="new_psd"  placeholder="新密码" class="form-control mb15" name="new_psd">
-                        <input type="password" id="psd_again"  placeholder="验证新密码" class="form-control mb15" name="psd_again">
-                        <p id="warning" style="color: red;display: none;"></p><br/>
-                        <div type="button" id="dismiss_modal" class="btn btn-default" data-dismiss="modal">关闭</div>
-                        <input  type="button"  onclick="modify()" class="btn btn-primary" value="提交">
-                    </form>
-                </div>
-            </div>
+          </form>       
+        </div><!-- panel-body -->
+        
+        <div class="panel-footer">
+			 <div class="row">
+				<div class="col-sm-6 col-sm-offset-3">
+				  <button class="btn btn-primary" id="input"> 录 入 </button> &nbsp;
+				  <button class="btn btn-primary" id="cancel"> 取 消 </button>
+				</div>
+			 </div>
+		  </div><!-- panel-footer -->     
+      </div><!-- panel -->
+
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <div class="panel-btns">
+            <a href="" class="panel-close">&times;</a>
+            <a href="" class="minimize">&minus;</a>
+          </div>
+          <h4 class="panel-title">报表录入</h4>
         </div>
-    </div>
+        <div class="panel-body">
+          <h4>报表格式为 .xls或.xlsx</h4>
+          <br />
+          <form action="input/upload/table/scoredetail" class="dropzone" id="dropzone">
+            <div class="fallback">
+              <input name="file" type="file" multiple />
+            </div>
+          </form>
+        </div>
+      </div>
+
+  
+      <script>
+
+          Dropzone.options.dropzone = {
+            //maxFilesize: 2, // MB
+            acceptedFiles: ".xlsx,.xls"
+          };
+
+          $("#sc_who").val("Hello World");
+          jQuery('#sc_time').datepicker({
+            numberOfMonths: 3,
+            showButtonPanel: true
+          });
+          $("#input").click(function(){
+          		$.ajax({
+          			type:'POST',
+          			url:"<?php echo U('Input/input');?>",
+          			data:{
+          				's_id':$('#s_id').val(),
+          				's_name':$('#s_name').val(),
+                        'c_name':$('#c_name').val(),
+          				'sc_number':$('#sc_number').val(),
+          				'sc_reason':$('#sc_reason').val(),
+          				'sc_time':$('#sc_time').val(),
+          				'sc_who':$('#sc_who').val(),
+          				'sc_union':$('#sc_union').val(),
+          			},
+          			success:function(data){
+          				 if(data.status==0){
+                         layer.msg(data.info,{icon:2});
+                     }else{
+                         layer.msg(data.info,{icon:1});
+
+                         setTimeout(function(){
+                             window.location.reload();
+                         },2000);
+                     }  
+          			}
+          		});
+          }); 
+          $("#cancel").click(function(){
+                  $('#s_id').val("");
+                  $('#s_name').val("");
+                  $('#sc_number').val("");
+                  $('#sc_reason').val("");
+                  $('#sc_time').val("");
+                  $('#sc_union').val("");
+          });         
+      </script>
 
         </div>
     </div><!-- mainpanel -->
@@ -322,150 +388,6 @@
 
 </script>
 
-    <script type="text/javascript">
-        const MODIFY_PASSWORD_FAILED      = "修改密码失败!";
-        var table = document.getElementById("member_table");
-        /*
-         * 添加成员
-         * */
-        function add_member(){
-            var id = document.getElementById('o_id').value;
-            var name = document.getElementById('o_name').value;
-            var hxr = new XMLHttpRequest();
-
-            hxr.onreadystatechange = function (){
-                if(hxr.readyState == 4){
-                    var table = document.getElementById("member_table");
-                    var  rlt = JSON.parse(hxr.responseText);
-
-                    if(rlt.status ==1 ){
-                        table.innerHTML = rlt.data;
-                        set_input_null();
-                        dismiss_fade_modal();
-                    }else{
-                        show_add_Warning(rlt.warn);
-                    }
-
-                }
-            };
-
-            var pram = 's_id='+id+'&s_name='+name;
-            hxr.open('post','add');
-            hxr.setRequestHeader('content-type','application/x-www-form-urlencoded');
-            hxr.send(pram);
-        }
-        /*
-         * 删除成员
-         */
-        function delete_member() {
-            var objs = document.getElementsByName("member");
-            var prams   = "";
-            for (var i = 0; i < objs.length; i++) {
-                if (objs[i].checked) {
-                    prams = prams+ "&"+objs[i].value+"="+objs[i].value;
-                }
-            }
-
-            var hxr = new XMLHttpRequest();
-            hxr.onreadystatechange= function (){
-                if(hxr.readyState == 4){
-                    var table = document.getElementById("member_table");
-                    var rlst = hxr.responseText;
-                    table.innerHTML = rlst;
-
-                }
-            };
-            hxr.open('post','delete');
-            hxr.setRequestHeader('content-type','application/x-www-form-urlencoded');
-            hxr.send(prams);
-        }
-        function exchange(ele){
-            var info         = ele.getAttribute('id');
-            var doc          = document.getElementById('h_id');
-            var title        = document.getElementById('h5_name');
-            var infos        = info.split(":");
-            doc.value        = infos[1];
-            title.innerHTML  = "修改"+infos[0]+"的密码";
-        }
-        /*
-         * 修改密码
-         * */
-        function modify(){
-
-            var o_id = document.getElementById('h_id').value;
-            var psd  = document.getElementById('new_psd').value;
-            var psd_again = document.getElementById('psd_again').value;
-
-            psd = psd.trim();
-            psd_again.trim();
-
-            var ajax = new XMLHttpRequest();
-            ajax.onreadystatechange = function (){
-                if(ajax.readyState == 4){
-                    var  rlt = ajax.responseText;
-
-                    if(rlt == "success"){
-                        set_input_null();
-                        dismiss_fade_modal();
-                    }else if(rlt == "fail"){
-                        showWarning(MODIFY_PASSWORD_FAILED);
-                    }else{
-                        showWarning(rlt);
-                    }
-                }
-            };
-
-            var info_str = "id=" + o_id + "&psd=" + psd +"&psd_again=" + psd_again;
-
-            ajax.open('post','modify_psd');
-            ajax.setRequestHeader('content-type','application/x-www-form-urlencoded');
-            ajax.send(info_str);
-        }
-        /*
-         *显示警告
-         * */
-        function showWarning(warning){
-
-            var doc = document.getElementById('warning');
-
-            doc.innerHTML = warning;
-            doc.style.display = "inline";
-
-            var time = setTimeout(function (){
-                doc.innerHTML = "";
-                doc.style.display = "none";
-                clearTimeout(time);
-                return;
-            },5000);
-        }
-        function show_add_Warning(warning){
-
-            var doc = document.getElementById('add_warning');
-
-            doc.innerHTML = warning;
-            doc.style.display = "inline";
-
-            var time = setTimeout(function (){
-                doc.innerHTML = "";
-                doc.style.display = "none";
-                clearTimeout(time);
-                return 0;
-            },5000);
-        }
-        /*
-         *消失fade
-         * */
-        function dismiss_fade_modal(){
-            var fade = document.getElementById('dismiss_modal');
-            var fade1 = document.getElementById('Enter');
-            fade.click();
-            fade1.click();
-        }
-        function set_input_null(){
-            document.getElementById('new_psd').value = "";
-            document.getElementById('psd_again').value = "";
-        }
-    </script>
 
 </body>
 </html>
