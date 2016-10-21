@@ -1,0 +1,1 @@
+a:7:{i:0;s:4:"c_id";i:1;s:6:"c_name";i:2;s:9:"leader_id";i:3;s:7:"c_score";i:4;s:5:"c_psd";s:3:"_pk";s:4:"c_id";s:5:"_type";a:5:{s:4:"c_id";s:10:"varchar(9)";s:6:"c_name";s:8:"char(10)";s:9:"leader_id";s:11:"varchar(11)";s:7:"c_score";s:10:"tinyint(2)";s:5:"c_psd";s:8:"char(16)";}}

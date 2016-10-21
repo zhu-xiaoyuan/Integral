@@ -1,1 +1,1 @@
-a:6:{i:0;s:4:"o_id";i:1;s:6:"o_name";i:2;s:5:"o_psd";i:3;s:9:"o_ispower";s:3:"_pk";s:4:"o_id";s:5:"_type";a:4:{s:4:"o_id";s:11:"varchar(11)";s:6:"o_name";s:10:"varchar(4)";s:5:"o_psd";s:8:"char(16)";s:9:"o_ispower";s:10:"tinyint(1)";}}
+a:6:{i:0;s:4:"o_id";i:1;s:6:"o_name";i:2;s:5:"o_psd";i:3;s:9:"o_ispower";s:3:"_pk";s:4:"o_id";s:5:"_type";a:4:{s:4:"o_id";s:11:"varchar(11)";s:6:"o_name";s:10:"varchar(4)";s:5:"o_psd";s:11:"varchar(32)";s:9:"o_ispower";s:10:"tinyint(1)";}}

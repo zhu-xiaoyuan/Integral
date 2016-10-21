@@ -1842,3 +1842,148 @@ NOTIC: [8] Use of undefined constant sc_time - assumed 'sc_time' E:\PHP\httpd-2.
 NOTIC: [8] Use of undefined constant sc_union - assumed 'sc_union' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 121 行.
 ERR: syntax error, unexpected '<<' (T_SL)
 
+[ 2016-10-19T22:27:57+08:00 ] ::1 /Integral/index.php/Admin/Tables/export.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000689s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002535s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002606s ]
+NOTIC: [8] Undefined index: c_name E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 13 行.
+NOTIC: [8] Undefined index: s_id E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 14 行.
+NOTIC: [8] Undefined index: sc_union E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 15 行.
+NOTIC: [8] Undefined variable: filter E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 30 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_scoredetail` LIMIT 1   [ RunTime:0.000175s ]
+NOTIC: [8] Undefined variable: filter E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 48 行.
+SQL: SELECT * FROM `tp_scoredetail` ORDER BY id desc LIMIT 0,30   [ RunTime:0.000244s ]
+NOTIC: [8] Use of undefined constant s_id - assumed 's_id' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 114 行.
+NOTIC: [8] Use of undefined constant s_name - assumed 's_name' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 115 行.
+NOTIC: [8] Use of undefined constant c_name - assumed 'c_name' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 116 行.
+NOTIC: [8] Use of undefined constant sc_number - assumed 'sc_number' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 117 行.
+NOTIC: [8] Use of undefined constant sc_reason - assumed 'sc_reason' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 118 行.
+NOTIC: [8] Use of undefined constant sc_time - assumed 'sc_time' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 119 行.
+NOTIC: [8] Use of undefined constant sc_union - assumed 'sc_union' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 121 行.
+NOTIC: [8] Use of undefined constant s_id - assumed 's_id' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 114 行.
+NOTIC: [8] Use of undefined constant s_name - assumed 's_name' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 115 行.
+NOTIC: [8] Use of undefined constant c_name - assumed 'c_name' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 116 行.
+NOTIC: [8] Use of undefined constant sc_number - assumed 'sc_number' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 117 行.
+NOTIC: [8] Use of undefined constant sc_reason - assumed 'sc_reason' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 118 行.
+NOTIC: [8] Use of undefined constant sc_time - assumed 'sc_time' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 119 行.
+NOTIC: [8] Use of undefined constant sc_union - assumed 'sc_union' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 121 行.
+NOTIC: [8] Use of undefined constant s_id - assumed 's_id' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 114 行.
+NOTIC: [8] Use of undefined constant s_name - assumed 's_name' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 115 行.
+NOTIC: [8] Use of undefined constant c_name - assumed 'c_name' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 116 行.
+NOTIC: [8] Use of undefined constant sc_number - assumed 'sc_number' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 117 行.
+NOTIC: [8] Use of undefined constant sc_reason - assumed 'sc_reason' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 118 行.
+NOTIC: [8] Use of undefined constant sc_time - assumed 'sc_time' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 119 行.
+NOTIC: [8] Use of undefined constant sc_union - assumed 'sc_union' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 121 行.
+ERR: syntax error, unexpected '<<' (T_SL)
+
+[ 2016-10-19T22:27:58+08:00 ] ::1 /Integral/index.php/Admin/Tables/export.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000515s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002458s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002508s ]
+NOTIC: [8] Undefined index: c_name E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 13 行.
+NOTIC: [8] Undefined index: s_id E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 14 行.
+NOTIC: [8] Undefined index: sc_union E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 15 行.
+NOTIC: [8] Undefined variable: filter E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 30 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_scoredetail` LIMIT 1   [ RunTime:0.000082s ]
+NOTIC: [8] Undefined variable: filter E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 48 行.
+SQL: SELECT * FROM `tp_scoredetail` ORDER BY id desc LIMIT 0,30   [ RunTime:0.000143s ]
+NOTIC: [8] Use of undefined constant s_id - assumed 's_id' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 114 行.
+NOTIC: [8] Use of undefined constant s_name - assumed 's_name' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 115 行.
+NOTIC: [8] Use of undefined constant c_name - assumed 'c_name' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 116 行.
+NOTIC: [8] Use of undefined constant sc_number - assumed 'sc_number' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 117 行.
+NOTIC: [8] Use of undefined constant sc_reason - assumed 'sc_reason' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 118 行.
+NOTIC: [8] Use of undefined constant sc_time - assumed 'sc_time' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 119 行.
+NOTIC: [8] Use of undefined constant sc_union - assumed 'sc_union' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 121 行.
+NOTIC: [8] Use of undefined constant s_id - assumed 's_id' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 114 行.
+NOTIC: [8] Use of undefined constant s_name - assumed 's_name' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 115 行.
+NOTIC: [8] Use of undefined constant c_name - assumed 'c_name' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 116 行.
+NOTIC: [8] Use of undefined constant sc_number - assumed 'sc_number' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 117 行.
+NOTIC: [8] Use of undefined constant sc_reason - assumed 'sc_reason' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 118 行.
+NOTIC: [8] Use of undefined constant sc_time - assumed 'sc_time' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 119 行.
+NOTIC: [8] Use of undefined constant sc_union - assumed 'sc_union' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 121 行.
+NOTIC: [8] Use of undefined constant s_id - assumed 's_id' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 114 行.
+NOTIC: [8] Use of undefined constant s_name - assumed 's_name' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 115 行.
+NOTIC: [8] Use of undefined constant c_name - assumed 'c_name' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 116 行.
+NOTIC: [8] Use of undefined constant sc_number - assumed 'sc_number' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 117 行.
+NOTIC: [8] Use of undefined constant sc_reason - assumed 'sc_reason' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 118 行.
+NOTIC: [8] Use of undefined constant sc_time - assumed 'sc_time' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 119 行.
+NOTIC: [8] Use of undefined constant sc_union - assumed 'sc_union' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 121 行.
+ERR: syntax error, unexpected '<<' (T_SL)
+
+[ 2016-10-19T22:27:59+08:00 ] ::1 /Integral/index.php/Admin/Tables/export.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000714s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002137s ]
+NOTIC: [8] Undefined index: c_name E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 13 行.
+NOTIC: [8] Undefined index: s_id E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 14 行.
+NOTIC: [8] Undefined index: sc_union E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 15 行.
+NOTIC: [8] Undefined variable: filter E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 30 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_scoredetail` LIMIT 1   [ RunTime:0.000181s ]
+NOTIC: [8] Undefined variable: filter E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 48 行.
+SQL: SELECT * FROM `tp_scoredetail` ORDER BY id desc LIMIT 0,30   [ RunTime:0.000193s ]
+NOTIC: [8] Use of undefined constant s_id - assumed 's_id' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 114 行.
+NOTIC: [8] Use of undefined constant s_name - assumed 's_name' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 115 行.
+NOTIC: [8] Use of undefined constant c_name - assumed 'c_name' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 116 行.
+NOTIC: [8] Use of undefined constant sc_number - assumed 'sc_number' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 117 行.
+NOTIC: [8] Use of undefined constant sc_reason - assumed 'sc_reason' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 118 行.
+NOTIC: [8] Use of undefined constant sc_time - assumed 'sc_time' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 119 行.
+NOTIC: [8] Use of undefined constant sc_union - assumed 'sc_union' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 121 行.
+NOTIC: [8] Use of undefined constant s_id - assumed 's_id' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 114 行.
+NOTIC: [8] Use of undefined constant s_name - assumed 's_name' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 115 行.
+NOTIC: [8] Use of undefined constant c_name - assumed 'c_name' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 116 行.
+NOTIC: [8] Use of undefined constant sc_number - assumed 'sc_number' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 117 行.
+NOTIC: [8] Use of undefined constant sc_reason - assumed 'sc_reason' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 118 行.
+NOTIC: [8] Use of undefined constant sc_time - assumed 'sc_time' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 119 行.
+NOTIC: [8] Use of undefined constant sc_union - assumed 'sc_union' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 121 行.
+NOTIC: [8] Use of undefined constant s_id - assumed 's_id' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 114 行.
+NOTIC: [8] Use of undefined constant s_name - assumed 's_name' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 115 行.
+NOTIC: [8] Use of undefined constant c_name - assumed 'c_name' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 116 行.
+NOTIC: [8] Use of undefined constant sc_number - assumed 'sc_number' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 117 行.
+NOTIC: [8] Use of undefined constant sc_reason - assumed 'sc_reason' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 118 行.
+NOTIC: [8] Use of undefined constant sc_time - assumed 'sc_time' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 119 行.
+NOTIC: [8] Use of undefined constant sc_union - assumed 'sc_union' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 121 行.
+ERR: syntax error, unexpected '<<' (T_SL)
+
+[ 2016-10-19T22:28:03+08:00 ] ::1 /Integral/index.php/Admin/Tables/export.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000803s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002355s ]
+NOTIC: [8] Undefined variable: filter E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 30 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_scoredetail` LIMIT 1   [ RunTime:0.000088s ]
+NOTIC: [8] Undefined variable: filter E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 48 行.
+SQL: SELECT * FROM `tp_scoredetail` ORDER BY id desc LIMIT 0,30   [ RunTime:0.000163s ]
+NOTIC: [8] Use of undefined constant s_id - assumed 's_id' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 114 行.
+NOTIC: [8] Use of undefined constant s_name - assumed 's_name' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 115 行.
+NOTIC: [8] Use of undefined constant c_name - assumed 'c_name' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 116 行.
+NOTIC: [8] Use of undefined constant sc_number - assumed 'sc_number' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 117 行.
+NOTIC: [8] Use of undefined constant sc_reason - assumed 'sc_reason' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 118 行.
+NOTIC: [8] Use of undefined constant sc_time - assumed 'sc_time' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 119 行.
+NOTIC: [8] Use of undefined constant sc_union - assumed 'sc_union' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 121 行.
+NOTIC: [8] Use of undefined constant s_id - assumed 's_id' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 114 行.
+NOTIC: [8] Use of undefined constant s_name - assumed 's_name' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 115 行.
+NOTIC: [8] Use of undefined constant c_name - assumed 'c_name' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 116 行.
+NOTIC: [8] Use of undefined constant sc_number - assumed 'sc_number' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 117 行.
+NOTIC: [8] Use of undefined constant sc_reason - assumed 'sc_reason' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 118 行.
+NOTIC: [8] Use of undefined constant sc_time - assumed 'sc_time' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 119 行.
+NOTIC: [8] Use of undefined constant sc_union - assumed 'sc_union' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 121 行.
+NOTIC: [8] Use of undefined constant s_id - assumed 's_id' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 114 行.
+NOTIC: [8] Use of undefined constant s_name - assumed 's_name' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 115 行.
+NOTIC: [8] Use of undefined constant c_name - assumed 'c_name' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 116 行.
+NOTIC: [8] Use of undefined constant sc_number - assumed 'sc_number' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 117 行.
+NOTIC: [8] Use of undefined constant sc_reason - assumed 'sc_reason' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 118 行.
+NOTIC: [8] Use of undefined constant sc_time - assumed 'sc_time' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 119 行.
+NOTIC: [8] Use of undefined constant sc_union - assumed 'sc_union' E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 121 行.
+ERR: syntax error, unexpected '<<' (T_SL)
+
