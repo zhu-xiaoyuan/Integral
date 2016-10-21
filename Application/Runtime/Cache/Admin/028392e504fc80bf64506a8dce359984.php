@@ -121,9 +121,6 @@
               <div style="float:left;">                
                 <span>年级：
                   <input class="form-control" type="text" name="search[s_id]" value="<?php echo ($search['s_id']); ?>" placeholder="格式：如 2015" class="input-medium">
-                  <!-- <select name="schoolyear" id="term">
-                  <?php if(is_array($list)): foreach($list as $key=>$vo): ?><option value="<?php echo ($vo["schoolyear"]); ?>"></option><?php endforeach; endif; ?>
-                  </select> -->
                 </span>
               </div>
               <div style="float:left;">               
@@ -133,7 +130,7 @@
               </div>
                 <div style="float:right;">      
                   <input type="submit" class="btn" value="搜索" onclick="checkaction(1);"/>
-                  <input type="submit" id="btn" class="btn" value="导出" onclick="checkaction(0);"/>
+                  <input type="submit" class="btn" value="导出" onclick="checkaction(0);"/>
                 </div>     
               </form>
         </div>
@@ -142,7 +139,7 @@
         <div class="panel-body">         
           <div class="table-responsive" id="list">         
           <form style="min-width:1030px;">
-          <a class="btn btn-xs btn-info pull-left mr-5" style="float:left;" id="discard" href="javascript:;">删除</a>        
+          <a class="btn btn-xs btn-info pull-left mr-5" style="float:left;" id="discard" href="javascript:void(0);">删除</a>        
           <table class="table table-striped" id="table2">
               <thead>
                   <tr>
@@ -152,7 +149,7 @@
                     <th>班级</th>
                     <th>分数</th>
                     <th>原因</th>
-                    <th width="100px">时间</th>
+                    <th>时间</th>
                     <th>记录者</th>
                     <th>部室</th>
                     <th>操作</th>
@@ -169,7 +166,7 @@
                       <td class="center"><?php echo ($vo["sc_time"]); ?></td>
                       <td class="center"><?php echo ($vo["sc_who"]); ?></td>
                       <td class="center"><?php echo ($vo["sc_union"]); ?></td>
-                      <td class="center">
+                      <td>
                         <!-- <a id="edit" class="btn btn-xs btn-info mr-5" href="javascript:;" onclick="edit()">修改</a> -->
                         <a class="btn btn-xs btn-info mr-5" href="javascript:void(0);" data-toggle="modal" data-target="#myModal" onclick="tables(this)" data-id="<?php echo ($vo["id"]); ?>">修改</a>
                         <!-- <a class="btn btn-xs btn-info right mr-5" href="javascript:;" id="discard" data-id="{vo.id}">删除</a> -->
@@ -235,11 +232,6 @@
       </div><!-- modal-dialog -->
     </div><!-- modal -->
   
-
-<!-- <script src="/Integral/Public/Admin/bracket/js/jquery-1.11.0.min.js" type="text/javascript"></script>
-<script src="/Integral/Public/static/layer/layer.js"></script> -->
-<script src="/Integral/Public/Admin/bracket/js/jquery.datatables.min.js"></script>
-<script src="/Integral/Public/Admin/bracket/js/select2.min.js"></script>
 <script>
  $('.all').click(function() {
     if($(this).is(':checked')) {
@@ -252,12 +244,12 @@
   // 删除操作
   $('#discard').click(function() {
     if($(':checked').size() > 0) {
-      alert($(':checked').size() );
+      // alert($(':checked').size() );
       layer.confirm('确定要删除吗？', {
         btn: ['确定','取消'],
         shade: false 
       }, function(){
-        $.post("<?php echo U('Tables/delete');?>", {data: $('form').serializeArray()}, function(res) {
+        $.post("<?php echo U('Admin/Tables/delete');?>", {data: $('form').serializeArray()}, function(res) {
           if(res.state == 1) {
             layer.msg(res.message, {icon: 1, time: 1000});
           } else {
@@ -280,9 +272,9 @@
 <script>
 function checkaction(v){ 
   if(v==0){ 
-  document.searchform.action="<?php echo U('admin/Tables/export');?>"; 
+  document.searchform.action="<?php echo U('Admin/Tables/export');?>"; 
   }else{ 
-  document.searchform.action="<?php echo U('admin/Tables/tables');?>"; 
+  document.searchform.action="<?php echo U('Admin/Tables/index');?>"; 
   } 
   searchform.submit(); 
 } 
@@ -311,7 +303,7 @@ function checkaction(v){
     };
 
     $("#editform").click(function(){
-      var url = "<?php echo U('Tables/save');?>";
+      var url = "<?php echo U('Admin/Tables/save');?>";
       $.post(url,{
         'id':$("#edit_id_update").val(),
         's_id':$("#s_id").val(),
@@ -323,24 +315,12 @@ function checkaction(v){
         'sc_union':$("#sc_union").val(),
         'sc_who':$("#sc_who").val()
       },function(msg){
-        // layer.confirm('确定修改吗？',{
-        //   btn: ['确定','取消'],
-        //   shade: false 
-        // });
-        layer.alert(msg);
-          
+        layer.msg('修改成功！');
+        setTimeout(function() {
+            location.reload();
+          }, 1000);        
       });
-      layer.close();
-      // window.location.href = 'tables';
     });
-</script>
-<script>
-  // function list (id) {
-  //   var id = id;
-  //     $.get('Tables/_empty', {'p':id}, function(data){ 
-  //       $("#list").replaceWith("<div  id='list'>"+data+"</div>"); //user一定要和tpl中的一致
-  //   });
-  // }
 </script>
 
 
