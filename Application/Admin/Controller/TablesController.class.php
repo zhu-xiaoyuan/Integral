@@ -42,7 +42,6 @@ class TablesController extends BaseController
 
             $this->assign('total',$total);
             $this->assign('page',$show);
-
         }
 
         $list = $tables->where($filter)->order('id desc')->limit($Page->firstRow.','.$Page->listRows)->select();

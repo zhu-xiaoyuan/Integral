@@ -9,9 +9,9 @@
     <link rel="shortcut icon" href="/Integral/Public/Admin/bracket/images/logo.png" type="image/png">
     <title>信息工程学院积分管理系统</title>
     <link href="/Integral/Public/Admin/bracket/css/style.default.css" rel="stylesheet">
-      <link rel="stylesheet" href="/Integral/Public/Admin/bracket/css/dropzone.css" />
-    <script src="/Integral/Public/Admin/bracket/js/dropzone.min.js"></script>
+    <link rel="stylesheet" href="/Integral/Public/Admin/bracket/css/dropzone.css" />
     <script src="/Integral/Public/Admin/bracket/js/jquery-1.11.1.min.js"></script>
+    <script src="/Integral/Public/Admin/bracket/js/dropzone.min.js"></script>    
     <script src="/Integral/Public/Admin/bracket/js/jquery-migrate-1.2.1.min.js"></script>
     <script src="/Integral/Public/Admin/bracket/js/jquery-ui-1.10.3.min.js"></script>
     <script src="/Integral/Public/Admin/bracket/js/bootstrap.min.js"></script>
@@ -76,12 +76,12 @@
             <ul class="nav nav-pills nav-stacked nav-bracket">
 
                 
-                    <li id="Tables"><a href="/Integral/Admin/Tables"><i class="fa fa-home"></i> <span>查看积分信息</span></a></li>
+                    <li id="Tables"><a href="/Integral/index.php/Admin/Tables/tables"><i class="fa fa-home"></i> <span>查看积分信息</span></a></li>
                 
-                <li id="input"><a href="/Integral/Admin/input"><i class="fa fa-th-list"></i> <span>积分信息录入</span></a></li>
-                <li id="class"><a href="/Integral/Admin/class"><i class="fa fa-th-list"></i> <span>学生信息录入</span></a></li>
+                <li id="input"><a href="/Integral/index.php/Admin/input"><i class="fa fa-th-list"></i> <span>积分信息录入</span></a></li>
+                <li id="class"><a href="/Integral/index.php/Admin/class"><i class="fa fa-th-list"></i> <span>学生信息录入</span></a></li>
                 
-                    <?php if($_SESSION['is_power'] == 1): ?><li id="member"><a href="/Integral/Admin/Manage/member"><i class="fa fa-th-list"></i> <span>成员管理</span></a></li><?php endif; ?>
+                    <?php if($_SESSION['is_power'] == 1): ?><li id="member"><a href="/Integral/index.php/Admin/Manage/member"><i class="fa fa-th-list"></i> <span>成员管理</span></a></li><?php endif; ?>
                 
             </ul>
         </div><!-- leftpanelinner -->
@@ -330,7 +330,6 @@
     <script src="/Integral/Public/Admin/bracket/js/jquery-1.11.1.min.js"></script>
     <script type="text/javascript">
         const MODIFY_PASSWORD_FAILED      = "修改密码失败!";
-        var table = document.getElementById("member_table");
         /*
          * 添加成员
          * */

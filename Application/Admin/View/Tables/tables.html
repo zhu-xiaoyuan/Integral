@@ -75,7 +75,7 @@
                       <td class="center">{$vo.sc_time}</td>
                       <td class="center">{$vo.sc_who}</td>
                       <td class="center">{$vo.sc_union}</td>
-                      <td class="center">
+                      <td>
                         <!-- <a id="edit" class="btn btn-xs btn-info mr-5" href="javascript:;" onclick="edit()">修改</a> -->
                         <a class="btn btn-xs btn-info mr-5" href="javascript:void(0);" data-toggle="modal" data-target="#myModal" onclick="tables(this)" data-id="{$vo.id}">修改</a>
                         <!-- <a class="btn btn-xs btn-info right mr-5" href="javascript:;" id="discard" data-id="{vo.id}">删除</a> -->
@@ -143,11 +143,6 @@
       </div><!-- modal-dialog -->
     </div><!-- modal -->
   
-
-<!-- <script src="__BRACKET__/js/jquery-1.11.0.min.js" type="text/javascript"></script>
-<script src="__STATIC__/layer/layer.js"></script> -->
-<script src="__BRACKET__/js/jquery.datatables.min.js"></script>
-<script src="__BRACKET__/js/select2.min.js"></script>
 <script>
  $('.all').click(function() {
     if($(this).is(':checked')) {
@@ -160,12 +155,12 @@
   // 删除操作
   $('#discard').click(function() {
     if($(':checked').size() > 0) {
-      alert($(':checked').size() );
+      // alert($(':checked').size() );
       layer.confirm('确定要删除吗？', {
         btn: ['确定','取消'],
         shade: false 
       }, function(){
-        $.post("{:U('Tables/delete')}", {data: $('form').serializeArray()}, function(res) {
+        $.post("{:U('Admin/Tables/delete')}", {data: $('form').serializeArray()}, function(res) {
           if(res.state == 1) {
             layer.msg(res.message, {icon: 1, time: 1000});
           } else {
@@ -188,9 +183,9 @@
 <script>
 function checkaction(v){ 
   if(v==0){ 
-  document.searchform.action="{:U('admin/Tables/export')}"; 
+  document.searchform.action="{:U('Admin/Tables/export')}"; 
   }else{ 
-  document.searchform.action="{:U('admin/Tables/tables')}"; 
+  document.searchform.action="{:U('Admin/Tables/tables')}"; 
   } 
   searchform.submit(); 
 } 
@@ -231,24 +226,12 @@ function checkaction(v){
         'sc_union':$("#sc_union").val(),
         'sc_who':$("#sc_who").val()
       },function(msg){
-        // layer.confirm('确定修改吗？',{
-        //   btn: ['确定','取消'],
-        //   shade: false 
-        // });
-        layer.alert(msg);
-          
+        layer.msg('修改成功');
+        setTimeout(function() {
+            location.reload();
+          }, 1500);        
       });
-      layer.close();
-      // window.location.href = 'tables';
     });
-</script>
-<script>
-  // function list (id) {
-  //   var id = id;
-  //     $.get('Tables/_empty', {'p':id}, function(data){ 
-  //       $("#list").replaceWith("<div  id='list'>"+data+"</div>"); //user一定要和tpl中的一致
-  //   });
-  // }
 </script>
 
 </block>
