@@ -316,7 +316,6 @@
     var strPage=arrUrl[arrUrl.length-1];
     var nm = strPage.split('.');
     var ele = document.getElementById(nm[0] + "");
-//    alert(ele);
     ele.className = 'active';
 
 

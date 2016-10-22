@@ -36,9 +36,15 @@ class InputController extends BaseController {
         }else{// 上传成功
 
             $url='uploads/'.$info['file']['savepath'].$info['file']['savename'];
-            $this->score($table,$url);
-            unlink($url);//删除上传的文件    
-            $this->success('上传成功');
+            $str=$this->score($table,$url);
+            unlink($url);//删除上传的文件  
+            if ($str=='数据类型错误！') {
+                   $this->error($str);
+              } else {
+                   $this->success($str);
+              }
+                
+           
 
         }
     }
@@ -51,11 +57,17 @@ class InputController extends BaseController {
         $arrExcel = $objPHPExcel->getSheet(0)->toArray();
         $m = M($table);  
         //表头部分处理
+        
         if ($table=='scoredetail') {
+            // if (sizeof($arrExcel[0])!=7) {
+            //      return '数据类型错误！';
+            // }
             foreach ($arrExcel[0] as $key) {
-                
+
                 $field[] = $this->order($key);
+               
             }
+
                 $field[7]='sc_who';
             array_shift($arrExcel);
 
@@ -80,15 +92,14 @@ class InputController extends BaseController {
 
 
         //循环录入
-        dump($fields);
-        echo '共'.sizeof($fields).'条数据！';
+        $str= '共'.sizeof($fields).'条数据！';
         $sum=0;
         foreach($fields as $k){
         
             if($m->add($k))
                 $sum++;
         } 
-        echo '成功添加'.$sum.'条数据！';        
+        return $str.'成功添加'.$sum.'条数据！数据缺失或重复录入！';        
 
 
     }
@@ -116,14 +127,14 @@ class InputController extends BaseController {
         } 
         //循环录入
         dump($fields);
-        echo '共'.sizeof($fields).'条数据！';
+       $str='共'.sizeof($fields).'条数据！';
         $sum=0;
         foreach($fields as $k){
     
             if($m->add($k))
                 $sum++;
         } 
-        echo '成功添加'.$sum.'条数据！';        
+        return $str.'成功添加'.$sum.'条数据！数据缺失或重复录入！';        
     }
 
     public function order($str){

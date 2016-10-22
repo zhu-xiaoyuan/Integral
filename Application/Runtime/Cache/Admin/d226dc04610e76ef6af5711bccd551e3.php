@@ -109,7 +109,6 @@
       <div class="panel panel-default">
         <div class="panel-heading">
           <div class="panel-btns">
-            <a href="" class="panel-close">&times;</a>
             <a href="" class="minimize">&minus;</a>
           </div>
           <h2 class="panel-title">积分录入</h2>
@@ -121,13 +120,13 @@
             <div class="form-group">
               <label class="col-sm-3 control-label" > 班级编号 </label>
               <div class="col-sm-6">
-                <input type="text" placeholder="个人学号前9位为所属班级编号" class="form-control" id="s_id" maxlength="11" />
+                <input type="text" placeholder="个人学号前9位为所属班级编号" class="form-control" id="c_id" maxlength="11" />
               </div>
             </div>
             <div class="form-group">
               <label class="col-sm-3 control-label"> 班级名称 </label>
               <div class="col-sm-6">
-                <input type="text" placeholder="如 计科151" class="form-control" id="s_name" />
+                <input type="text" placeholder="如 计科151" class="form-control" id="c_name" />
               </div>
             </div>    
           </form>       
@@ -136,7 +135,7 @@
         <div class="panel-footer">
 			 <div class="row">
 				<div class="col-sm-6 col-sm-offset-3">
-				  <button class="btn btn-primary" id="input"> 录 入 </button>&nbsp;
+				  <button class="btn btn-primary" id="sub"> 录 入 </button>&nbsp;
 				  <button class="btn btn-default" id="cancel"> 取 消 </button>
 				</div>
 			 </div>
@@ -146,7 +145,6 @@
       <div class="panel panel-default">
         <div class="panel-heading">
           <div class="panel-btns">
-            <a href="" class="panel-close">&times;</a>
             <a href="" class="minimize">&minus;</a>
           </div>
           <h4 class="panel-title">报表录入</h4>
@@ -171,34 +169,19 @@
 
           }
 
-          $("#sc_who").val("Hello World");
-          jQuery('#sc_time').datepicker({
-            numberOfMonths: 3,
-            showButtonPanel: true
-          });
-          $("#input").click(function(){
+          $("#sub").click(function(){
           		$.ajax({
           			type:'POST',
-          			url:"<?php echo U('Input/input');?>",
+          			url:"<?php echo U('Class/input');?>",
           			data:{
-          				's_id':$('#s_id').val(),
-          				's_name':$('#s_name').val(),
-                  'c_name':$('#c_name').val(),
-          				'sc_number':$('#sc_number').val(),
-          				'sc_reason':$('#sc_reason').val(),
-          				'sc_time':$('#sc_time').val(),
-          				'sc_who':$('#sc_who').val(),
-          				'sc_union':$('#sc_union').val(),
+          				'c_id':$('#c_id').val(),
+          				'c_name':$('#c_name').val(),
           			},
           			success:function(data){
           				 if(data.status==0){
                          layer.msg(data.info,{icon:2});
                      }else{
                          layer.msg(data.info,{icon:1});
-
-                         setTimeout(function(){
-                             window.location.reload();
-                         },2000);
                      }  
           			}
           		});
@@ -206,10 +189,6 @@
           $("#cancel").click(function(){
                   $('#s_id').val("");
                   $('#s_name').val("");
-                  $('#sc_number').val("");
-                  $('#sc_reason').val("");
-                  $('#sc_time').val("");
-                  $('#sc_union').val("");
           });         
       </script>
 
@@ -346,7 +325,6 @@
     var strPage=arrUrl[arrUrl.length-1];
     var nm = strPage.split('.');
     var ele = document.getElementById(nm[0] + "");
-//    alert(ele);
     ele.className = 'active';
 
 
