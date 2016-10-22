@@ -59,65 +59,7 @@ class TablesController extends BaseController
         $this->assign('list', $list);
         $this->display('tables');
     }
-    /*
-	public function _empty($action='tables')
-    {
-        $tables = M('scoredetail');
 
-        //搜索条件
-        $search  = I('search', array());
-
-        $c_name = $search['c_name'];
-        $s_id = $search['s_id'];
-        $sc_union = $search['sc_union'];
-     
-        if($c_name && isset($c_name)){
-            $filter['c_name'] = array('like',"%{$c_name}%");
-        }
-
-        if($s_id && isset($s_id)){
-
-            $filter['s_id'] = array('like',"%{$s_id}%");
-        }
-
-        if($sc_union && isset($sc_union)){
-            $filter['sc_union'] = array('like',"%{$sc_union}%");
-           
-        }
-         // dump($filter);
-        //分页dd
-        $total = $tables->where($filter)->count();
-        // echo $tables->getLastSql();
-        if($total){
-            $perNum = 30;
-            $Page = new \Think\Page($total,$perNum);
-            $Page->setConfig('prev', "上一页");//上一页
-            $Page->setConfig('next', '下一页');//下一页
-            $Page->setConfig('first', '首页');//第一页
-            $Page->setConfig('last', "末页");//最后一页
-            $Page->setConfig ( 'theme', '%HEADER% %FIRST% %UP_PAGE% %LINK_PAGE% %DOWN_PAGE% %END%' );
-
-            $show = $Page->show();
-
-            $this->assign('total',$total);
-            $this->assign('page',$show);
-
-        }
-
-        $list = $tables->where($filter)->order('id desc')->limit($Page->firstRow.','.$Page->listRows)->select();
-
-        if($action == 'export'){
-            if(!$list){
-                $this->ajaxReturn('没有搜索结果，无法导出数据');
-            }
-            $this->export($list);
-        }
-
-        $this->assign('search', $search);
-        $this->assign('list', $list);
-        $this->display('tables');
-    }
-    */
     //编辑
     public function edit()
     {
