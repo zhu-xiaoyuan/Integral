@@ -84,8 +84,7 @@
                             o_psd:opsd
                         },function(data){
                             if (data==1) {
-
-                                window.location.href="/Integral/index.php/Admin/Index/index";
+                                window.location.href="/Integral/index.php/Admin/Tables";
                             }else if(data==2) {
                                 $("#uname").css("border","1px solid red");
                                 clearPrompt("#uname");
@@ -99,8 +98,9 @@
         }
     }
     function clearPrompt($show){
-        setTimeout(function(){
+        var show = setTimeout(function(){
             $($show).css("border","1px solid #ccc");
+            setInterval(show);
         },3000);
     }
 </script>

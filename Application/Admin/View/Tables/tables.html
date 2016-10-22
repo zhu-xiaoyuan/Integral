@@ -17,27 +17,22 @@
               <form id="searchForm" name="searchform" class="well form-search" method="post"  onSubmit="check();" enctype="multipart/form-data" style="background-color:white;margin-top:15px;">
               <div style="float:left;">
                 <span>班级：
-                  <input type="text" name="search[c_name]" value="{$search['c_name']}" placeholder="请输入班级" class="input-medium">
+                  <input class="form-control" type="text" name="search[c_name]" value="{$search['c_name']}" placeholder="请输入班级" class="input-medium">
                 </span> 
               </div>
               <div style="float:left;">                
                 <span>年级：
-                  <input type="text" name="search[s_id]" value="{$search['s_id']}" placeholder="格式：如 2015" class="input-medium">
-                  <!-- <select name="schoolyear" id="term">
-                  <foreach name="list" item='vo'>
-                    <option value="{$vo.schoolyear}"></option>
-                  </foreach>
-                  </select> -->
+                  <input class="form-control" type="text" name="search[s_id]" value="{$search['s_id']}" placeholder="格式：如 2015" class="input-medium">
                 </span>
               </div>
               <div style="float:left;">               
                 <span>部室：
-                  <input type="text" name="search[sc_union]" value="{$search['sc_union']}" placeholder="请输入部室" class="input-medium">
+                  <input class="form-control" type="text" name="search[sc_union]" value="{$search['sc_union']}" placeholder="请输入部室" class="input-medium">
                 </span>
               </div>
                 <div style="float:right;">      
                   <input type="submit" class="btn" value="搜索" onclick="checkaction(1);"/>
-                  <input type="submit" id="btn" class="btn" value="导出" onclick="checkaction(0);"/>
+                  <input type="submit" class="btn" value="导出" onclick="checkaction(0);"/>
                 </div>     
               </form>
         </div>
@@ -46,12 +41,12 @@
         <div class="panel-body">         
           <div class="table-responsive" id="list">         
           <form style="min-width:1030px;">
-          <a class="btn btn-xs btn-info pull-left mr-5" style="float:left;" id="discard" href="javascript:;">删除</a>        
+          <a class="btn btn-xs btn-info pull-left mr-5" style="float:left;" id="discard" href="javascript:void(0);">删除</a>        
           <table class="table table-striped" id="table2">
               <thead>
                   <tr>
                     <th><input class="all" type="checkbox"/></th>
-                    <th>学号</th>
+                    <th width="50px">学号</th>
                     <th>姓名</th>
                     <th>班级</th>
                     <th>分数</th>
@@ -185,7 +180,11 @@ function checkaction(v){
   if(v==0){ 
   document.searchform.action="{:U('Admin/Tables/export')}"; 
   }else{ 
+<<<<<<< HEAD
   document.searchform.action="{:U('Admin/Tables/tables')}"; 
+=======
+  document.searchform.action="{:U('Admin/Tables/index')}"; 
+>>>>>>> efe2f90a5b933365da35d6122da0b87e3c85a29e
   } 
   searchform.submit(); 
 } 
@@ -214,7 +213,7 @@ function checkaction(v){
     };
 
     $("#editform").click(function(){
-      var url = "{:U('Tables/save')}";
+      var url = "{:U('Admin/Tables/save')}";
       $.post(url,{
         'id':$("#edit_id_update").val(),
         's_id':$("#s_id").val(),
@@ -226,10 +225,17 @@ function checkaction(v){
         'sc_union':$("#sc_union").val(),
         'sc_who':$("#sc_who").val()
       },function(msg){
+<<<<<<< HEAD
         layer.msg('修改成功');
         setTimeout(function() {
             location.reload();
           }, 1500);        
+=======
+        layer.msg('修改成功！');
+        setTimeout(function() {
+            location.reload();
+          }, 1000);        
+>>>>>>> efe2f90a5b933365da35d6122da0b87e3c85a29e
       });
     });
 </script>

@@ -2,7 +2,7 @@
 namespace Admin\Controller;
 class IndexController extends BaseController {
     public function index(){
-        $this->display();
+        $this->display('Tables/tables');
     }
 
     public function changeInfo(){

@@ -7,13 +7,19 @@ class ClassController extends BaseController {
     }
     public function input(){
 
-    	$model=D('scoredetail');
-        $arr=I('post.');
-        $arr['sc_time']=strtotime(I('post.sc_time'));
+    	$model=D('class');
     	if($model->create(I('post.'))){
             if($model->find()){
-                    $model->add($arr);
-                    $this->success('录入成功！'); 
+                    if ( $model->add(I('post'))) {
+                        
+                       $this->success('录入成功！');
+                    } else {dump(I('post'));
+                       $this->error('录入失败！'); 
+                    }
+                    
+                   
+
+                    
                     exit;
             }else{
                     $this->error($model->getError());   
