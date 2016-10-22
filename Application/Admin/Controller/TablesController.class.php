@@ -3,7 +3,8 @@ namespace Admin\Controller;
 class TablesController extends BaseController 
 {
 	//搜索
-	public function _empty($action='tables')
+
+    public function _empty($action='tables')
     {
         $tables = M('scoredetail');
 
@@ -42,7 +43,6 @@ class TablesController extends BaseController
 
             $this->assign('total',$total);
             $this->assign('page',$show);
-
         }
 
         $list = $tables->where($filter)->order('id desc')->limit($Page->firstRow.','.$Page->listRows)->select();
@@ -59,7 +59,7 @@ class TablesController extends BaseController
         $this->assign('list', $list);
         $this->display('tables');
     }
-    
+
     //编辑
     public function edit()
     {
@@ -158,7 +158,6 @@ class TablesController extends BaseController
         }
 
         $filename="积分汇总表";
-
         $this->getExcel($filename,$headArr,$data);
     }
 
@@ -168,7 +167,6 @@ class TablesController extends BaseController
         import("Org.Util.PHPExcel");
         import("Org.Util.PHPExcel.Writer.Excel5");
         import("Org.Util.PHPExcel.IOFactory.php");
-
         $date = date("Y-m-d",time());
         $fileName .= "_{$date}.xls";
 
@@ -203,7 +201,7 @@ class TablesController extends BaseController
         $fileName = iconv("utf-8", "gb2312", $fileName);
 
         //重命名表
-        $objPHPExcel->getActiveSheet()->setTitle('j');
+        $objPHPExcel->getActiveSheet()->setTitle('积分汇总表');
         //设置活动单指数到第一个表,所以Excel打开这是第一个表
         $objPHPExcel->setActiveSheetIndex(0);
         ob_end_clean();//清除缓冲区,避免乱码
