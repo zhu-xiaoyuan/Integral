@@ -2,6 +2,8 @@
 namespace Admin\Controller;
 class InputController extends BaseController {
     public function index(){
+        $name=session('o_name');
+        $this->assign('name',$name);
         $this->display();
 
     }
@@ -37,7 +39,7 @@ class InputController extends BaseController {
 
             $url='uploads/'.$info['file']['savepath'].$info['file']['savename'];
             $str=$this->score($table,$url);
-            unlink($url);//删除上传的文件  
+            
             if ($str=='数据类型错误！') {
                    $this->error($str);
               } else {
@@ -55,6 +57,7 @@ class InputController extends BaseController {
         Vendor('Classes.PHPExcel');
         $objPHPExcel = \PHPExcel_IOFactory::load($url);
         $arrExcel = $objPHPExcel->getSheet(0)->toArray();
+        unlink($url);//删除上传的文件 
         $m = M($table);  
         //表头部分处理
         
@@ -72,7 +75,7 @@ class InputController extends BaseController {
             array_shift($arrExcel);
 
             foreach($arrExcel as $v){
-                $v[7]='admin';
+                $v[7] = session('o_name');
                 $fields[] = array_combine($field,$v);//将excel的一行数据赋值给表的字段
             } 
         }else{
@@ -102,39 +105,6 @@ class InputController extends BaseController {
         return $str.'成功添加'.$sum.'条数据！数据缺失或重复录入！';        
 
 
-    }
-
-    public function test(){
-        $url='C:/Users/blackshh/Desktop/jk166.xlsx';
-        $table='scoredetail';
-        Vendor('Classes.PHPExcel');
-        $objPHPExcel = \PHPExcel_IOFactory::load($url);
-        $arrExcel = $objPHPExcel->getSheet(0)->toArray();
-        //删除不要的表头部分
-
-        foreach ($arrExcel[0] as $key) {
-            echo $key;
-            $field[] = $this->order($key);
-        }
-            $field[7]='sc_who';
-        array_shift($arrExcel);
-
-        $m = M('scoredetail');   
-        //循环给数据字段赋值
-        foreach($arrExcel as $v){
-            $v[7]='admin';
-            $fields[] = array_combine($field,$v);//将excel的一行数据赋值给表的字段
-        } 
-        //循环录入
-        dump($fields);
-       $str='共'.sizeof($fields).'条数据！';
-        $sum=0;
-        foreach($fields as $k){
-    
-            if($m->add($k))
-                $sum++;
-        } 
-        return $str.'成功添加'.$sum.'条数据！数据缺失或重复录入！';        
     }
 
     public function order($str){

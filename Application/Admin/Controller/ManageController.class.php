@@ -76,7 +76,7 @@ class ManageController extends  BaseController
             $insert = Array();
             $insert['o_id']   =    $_POST['s_id'];
             $insert['o_name'] =  $_POST['s_name'];
-            $insert['o_psd']  =   '123456';
+            $insert['o_psd']  =   md5('123456');
             $insert['o_ispower'] = 0;
 
             $bo = $data->add($insert);
