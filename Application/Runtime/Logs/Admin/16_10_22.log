@@ -1,0 +1,1172 @@
+[ 2016-10-22T12:25:17+08:00 ] ::1 /Integral/index.php/Admin/input
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006020s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000843s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000920s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000155s ]
+NOTIC: [2] file_put_contents(./Application/Runtime/Cache/Admin/5337214fc7c0c9209a5e999311c49626.php): failed to open stream: Permission denied /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Storage/Driver/File.class.php 第 46 行.
+ERR: _STORAGE_WRITE_ERROR_:./Application/Runtime/Cache/Admin/5337214fc7c0c9209a5e999311c49626.php
+
+[ 2016-10-22T12:25:45+08:00 ] ::1 /Integral/index.php/Admin/input
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000857s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001391s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001489s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000163s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014786s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014850s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000402s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000439s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001119s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001216s ]
+
+[ 2016-10-22T12:26:44+08:00 ] ::1 /Integral/index.php/Admin/input
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001014s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000926s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000143s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000197s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010811s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010877s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000503s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000556s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001011s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001108s ]
+
+[ 2016-10-22T12:26:46+08:00 ] ::1 /Integral/index.php/Admin/class
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000373s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000465s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000524s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000172s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008663s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008731s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000145s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000175s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000715s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000809s ]
+
+[ 2016-10-22T12:26:49+08:00 ] ::1 /Integral/index.php/Admin/Tables
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000354s ]
+NOTIC: [8] Undefined index: c_name /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/TablesController.class.php 第 14 行.
+NOTIC: [8] Undefined index: s_id /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/TablesController.class.php 第 15 行.
+NOTIC: [8] Undefined index: sc_union /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/TablesController.class.php 第 16 行.
+NOTIC: [8] Undefined variable: filter /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/TablesController.class.php 第 31 行.
+NOTIC: [2] mysqli::mysqli(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysqli.class.php 第 44 行.
+ERR: Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2016-10-22T12:27:12+08:00 ] ::1 /Integral/index.php/Admin/Tables
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000648s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000777s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000845s ]
+NOTIC: [8] Undefined index: c_name /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/TablesController.class.php 第 14 行.
+NOTIC: [8] Undefined index: s_id /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/TablesController.class.php 第 15 行.
+NOTIC: [8] Undefined index: sc_union /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/TablesController.class.php 第 16 行.
+NOTIC: [8] Undefined variable: filter /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/TablesController.class.php 第 31 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_scoredetail` LIMIT 1   [ RunTime:0.004984s ]
+NOTIC: [8] Undefined variable: filter /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/TablesController.class.php 第 48 行.
+SQL: SELECT * FROM `tp_scoredetail` ORDER BY id desc LIMIT 0,30   [ RunTime:0.003253s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000203s ]
+NOTIC: [8] Undefined index: c_name /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Runtime/Cache/Admin/028392e504fc80bf64506a8dce359984.php 第 119 行.
+NOTIC: [8] Undefined index: s_id /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Runtime/Cache/Admin/028392e504fc80bf64506a8dce359984.php 第 124 行.
+NOTIC: [8] Undefined index: sc_union /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Runtime/Cache/Admin/028392e504fc80bf64506a8dce359984.php 第 129 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015375s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015428s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000519s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001013s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001083s ]
+
+[ 2016-10-22T12:35:46+08:00 ] ::1 /Integral/index.php/Admin/input
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000695s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000932s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000199s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000255s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015589s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015649s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000494s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000545s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000937s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001026s ]
+
+[ 2016-10-22T12:36:09+08:00 ] ::1 /Integral/index.php/Admin/input/upload/table/scoredetail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000905s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001007s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+NOTIC: [8] Undefined variable: options /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Vendor/Classes/PHPExcel/Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Vendor/Classes/PHPExcel/Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Vendor/Classes/PHPExcel/Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Vendor/Classes/PHPExcel/Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Vendor/Classes/PHPExcel/Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Vendor/Classes/PHPExcel/Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Vendor/Classes/PHPExcel/Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Vendor/Classes/PHPExcel/Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Vendor/Classes/PHPExcel/Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Vendor/Classes/PHPExcel/Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Vendor/Classes/PHPExcel/Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Vendor/Classes/PHPExcel/Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Vendor/Classes/PHPExcel/Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Vendor/Classes/PHPExcel/Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Vendor/Classes/PHPExcel/Settings.php 第 384 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 326 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 326 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 326 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 326 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 326 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 326 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('体育部','计科141','陈少博','篮球副队长','2015学年下学期',1,'admin') [ RunTime:0.011537s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('体育部','计科141','陈少博','篮球队','2015学年下学期',1,'admin') [ RunTime:0.001504s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','黄  刚','旷课','第八周',-0.5,'admin') [ RunTime:0.003567s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','黄  刚','旷课','第九周',-0.5,'admin') [ RunTime:0.000994s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','黄  刚','旷课两次','第十一周',-1,'admin') [ RunTime:0.001430s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','黄  刚',5,'第3-6周',0,'admin') [ RunTime:0.001906s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','黄  刚',7,'第7-10周',-2.1,'admin') [ RunTime:0.001029s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','黄  刚',14,'第11-14周',-5.6,'admin') [ RunTime:0.000836s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','李纪伟','旷课','第十一周',-0.5,'admin') [ RunTime:0.005438s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','李纪伟',5,'第3-6周',0,'admin') [ RunTime:0.000905s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','李纪伟',7,'第7-10周',-2.1,'admin') [ RunTime:0.000982s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','李纪伟',14,'第11-14周',-5.6,'admin') [ RunTime:0.001413s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('卫生部','计科141','李刘磊','批评','第四周',-0.5,'admin') [ RunTime:0.001281s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','李刘磊','旷课','第二周',-0.5,'admin') [ RunTime:0.000738s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','李刘磊','旷课 ','第五周',-0.5,'admin') [ RunTime:0.000783s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','李刘磊','旷课2次','第九周',-1,'admin') [ RunTime:0.000524s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','李刘磊','旷课','第十一周',-0.5,'admin') [ RunTime:0.001454s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','李刘磊','旷课','第十四周',-0.5,'admin') [ RunTime:0.000635s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','李刘磊',4,'第3-6周',0,'admin') [ RunTime:0.000539s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','李刘磊',7,'第7-10周',-2.1,'admin') [ RunTime:0.000511s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','李刘磊',14,'第11-14周',-5.6,'admin') [ RunTime:0.000614s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('体育部','计科141','李万鹏','篮球队','2015学年下学期',1,'admin') [ RunTime:0.000543s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','李万鹏','旷课','第二周',-0.5,'admin') [ RunTime:0.000599s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','李万鹏','旷课','第三周',-0.5,'admin') [ RunTime:0.000622s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','梁  伟','旷课','第二周',-0.5,'admin') [ RunTime:0.000562s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','梁  伟','旷课 ','第四周',-0.5,'admin') [ RunTime:0.001469s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','梁  伟','旷课2次','第五周',-1,'admin') [ RunTime:0.000700s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','梁  伟','旷课','第八周',-0.5,'admin') [ RunTime:0.000725s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','梁  伟','旷课','第九周',-0.5,'admin') [ RunTime:0.000991s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','梁  伟','旷课两次','第十一周',-1,'admin') [ RunTime:0.000829s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','梁  伟','旷课','第十四周',-0.5,'admin') [ RunTime:0.000496s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','梁  伟',5,'第3-6周',0,'admin') [ RunTime:0.000426s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','梁  伟',7,'第7-10周',-2.1,'admin') [ RunTime:0.000483s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','梁  伟',14,'第11-14周',-5.6,'admin') [ RunTime:0.000551s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','梁  伟','查寝未归','第十二周',-0.1,'admin') [ RunTime:0.000492s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','梁  伟','查寝未归','第十三周',-0.1,'admin') [ RunTime:0.000456s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','梁  伟','查寝未归','第十四周',-0.1,'admin') [ RunTime:0.000521s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','梁  伟','查寝未归','第十五周',-0.1,'admin') [ RunTime:0.000483s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('创新部','计科141','梁  伟','蓝桥杯省赛二等奖（java方向）','2016年5月31',3,'admin') [ RunTime:0.000399s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','刘国坤','旷课','第二周',-0.5,'admin') [ RunTime:0.000415s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','刘国坤','旷课 ','第四周',-0.5,'admin') [ RunTime:0.000484s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','刘国坤','旷课','第十四周',-0.5,'admin') [ RunTime:0.000973s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','刘国坤',5,'第3-6周',0,'admin') [ RunTime:0.000662s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','刘国坤',7,'第7-10周',-2.1,'admin') [ RunTime:0.000610s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','刘国坤',14,'第11-14周',-5.6,'admin') [ RunTime:0.000514s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','刘施展','旷课','第八周',-0.5,'admin') [ RunTime:0.000663s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','刘施展',2,'第3-6周',0,'admin') [ RunTime:0.000549s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','刘施展',6,'第7-10周',-1.8,'admin') [ RunTime:0.000556s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','刘施展',14,'第11-14周',-5.6,'admin') [ RunTime:0.000747s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('卫生部','计科141','刘宛秋','整体表扬较多','第十五周',0.5,'admin') [ RunTime:0.000915s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','刘宛秋','旷课','第九周',-0.5,'admin') [ RunTime:0.001076s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','刘宛秋',5,'第3-6周',0,'admin') [ RunTime:0.000494s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','刘宛秋',4,'第7-10周',-0.8,'admin') [ RunTime:0.000480s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','刘宛秋',14,'第11-14周',-5.6,'admin') [ RunTime:0.000531s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('创新部','计科141','刘婉秋','CSDN俱乐部副主席',null,2.5,'admin') [ RunTime:0.001046s ]
+ERR: 1048:Column 'sc_time' cannot be null
+ [ SQL语句 ] : INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('创新部','计科141','刘婉秋','CSDN俱乐部副主席',null,2.5,'admin')
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','潘  霖','旷课','第二周',-0.5,'admin') [ RunTime:0.000591s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','潘  霖','旷课','第三周',-0.5,'admin') [ RunTime:0.000607s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','潘  霖','旷课','第八周',-0.5,'admin') [ RunTime:0.000984s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','潘  霖','旷课','第十四周',-0.5,'admin') [ RunTime:0.000643s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','潘  霖','早读全勤','第3-6周',0.5,'admin') [ RunTime:0.000656s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','潘  霖','早读全勤','第7-10周',0.5,'admin') [ RunTime:0.000633s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','潘  霖','早读全勤','第11-14周',0.5,'admin') [ RunTime:0.000624s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','彭胜基','旷课2次','第九周',-1,'admin') [ RunTime:0.001116s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('体育部','计科141','彭圣基','足球队','2015学年下学期',1,'admin') [ RunTime:0.001093s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','彭圣基','旷课','第二周',-0.5,'admin') [ RunTime:0.001878s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','彭圣基','旷课三次','第十一周',-1.5,'admin') [ RunTime:0.001093s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','彭圣基','早读全勤','第3-6周',0.5,'admin') [ RunTime:0.000542s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','彭圣基','早读全勤','第7-10周',0.5,'admin') [ RunTime:0.000454s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','彭圣基','早读全勤','第11-14周',0.5,'admin') [ RunTime:0.000514s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('卫生部','计科141','屈佳佳','整体表扬较多','第十五周',0.5,'admin') [ RunTime:0.000523s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','屈佳佳','旷课','第十一周',-0.5,'admin') [ RunTime:0.000723s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','屈佳佳',5,'第3-6周',0,'admin') [ RunTime:0.000506s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','屈佳佳',7,'第7-10周',-2.1,'admin') [ RunTime:0.000462s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','屈佳佳',14,'第11-14周',-5.6,'admin') [ RunTime:0.000486s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('体育部','计科141','苏建博','篮球队','2015学年下学期',1,'admin') [ RunTime:0.000531s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','苏建博','旷课3次','第二周',-1.5,'admin') [ RunTime:0.000503s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','苏建博','旷课+迟到','第八周',-0.8,'admin') [ RunTime:0.000859s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','苏建博','旷课','第十一周',-0.5,'admin') [ RunTime:0.000567s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','苏建博','旷课','第十四周',-0.5,'admin') [ RunTime:0.000647s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','苏建鹏','旷课 ','第五周',-0.5,'admin') [ RunTime:0.001250s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('体育部','计科141','孙春雷','足球队 足球赛','2015学年下学期',3,'admin') [ RunTime:0.000613s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','孙春雷','旷课两次','第十一周',-1,'admin') [ RunTime:0.002013s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','汪  鹏','旷课','第二周',-0.5,'admin') [ RunTime:0.001058s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','汪  鹏','迟到','第八周',-0.3,'admin') [ RunTime:0.000532s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','汪  鹏','旷课','第十四周',-0.5,'admin') [ RunTime:0.000487s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','汪  鹏',4,'第3-6周',0,'admin') [ RunTime:0.001270s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','汪  鹏',7,'第7-10周',-2.1,'admin') [ RunTime:0.000805s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','汪  鹏',14,'第11-14周',-5.6,'admin') [ RunTime:0.000789s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','王  飞','旷课','第二周',-0.5,'admin') [ RunTime:0.000783s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','王  飞','旷课 ','第五周',-0.5,'admin') [ RunTime:0.000950s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','王  飞','迟到','第八周',-0.3,'admin') [ RunTime:0.000595s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','王  飞',5,'第3-6周',0,'admin') [ RunTime:0.000539s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','王  飞',7,'第7-10周',-2.1,'admin') [ RunTime:0.000695s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','王  飞',14,'第11-14周',-5.6,'admin') [ RunTime:0.000685s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','王  飞','查寝未归','第九周',-0.1,'admin') [ RunTime:0.001107s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','王  飞','查寝未归','第十二周',-0.1,'admin') [ RunTime:0.000867s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','王  飞','查寝未归','第十三周',-0.1,'admin') [ RunTime:0.006301s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('创新部','计科141','王宾宾','蓝桥杯省赛二等奖（java方向）','2016年5月31',3,'admin') [ RunTime:0.001018s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','王宾宾',4,'第3-6周',0,'admin') [ RunTime:0.000843s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','王宾宾',7,'第7-10周',-2.1,'admin') [ RunTime:0.000929s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','王宾宾',14,'第11-14周',-5.6,'admin') [ RunTime:0.000520s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','王宾宾','查寝未归','第九周',-0.1,'admin') [ RunTime:0.000964s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('体育部','计科141','王雪强','足球队 足球赛','2015学年下学期',3,'admin') [ RunTime:0.001426s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','王雪强','早读全勤','第3-6周',0.5,'admin') [ RunTime:0.002385s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','王雪强','早读全勤','第7-10周',0.5,'admin') [ RunTime:0.001542s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','王雪强','早读全勤','第11-14周',0.5,'admin') [ RunTime:0.000736s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','王志康','旷课','第二周',-0.5,'admin') [ RunTime:0.000694s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','王志康','旷课 ','第五周',-0.5,'admin') [ RunTime:0.000760s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','王志康','旷课','第八周',-1,'admin') [ RunTime:0.000867s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','王志康','旷课','第九周',-0.5,'admin') [ RunTime:0.000552s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','王志康','旷课','第十一周',-0.5,'admin') [ RunTime:0.000464s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','王志康','迟到四次','第十一周',-1.2,'admin') [ RunTime:0.000744s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','王志康',5,'第3-6周',0,'admin') [ RunTime:0.000485s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','王志康',7,'第7-10周',-2.1,'admin') [ RunTime:0.000399s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','王志康',14,'第11-14周',-5.6,'admin') [ RunTime:0.000536s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('创新部','计科141','吴海胜','蓝桥杯省赛三等奖（c/c++方向）','2016年5月31',2.5,'admin') [ RunTime:0.000754s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','吴海胜','旷课','第九周',-0.5,'admin') [ RunTime:0.000429s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','吴海胜','旷课','第十一周',-0.5,'admin') [ RunTime:0.000341s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','吴海胜',5,'第3-6周',0,'admin') [ RunTime:0.000406s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','吴海胜',1,'第7-10周',-0.2,'admin') [ RunTime:0.000460s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','吴海胜',9,'第11-14周',-3.6,'admin') [ RunTime:0.000791s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','徐  欣','旷课','第十一周',-0.5,'admin') [ RunTime:0.001424s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','徐  欣',2,'第3-6周',-0.4,'admin') [ RunTime:0.000630s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','徐  欣',6,'第7-10周',-1.8,'admin') [ RunTime:0.000852s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','徐  欣',14,'第11-14周',-5.6,'admin') [ RunTime:0.001009s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('卫生部','计科141','徐  欣','表扬','第九周',0.5,'admin') [ RunTime:0.000809s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','杨学骞','旷课','第二周',-0.5,'admin') [ RunTime:0.000499s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','杨学骞','旷课 ','第四周',-0.5,'admin') [ RunTime:0.000441s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','杨学骞','旷课2次','第五周',-1,'admin') [ RunTime:0.000857s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','杨学骞','旷课','第八周',-1,'admin') [ RunTime:0.000475s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','杨学骞','旷课3次','第九周',-1.5,'admin') [ RunTime:0.000951s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','杨学骞','旷课','第十一周',-0.5,'admin') [ RunTime:0.000576s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','杨学骞','旷课2次','第十四周',-1,'admin') [ RunTime:0.001009s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','杨学骞',5,'第3-6周',0,'admin') [ RunTime:0.001107s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','杨学骞',7,'第7-10周',-2.1,'admin') [ RunTime:0.000569s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','杨学骞',14,'第11-14周',-5.6,'admin') [ RunTime:0.001301s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','杨学骞','查寝未归','第九周',-0.1,'admin') [ RunTime:0.001364s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','杨学骞','查寝未归','第十二周',-0.1,'admin') [ RunTime:0.001368s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','杨学骞','查寝未归','第十四周',-0.1,'admin') [ RunTime:0.000573s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','杨学骞','查寝未归','第十五周',-0.1,'admin') [ RunTime:0.000410s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('创新部','计科141','杨亚东','蓝桥杯省赛一等奖（java方向）','2016年5月31',4,'admin') [ RunTime:0.000423s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','杨亚东','旷课 ','第四周',-0.5,'admin') [ RunTime:0.000398s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','杨亚东','旷课','第八周',-1,'admin') [ RunTime:0.000521s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','杨亚东','旷课','第九周',-0.5,'admin') [ RunTime:0.000430s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','杨亚东',5,'第3-6周',0,'admin') [ RunTime:0.000464s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','杨亚东',7,'第7-10周',-2.1,'admin') [ RunTime:0.000364s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','杨亚东',14,'第11-14周',-5.6,'admin') [ RunTime:0.000394s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','杨亚东','查寝未归','第九周',-0.1,'admin') [ RunTime:0.000378s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','杨亚东','查寝未归','第十二周',-0.1,'admin') [ RunTime:0.000446s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','杨亚东','查寝未归','第十三周',-0.1,'admin') [ RunTime:0.000403s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','杨亚东','查寝未归','第十四周',-0.1,'admin') [ RunTime:0.000494s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','杨亚东','查寝未归','第十五周',-0.1,'admin') [ RunTime:0.000595s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('卫生部','计科141','杨自翔','表扬','第八周',0.5,'admin') [ RunTime:0.000500s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','杨自翔',1,'第3-6周',-0.2,'admin') [ RunTime:0.000489s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','杨自翔',6,'第7-10周',-1.8,'admin') [ RunTime:0.000501s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','杨自翔',14,'第11-14周',-5.6,'admin') [ RunTime:0.000839s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','张  雪',4,'第7-10周',0,'admin') [ RunTime:0.000531s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','张  雪',6,'第11-14周',0,'admin') [ RunTime:0.001657s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('实践部','计科141','张  雪','青协副会长',null,2.5,'admin') [ RunTime:0.001074s ]
+ERR: 1048:Column 'sc_time' cannot be null
+ [ SQL语句 ] : INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('实践部','计科141','张  雪','青协副会长',null,2.5,'admin')
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('创新部','计科141','张  雪','蓝桥杯省赛三等奖（java方向）','2016年5月31',2.5,'admin') [ RunTime:0.000490s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('卫生部','计科141','张  雪','整体表扬较多','第十五周',0.5,'admin') [ RunTime:0.000424s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','张秀芳',4,'第3-6周',0,'admin') [ RunTime:0.000393s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','张秀芳',6,'第7-10周',-1.8,'admin') [ RunTime:0.000395s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','张秀芳',9,'第11-14周',-3.6,'admin') [ RunTime:0.000390s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('体育部','计科141','赵泽宇','足球队','2015学年下学期',1,'admin') [ RunTime:0.000453s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','赵泽宇','旷课 ','第四周',-0.5,'admin') [ RunTime:0.000444s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','赵泽宇',5,'第3-6周',-1,'admin') [ RunTime:0.000454s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','赵泽宇',7,'第7-10周',-2.1,'admin') [ RunTime:0.000444s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','赵泽宇',14,'第11-14周',-5.6,'admin') [ RunTime:0.000460s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('创新部','计科141','赵振伟','蓝桥杯国赛二等奖（java方向）','2016年5月31',4,'admin') [ RunTime:0.000448s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','赵振伟',11,'第11-14周',0,'admin') [ RunTime:0.000444s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','赵振伟','查寝未归','第十二周',-0.1,'admin') [ RunTime:0.000445s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('体育部','计科141','郑  帅','篮球队','2015学年下学期',1,'admin') [ RunTime:0.000525s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','郑  帅','旷课2次','第二周',-1,'admin') [ RunTime:0.000483s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','郑  帅','旷课','第九周',-0.5,'admin') [ RunTime:0.000410s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','郑  帅','旷课两次','第十一周',-1,'admin') [ RunTime:0.000460s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('创新部','计科141','朱银伟','蓝桥杯省赛二等奖（java方向）','2016年5月31',3,'admin') [ RunTime:0.000467s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','朱银伟','旷课','第八周',-0.5,'admin') [ RunTime:0.001650s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','朱银伟','迟到三次','第十一周',-0.9,'admin') [ RunTime:0.000985s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','朱银伟','旷课','第十四周',-0.5,'admin') [ RunTime:0.002514s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','朱银伟',3,'第3-6周',0,'admin') [ RunTime:0.000510s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','朱银伟',7,'第7-10周',-2.1,'admin') [ RunTime:0.000427s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','朱银伟',14,'第11-14周',-5.6,'admin') [ RunTime:0.000400s ]
+
+[ 2016-10-22T12:38:45+08:00 ] ::1 /Integral/index.php/Admin/input
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000323s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001455s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000978s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001065s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000179s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015760s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015824s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000491s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000545s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001054s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001123s ]
+
+[ 2016-10-22T12:41:18+08:00 ] ::1 /Integral/index.php/Admin/input/upload/table/scoredetail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001462s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001746s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001842s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+NOTIC: [8] Undefined variable: options /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Vendor/Classes/PHPExcel/Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Vendor/Classes/PHPExcel/Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Vendor/Classes/PHPExcel/Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Vendor/Classes/PHPExcel/Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Vendor/Classes/PHPExcel/Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Vendor/Classes/PHPExcel/Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Vendor/Classes/PHPExcel/Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Vendor/Classes/PHPExcel/Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Vendor/Classes/PHPExcel/Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Vendor/Classes/PHPExcel/Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Vendor/Classes/PHPExcel/Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Vendor/Classes/PHPExcel/Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Vendor/Classes/PHPExcel/Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Vendor/Classes/PHPExcel/Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Vendor/Classes/PHPExcel/Settings.php 第 384 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 326 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 326 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 326 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 326 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 326 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 326 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('体育部','计科141','陈少博','篮球副队长','2015学年下学期',1,'admin') [ RunTime:0.000612s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('体育部','计科141','陈少博','篮球队','2015学年下学期',1,'admin') [ RunTime:0.000743s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','黄  刚','旷课','第八周',-0.5,'admin') [ RunTime:0.000461s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','黄  刚','旷课','第九周',-0.5,'admin') [ RunTime:0.000691s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','黄  刚','旷课两次','第十一周',-1,'admin') [ RunTime:0.000538s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','黄  刚',5,'第3-6周',0,'admin') [ RunTime:0.000417s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','黄  刚',7,'第7-10周',-2.1,'admin') [ RunTime:0.000631s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','黄  刚',14,'第11-14周',-5.6,'admin') [ RunTime:0.000371s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','李纪伟','旷课','第十一周',-0.5,'admin') [ RunTime:0.000486s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','李纪伟',5,'第3-6周',0,'admin') [ RunTime:0.000532s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','李纪伟',7,'第7-10周',-2.1,'admin') [ RunTime:0.000982s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','李纪伟',14,'第11-14周',-5.6,'admin') [ RunTime:0.001320s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('卫生部','计科141','李刘磊','批评','第四周',-0.5,'admin') [ RunTime:0.000999s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','李刘磊','旷课','第二周',-0.5,'admin') [ RunTime:0.000549s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','李刘磊','旷课 ','第五周',-0.5,'admin') [ RunTime:0.000444s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','李刘磊','旷课2次','第九周',-1,'admin') [ RunTime:0.000482s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','李刘磊','旷课','第十一周',-0.5,'admin') [ RunTime:0.000383s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','李刘磊','旷课','第十四周',-0.5,'admin') [ RunTime:0.000497s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','李刘磊',4,'第3-6周',0,'admin') [ RunTime:0.000545s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','李刘磊',7,'第7-10周',-2.1,'admin') [ RunTime:0.000556s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','李刘磊',14,'第11-14周',-5.6,'admin') [ RunTime:0.000565s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('体育部','计科141','李万鹏','篮球队','2015学年下学期',1,'admin') [ RunTime:0.000525s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','李万鹏','旷课','第二周',-0.5,'admin') [ RunTime:0.000612s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','李万鹏','旷课','第三周',-0.5,'admin') [ RunTime:0.000925s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','梁  伟','旷课','第二周',-0.5,'admin') [ RunTime:0.000599s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','梁  伟','旷课 ','第四周',-0.5,'admin') [ RunTime:0.000570s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','梁  伟','旷课2次','第五周',-1,'admin') [ RunTime:0.000706s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','梁  伟','旷课','第八周',-0.5,'admin') [ RunTime:0.000676s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','梁  伟','旷课','第九周',-0.5,'admin') [ RunTime:0.000889s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','梁  伟','旷课两次','第十一周',-1,'admin') [ RunTime:0.001034s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','梁  伟','旷课','第十四周',-0.5,'admin') [ RunTime:0.001481s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','梁  伟',5,'第3-6周',0,'admin') [ RunTime:0.000605s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','梁  伟',7,'第7-10周',-2.1,'admin') [ RunTime:0.000562s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','梁  伟',14,'第11-14周',-5.6,'admin') [ RunTime:0.000557s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','梁  伟','查寝未归','第十二周',-0.1,'admin') [ RunTime:0.000583s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','梁  伟','查寝未归','第十三周',-0.1,'admin') [ RunTime:0.000558s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','梁  伟','查寝未归','第十四周',-0.1,'admin') [ RunTime:0.000560s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','梁  伟','查寝未归','第十五周',-0.1,'admin') [ RunTime:0.000530s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('创新部','计科141','梁  伟','蓝桥杯省赛二等奖（java方向）','2016年5月31',3,'admin') [ RunTime:0.000467s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','刘国坤','旷课','第二周',-0.5,'admin') [ RunTime:0.000403s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','刘国坤','旷课 ','第四周',-0.5,'admin') [ RunTime:0.000419s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','刘国坤','旷课','第十四周',-0.5,'admin') [ RunTime:0.000386s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','刘国坤',5,'第3-6周',0,'admin') [ RunTime:0.000416s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','刘国坤',7,'第7-10周',-2.1,'admin') [ RunTime:0.000671s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','刘国坤',14,'第11-14周',-5.6,'admin') [ RunTime:0.000474s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','刘施展','旷课','第八周',-0.5,'admin') [ RunTime:0.000533s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','刘施展',2,'第3-6周',0,'admin') [ RunTime:0.000487s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','刘施展',6,'第7-10周',-1.8,'admin') [ RunTime:0.000502s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','刘施展',14,'第11-14周',-5.6,'admin') [ RunTime:0.000759s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('卫生部','计科141','刘宛秋','整体表扬较多','第十五周',0.5,'admin') [ RunTime:0.001187s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','刘宛秋','旷课','第九周',-0.5,'admin') [ RunTime:0.001729s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','刘宛秋',5,'第3-6周',0,'admin') [ RunTime:0.000637s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','刘宛秋',4,'第7-10周',-0.8,'admin') [ RunTime:0.000555s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','刘宛秋',14,'第11-14周',-5.6,'admin') [ RunTime:0.000494s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('创新部','计科141','刘婉秋','CSDN俱乐部副主席',null,2.5,'admin') [ RunTime:0.000289s ]
+ERR: 1048:Column 'sc_time' cannot be null
+ [ SQL语句 ] : INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('创新部','计科141','刘婉秋','CSDN俱乐部副主席',null,2.5,'admin')
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','潘  霖','旷课','第二周',-0.5,'admin') [ RunTime:0.000673s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','潘  霖','旷课','第三周',-0.5,'admin') [ RunTime:0.000637s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','潘  霖','旷课','第八周',-0.5,'admin') [ RunTime:0.000571s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','潘  霖','旷课','第十四周',-0.5,'admin') [ RunTime:0.000586s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','潘  霖','早读全勤','第3-6周',0.5,'admin') [ RunTime:0.000928s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','潘  霖','早读全勤','第7-10周',0.5,'admin') [ RunTime:0.000387s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','潘  霖','早读全勤','第11-14周',0.5,'admin') [ RunTime:0.000387s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','彭胜基','旷课2次','第九周',-1,'admin') [ RunTime:0.000405s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('体育部','计科141','彭圣基','足球队','2015学年下学期',1,'admin') [ RunTime:0.000369s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','彭圣基','旷课','第二周',-0.5,'admin') [ RunTime:0.000481s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','彭圣基','旷课三次','第十一周',-1.5,'admin') [ RunTime:0.000785s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','彭圣基','早读全勤','第3-6周',0.5,'admin') [ RunTime:0.000644s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','彭圣基','早读全勤','第7-10周',0.5,'admin') [ RunTime:0.001530s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','彭圣基','早读全勤','第11-14周',0.5,'admin') [ RunTime:0.000598s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('卫生部','计科141','屈佳佳','整体表扬较多','第十五周',0.5,'admin') [ RunTime:0.000794s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','屈佳佳','旷课','第十一周',-0.5,'admin') [ RunTime:0.000915s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','屈佳佳',5,'第3-6周',0,'admin') [ RunTime:0.001169s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','屈佳佳',7,'第7-10周',-2.1,'admin') [ RunTime:0.000983s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','屈佳佳',14,'第11-14周',-5.6,'admin') [ RunTime:0.000793s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('体育部','计科141','苏建博','篮球队','2015学年下学期',1,'admin') [ RunTime:0.000553s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','苏建博','旷课3次','第二周',-1.5,'admin') [ RunTime:0.000545s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','苏建博','旷课+迟到','第八周',-0.8,'admin') [ RunTime:0.000558s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','苏建博','旷课','第十一周',-0.5,'admin') [ RunTime:0.000402s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','苏建博','旷课','第十四周',-0.5,'admin') [ RunTime:0.000424s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','苏建鹏','旷课 ','第五周',-0.5,'admin') [ RunTime:0.000360s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('体育部','计科141','孙春雷','足球队 足球赛','2015学年下学期',3,'admin') [ RunTime:0.000490s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','孙春雷','旷课两次','第十一周',-1,'admin') [ RunTime:0.000485s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','汪  鹏','旷课','第二周',-0.5,'admin') [ RunTime:0.000585s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','汪  鹏','迟到','第八周',-0.3,'admin') [ RunTime:0.000545s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','汪  鹏','旷课','第十四周',-0.5,'admin') [ RunTime:0.001112s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','汪  鹏',4,'第3-6周',0,'admin') [ RunTime:0.000896s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','汪  鹏',7,'第7-10周',-2.1,'admin') [ RunTime:0.000808s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','汪  鹏',14,'第11-14周',-5.6,'admin') [ RunTime:0.000847s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','王  飞','旷课','第二周',-0.5,'admin') [ RunTime:0.001366s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','王  飞','旷课 ','第五周',-0.5,'admin') [ RunTime:0.001001s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','王  飞','迟到','第八周',-0.3,'admin') [ RunTime:0.000757s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','王  飞',5,'第3-6周',0,'admin') [ RunTime:0.000465s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','王  飞',7,'第7-10周',-2.1,'admin') [ RunTime:0.000509s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','王  飞',14,'第11-14周',-5.6,'admin') [ RunTime:0.000486s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','王  飞','查寝未归','第九周',-0.1,'admin') [ RunTime:0.000480s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','王  飞','查寝未归','第十二周',-0.1,'admin') [ RunTime:0.000553s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','王  飞','查寝未归','第十三周',-0.1,'admin') [ RunTime:0.000548s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('创新部','计科141','王宾宾','蓝桥杯省赛二等奖（java方向）','2016年5月31',3,'admin') [ RunTime:0.000579s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','王宾宾',4,'第3-6周',0,'admin') [ RunTime:0.000559s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','王宾宾',7,'第7-10周',-2.1,'admin') [ RunTime:0.000508s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','王宾宾',14,'第11-14周',-5.6,'admin') [ RunTime:0.000558s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','王宾宾','查寝未归','第九周',-0.1,'admin') [ RunTime:0.001226s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('体育部','计科141','王雪强','足球队 足球赛','2015学年下学期',3,'admin') [ RunTime:0.000827s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','王雪强','早读全勤','第3-6周',0.5,'admin') [ RunTime:0.001806s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','王雪强','早读全勤','第7-10周',0.5,'admin') [ RunTime:0.000860s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','王雪强','早读全勤','第11-14周',0.5,'admin') [ RunTime:0.000501s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','王志康','旷课','第二周',-0.5,'admin') [ RunTime:0.000511s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','王志康','旷课 ','第五周',-0.5,'admin') [ RunTime:0.000535s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','王志康','旷课','第八周',-1,'admin') [ RunTime:0.000550s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','王志康','旷课','第九周',-0.5,'admin') [ RunTime:0.000572s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','王志康','旷课','第十一周',-0.5,'admin') [ RunTime:0.000560s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','王志康','迟到四次','第十一周',-1.2,'admin') [ RunTime:0.000591s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','王志康',5,'第3-6周',0,'admin') [ RunTime:0.000562s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','王志康',7,'第7-10周',-2.1,'admin') [ RunTime:0.000531s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','王志康',14,'第11-14周',-5.6,'admin') [ RunTime:0.000576s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('创新部','计科141','吴海胜','蓝桥杯省赛三等奖（c/c++方向）','2016年5月31',2.5,'admin') [ RunTime:0.000567s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','吴海胜','旷课','第九周',-0.5,'admin') [ RunTime:0.000968s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','吴海胜','旷课','第十一周',-0.5,'admin') [ RunTime:0.002367s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','吴海胜',5,'第3-6周',0,'admin') [ RunTime:0.001592s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','吴海胜',1,'第7-10周',-0.2,'admin') [ RunTime:0.000797s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','吴海胜',9,'第11-14周',-3.6,'admin') [ RunTime:0.000523s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','徐  欣','旷课','第十一周',-0.5,'admin') [ RunTime:0.000500s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','徐  欣',2,'第3-6周',-0.4,'admin') [ RunTime:0.000569s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','徐  欣',6,'第7-10周',-1.8,'admin') [ RunTime:0.000568s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','徐  欣',14,'第11-14周',-5.6,'admin') [ RunTime:0.000857s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('卫生部','计科141','徐  欣','表扬','第九周',0.5,'admin') [ RunTime:0.000608s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','杨学骞','旷课','第二周',-0.5,'admin') [ RunTime:0.000574s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','杨学骞','旷课 ','第四周',-0.5,'admin') [ RunTime:0.000564s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','杨学骞','旷课2次','第五周',-1,'admin') [ RunTime:0.000642s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','杨学骞','旷课','第八周',-1,'admin') [ RunTime:0.000574s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','杨学骞','旷课3次','第九周',-1.5,'admin') [ RunTime:0.000551s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','杨学骞','旷课','第十一周',-0.5,'admin') [ RunTime:0.000577s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','杨学骞','旷课2次','第十四周',-1,'admin') [ RunTime:0.001307s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','杨学骞',5,'第3-6周',0,'admin') [ RunTime:0.001073s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','杨学骞',7,'第7-10周',-2.1,'admin') [ RunTime:0.001214s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','杨学骞',14,'第11-14周',-5.6,'admin') [ RunTime:0.000586s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','杨学骞','查寝未归','第九周',-0.1,'admin') [ RunTime:0.000441s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','杨学骞','查寝未归','第十二周',-0.1,'admin') [ RunTime:0.000396s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','杨学骞','查寝未归','第十四周',-0.1,'admin') [ RunTime:0.000446s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','杨学骞','查寝未归','第十五周',-0.1,'admin') [ RunTime:0.000462s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('创新部','计科141','杨亚东','蓝桥杯省赛一等奖（java方向）','2016年5月31',4,'admin') [ RunTime:0.000547s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','杨亚东','旷课 ','第四周',-0.5,'admin') [ RunTime:0.000454s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','杨亚东','旷课','第八周',-1,'admin') [ RunTime:0.000390s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','杨亚东','旷课','第九周',-0.5,'admin') [ RunTime:0.000391s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','杨亚东',5,'第3-6周',0,'admin') [ RunTime:0.000833s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','杨亚东',7,'第7-10周',-2.1,'admin') [ RunTime:0.000494s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','杨亚东',14,'第11-14周',-5.6,'admin') [ RunTime:0.000362s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','杨亚东','查寝未归','第九周',-0.1,'admin') [ RunTime:0.000411s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','杨亚东','查寝未归','第十二周',-0.1,'admin') [ RunTime:0.000407s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','杨亚东','查寝未归','第十三周',-0.1,'admin') [ RunTime:0.000396s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','杨亚东','查寝未归','第十四周',-0.1,'admin') [ RunTime:0.000341s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','杨亚东','查寝未归','第十五周',-0.1,'admin') [ RunTime:0.000384s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('卫生部','计科141','杨自翔','表扬','第八周',0.5,'admin') [ RunTime:0.000618s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','杨自翔',1,'第3-6周',-0.2,'admin') [ RunTime:0.000808s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','杨自翔',6,'第7-10周',-1.8,'admin') [ RunTime:0.001054s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','杨自翔',14,'第11-14周',-5.6,'admin') [ RunTime:0.000850s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','张  雪',4,'第7-10周',0,'admin') [ RunTime:0.000608s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','张  雪',6,'第11-14周',0,'admin') [ RunTime:0.000481s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('实践部','计科141','张  雪','青协副会长',null,2.5,'admin') [ RunTime:0.000296s ]
+ERR: 1048:Column 'sc_time' cannot be null
+ [ SQL语句 ] : INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('实践部','计科141','张  雪','青协副会长',null,2.5,'admin')
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('创新部','计科141','张  雪','蓝桥杯省赛三等奖（java方向）','2016年5月31',2.5,'admin') [ RunTime:0.000543s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('卫生部','计科141','张  雪','整体表扬较多','第十五周',0.5,'admin') [ RunTime:0.000597s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','张秀芳',4,'第3-6周',0,'admin') [ RunTime:0.000596s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','张秀芳',6,'第7-10周',-1.8,'admin') [ RunTime:0.000562s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','张秀芳',9,'第11-14周',-3.6,'admin') [ RunTime:0.000568s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('体育部','计科141','赵泽宇','足球队','2015学年下学期',1,'admin') [ RunTime:0.000555s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','赵泽宇','旷课 ','第四周',-0.5,'admin') [ RunTime:0.000848s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','赵泽宇',5,'第3-6周',-1,'admin') [ RunTime:0.000632s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','赵泽宇',7,'第7-10周',-2.1,'admin') [ RunTime:0.000604s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','赵泽宇',14,'第11-14周',-5.6,'admin') [ RunTime:0.000627s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('创新部','计科141','赵振伟','蓝桥杯国赛二等奖（java方向）','2016年5月31',4,'admin') [ RunTime:0.000580s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','赵振伟',11,'第11-14周',0,'admin') [ RunTime:0.000596s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','赵振伟','查寝未归','第十二周',-0.1,'admin') [ RunTime:0.000645s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('体育部','计科141','郑  帅','篮球队','2015学年下学期',1,'admin') [ RunTime:0.000932s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','郑  帅','旷课2次','第二周',-1,'admin') [ RunTime:0.001017s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','郑  帅','旷课','第九周',-0.5,'admin') [ RunTime:0.001130s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','郑  帅','旷课两次','第十一周',-1,'admin') [ RunTime:0.000662s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('创新部','计科141','朱银伟','蓝桥杯省赛二等奖（java方向）','2016年5月31',3,'admin') [ RunTime:0.000448s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','朱银伟','旷课','第八周',-0.5,'admin') [ RunTime:0.000523s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','朱银伟','迟到三次','第十一周',-0.9,'admin') [ RunTime:0.000457s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('学习部','计科141','朱银伟','旷课','第十四周',-0.5,'admin') [ RunTime:0.000546s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','朱银伟',3,'第3-6周',0,'admin') [ RunTime:0.000600s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','朱银伟',7,'第7-10周',-2.1,'admin') [ RunTime:0.000575s ]
+SQL: INSERT INTO `tp_scoredetail` (`sc_union`,`c_name`,`s_name`,`sc_reason`,`sc_time`,`sc_number`,`sc_who`) VALUES ('自律部','计科141','朱银伟',14,'第11-14周',-5.6,'admin') [ RunTime:0.000523s ]
+
+[ 2016-10-22T12:41:33+08:00 ] ::1 /Integral/index.php/Admin/Tables
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000340s ]
+NOTIC: [8] Undefined index: c_name /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/TablesController.class.php 第 14 行.
+NOTIC: [8] Undefined index: s_id /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/TablesController.class.php 第 15 行.
+NOTIC: [8] Undefined index: sc_union /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/TablesController.class.php 第 16 行.
+NOTIC: [8] Undefined variable: filter /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/TablesController.class.php 第 31 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_scoredetail` LIMIT 1   [ RunTime:0.004686s ]
+NOTIC: [8] Undefined variable: filter /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/TablesController.class.php 第 48 行.
+SQL: SELECT * FROM `tp_scoredetail` ORDER BY id desc LIMIT 0,30   [ RunTime:0.001581s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000141s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000193s ]
+NOTIC: [8] Undefined index: c_name /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Runtime/Cache/Admin/028392e504fc80bf64506a8dce359984.php 第 119 行.
+NOTIC: [8] Undefined index: s_id /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Runtime/Cache/Admin/028392e504fc80bf64506a8dce359984.php 第 124 行.
+NOTIC: [8] Undefined index: sc_union /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Runtime/Cache/Admin/028392e504fc80bf64506a8dce359984.php 第 129 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018710s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018799s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000633s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000701s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001696s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001789s ]
+
+[ 2016-10-22T12:41:55+08:00 ] ::1 /Integral/index.php/Admin/Tables
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001033s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001158s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001296s ]
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 326 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_scoredetail` WHERE `sc_union` LIKE '%自律部%' LIMIT 1   [ RunTime:0.003126s ]
+SQL: SELECT * FROM `tp_scoredetail` WHERE `sc_union` LIKE '%自律部%' ORDER BY id desc LIMIT 0,30   [ RunTime:0.000874s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000162s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000218s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016527s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016591s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000409s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000452s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001240s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001426s ]
+
+[ 2016-10-22T12:42:13+08:00 ] ::1 /Integral/index.php/Admin/Tables
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000617s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000630s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000683s ]
+NOTIC: [8] Undefined variable: filter /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/TablesController.class.php 第 31 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_scoredetail` LIMIT 1   [ RunTime:0.000291s ]
+NOTIC: [8] Undefined variable: filter /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/TablesController.class.php 第 48 行.
+SQL: SELECT * FROM `tp_scoredetail` ORDER BY id desc LIMIT 0,30   [ RunTime:0.000368s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000137s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000186s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012266s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012311s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000357s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000390s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000827s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000898s ]
+
+[ 2016-10-22T12:42:39+08:00 ] ::1 /Integral/index.php/Admin/Tables/delete.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002040s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001098s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001188s ]
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 326 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: DELETE FROM `tp_scoredetail` WHERE `sc_time` = '181' [ RunTime:0.001889s ]
+SQL: DELETE FROM `tp_scoredetail` WHERE `sc_time` = '180' [ RunTime:0.000476s ]
+SQL: DELETE FROM `tp_scoredetail` WHERE `sc_time` = '179' [ RunTime:0.000353s ]
+SQL: DELETE FROM `tp_scoredetail` WHERE `sc_time` = '178' [ RunTime:0.000362s ]
+SQL: DELETE FROM `tp_scoredetail` WHERE `sc_time` = '177' [ RunTime:0.000397s ]
+SQL: DELETE FROM `tp_scoredetail` WHERE `sc_time` = '176' [ RunTime:0.000337s ]
+SQL: DELETE FROM `tp_scoredetail` WHERE `sc_time` = '175' [ RunTime:0.000304s ]
+
+[ 2016-10-22T12:42:40+08:00 ] ::1 /Integral/index.php/Admin/Tables
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000208s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000258s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000291s ]
+NOTIC: [8] Undefined variable: filter /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/TablesController.class.php 第 31 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_scoredetail` LIMIT 1   [ RunTime:0.000334s ]
+NOTIC: [8] Undefined variable: filter /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/TablesController.class.php 第 48 行.
+SQL: SELECT * FROM `tp_scoredetail` ORDER BY id desc LIMIT 0,30   [ RunTime:0.000661s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000156s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000199s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015396s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015454s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000507s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000570s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000960s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001031s ]
+
+[ 2016-10-22T12:42:44+08:00 ] ::1 /Integral/index.php/Admin/Tables
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000322s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000428s ]
+NOTIC: [8] Undefined variable: filter /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/TablesController.class.php 第 31 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_scoredetail` LIMIT 1   [ RunTime:0.000393s ]
+NOTIC: [8] Undefined variable: filter /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/TablesController.class.php 第 48 行.
+SQL: SELECT * FROM `tp_scoredetail` ORDER BY id desc LIMIT 0,30   [ RunTime:0.000397s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000155s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000228s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009763s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009811s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000143s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000189s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000638s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000708s ]
+
+[ 2016-10-22T12:43:29+08:00 ] ::1 /Integral/index.php/Admin/Tables
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000971s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000983s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001085s ]
+NOTIC: [8] Undefined variable: filter /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/TablesController.class.php 第 31 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_scoredetail` LIMIT 1   [ RunTime:0.000449s ]
+NOTIC: [8] Undefined variable: filter /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/TablesController.class.php 第 48 行.
+SQL: SELECT * FROM `tp_scoredetail` ORDER BY id desc LIMIT 0,30   [ RunTime:0.000597s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000217s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000277s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017303s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017357s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000487s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000540s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000908s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000959s ]
+
+[ 2016-10-22T12:44:53+08:00 ] ::1 /Integral/index.php/Admin/Tables
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001077s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000928s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001021s ]
+NOTIC: [8] Undefined variable: filter /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/TablesController.class.php 第 31 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_scoredetail` LIMIT 1   [ RunTime:0.000901s ]
+NOTIC: [8] Undefined variable: filter /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/TablesController.class.php 第 48 行.
+SQL: SELECT * FROM `tp_scoredetail` ORDER BY id desc LIMIT 0,30   [ RunTime:0.000982s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000174s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000229s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015438s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015506s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000490s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000899s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-22T12:45:00+08:00 ] ::1 /Integral/index.php/Admin/Tables/delete.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000724s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000793s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: DELETE FROM `tp_scoredetail` WHERE ( id= ) [ RunTime:0.001844s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : DELETE FROM `tp_scoredetail` WHERE ( id= )
+SQL: DELETE FROM `tp_scoredetail` WHERE ( id= ) [ RunTime:0.000317s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : DELETE FROM `tp_scoredetail` WHERE ( id= )
+SQL: DELETE FROM `tp_scoredetail` WHERE ( id= ) [ RunTime:0.000239s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : DELETE FROM `tp_scoredetail` WHERE ( id= )
+SQL: DELETE FROM `tp_scoredetail` WHERE ( id=181 ) [ RunTime:0.004745s ]
+SQL: DELETE FROM `tp_scoredetail` WHERE ( id=180 ) [ RunTime:0.001873s ]
+SQL: DELETE FROM `tp_scoredetail` WHERE ( id=179 ) [ RunTime:0.001987s ]
+SQL: DELETE FROM `tp_scoredetail` WHERE ( id= ) [ RunTime:0.000202s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : DELETE FROM `tp_scoredetail` WHERE ( id= )
+SQL: DELETE FROM `tp_scoredetail` WHERE ( id= ) [ RunTime:0.000187s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : DELETE FROM `tp_scoredetail` WHERE ( id= )
+SQL: DELETE FROM `tp_scoredetail` WHERE ( id= ) [ RunTime:0.000137s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : DELETE FROM `tp_scoredetail` WHERE ( id= )
+SQL: DELETE FROM `tp_scoredetail` WHERE ( id= ) [ RunTime:0.000109s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : DELETE FROM `tp_scoredetail` WHERE ( id= )
+
+[ 2016-10-22T12:45:01+08:00 ] ::1 /Integral/index.php/Admin/Tables
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000316s ]
+NOTIC: [8] Undefined variable: filter /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/TablesController.class.php 第 31 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_scoredetail` LIMIT 1   [ RunTime:0.000318s ]
+NOTIC: [8] Undefined variable: filter /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/TablesController.class.php 第 48 行.
+SQL: SELECT * FROM `tp_scoredetail` ORDER BY id desc LIMIT 0,30   [ RunTime:0.000416s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000274s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000332s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011252s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011311s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000107s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000134s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000639s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000685s ]
+
+[ 2016-10-22T12:45:09+08:00 ] ::1 /Integral/index.php/Admin/Tables/delete.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000607s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000708s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: DELETE FROM `tp_scoredetail` WHERE ( id= ) [ RunTime:0.000187s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : DELETE FROM `tp_scoredetail` WHERE ( id= )
+SQL: DELETE FROM `tp_scoredetail` WHERE ( id= ) [ RunTime:0.000187s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : DELETE FROM `tp_scoredetail` WHERE ( id= )
+SQL: DELETE FROM `tp_scoredetail` WHERE ( id= ) [ RunTime:0.000139s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : DELETE FROM `tp_scoredetail` WHERE ( id= )
+SQL: DELETE FROM `tp_scoredetail` WHERE ( id=178 ) [ RunTime:0.001742s ]
+SQL: DELETE FROM `tp_scoredetail` WHERE ( id=177 ) [ RunTime:0.001656s ]
+SQL: DELETE FROM `tp_scoredetail` WHERE ( id=176 ) [ RunTime:0.000907s ]
+SQL: DELETE FROM `tp_scoredetail` WHERE ( id= ) [ RunTime:0.000389s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : DELETE FROM `tp_scoredetail` WHERE ( id= )
+SQL: DELETE FROM `tp_scoredetail` WHERE ( id= ) [ RunTime:0.000162s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : DELETE FROM `tp_scoredetail` WHERE ( id= )
+SQL: DELETE FROM `tp_scoredetail` WHERE ( id= ) [ RunTime:0.000150s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : DELETE FROM `tp_scoredetail` WHERE ( id= )
+SQL: DELETE FROM `tp_scoredetail` WHERE ( id= ) [ RunTime:0.000127s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : DELETE FROM `tp_scoredetail` WHERE ( id= )
+
+[ 2016-10-22T12:45:10+08:00 ] ::1 /Integral/index.php/Admin/Tables
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000533s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000599s ]
+NOTIC: [8] Undefined variable: filter /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/TablesController.class.php 第 31 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_scoredetail` LIMIT 1   [ RunTime:0.000316s ]
+NOTIC: [8] Undefined variable: filter /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/TablesController.class.php 第 48 行.
+SQL: SELECT * FROM `tp_scoredetail` ORDER BY id desc LIMIT 0,30   [ RunTime:0.000428s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000278s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000361s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011758s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011816s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000208s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000582s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000633s ]
+
+[ 2016-10-22T12:45:15+08:00 ] ::1 /Integral/index.php/Admin/Tables
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000404s ]
+NOTIC: [8] Undefined variable: filter /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/TablesController.class.php 第 31 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_scoredetail` LIMIT 1   [ RunTime:0.000677s ]
+NOTIC: [8] Undefined variable: filter /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/TablesController.class.php 第 48 行.
+SQL: SELECT * FROM `tp_scoredetail` ORDER BY id desc LIMIT 0,30   [ RunTime:0.000565s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000240s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000304s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011190s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011241s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000150s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000183s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000647s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000737s ]
+
+[ 2016-10-22T12:45:26+08:00 ] ::1 /Integral/index.php/Admin/input
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000357s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000446s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000494s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000161s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008675s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008733s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000124s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000155s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000491s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000533s ]
+
+[ 2016-10-22T12:45:32+08:00 ] ::1 /Integral/index.php/Admin/class
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000366s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000416s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000125s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008366s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008426s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000111s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000135s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000528s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000582s ]
+
+[ 2016-10-22T12:45:34+08:00 ] ::1 /Integral/index.php/Admin/Manage/member
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000252s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000461s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000605s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/ManageController.class.php 第 24 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SELECT * FROM `tp_office` WHERE ( o_id not like 10001 )  [ RunTime:0.002613s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000163s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011145s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011226s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000124s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000154s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000578s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000627s ]
+
+[ 2016-10-22T12:45:37+08:00 ] ::1 /Integral/index.php/Admin/class
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000323s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000211s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010880s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010944s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000210s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000693s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000787s ]
+
+[ 2016-10-22T12:45:39+08:00 ] ::1 /Integral/index.php/Admin/input
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000645s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000391s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000432s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007915s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007961s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000100s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000123s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000376s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000411s ]
+
+[ 2016-10-22T12:45:40+08:00 ] ::1 /Integral/index.php/Admin/Tables
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000211s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000262s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000292s ]
+NOTIC: [8] Undefined index: c_name /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/TablesController.class.php 第 14 行.
+NOTIC: [8] Undefined index: s_id /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/TablesController.class.php 第 15 行.
+NOTIC: [8] Undefined index: sc_union /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/TablesController.class.php 第 16 行.
+NOTIC: [8] Undefined variable: filter /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/TablesController.class.php 第 31 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_scoredetail` LIMIT 1   [ RunTime:0.000457s ]
+NOTIC: [8] Undefined variable: filter /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/TablesController.class.php 第 48 行.
+SQL: SELECT * FROM `tp_scoredetail` ORDER BY id desc LIMIT 0,30   [ RunTime:0.000677s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000164s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000227s ]
+NOTIC: [8] Undefined index: c_name /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Runtime/Cache/Admin/028392e504fc80bf64506a8dce359984.php 第 119 行.
+NOTIC: [8] Undefined index: s_id /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Runtime/Cache/Admin/028392e504fc80bf64506a8dce359984.php 第 124 行.
+NOTIC: [8] Undefined index: sc_union /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Runtime/Cache/Admin/028392e504fc80bf64506a8dce359984.php 第 129 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012375s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012413s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000115s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000141s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000467s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000511s ]
+
+[ 2016-10-22T15:59:30+08:00 ] ::1 /Integral/index.php/Admin/input
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002682s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001140s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001253s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000168s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021202s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021291s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000578s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000641s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001201s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001340s ]
+
+[ 2016-10-22T15:59:39+08:00 ] ::1 /Integral/index.php/Admin/Tables
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000370s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000456s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+NOTIC: [8] Undefined index: c_name /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/TablesController.class.php 第 14 行.
+NOTIC: [8] Undefined index: s_id /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/TablesController.class.php 第 15 行.
+NOTIC: [8] Undefined index: sc_union /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/TablesController.class.php 第 16 行.
+NOTIC: [8] Undefined variable: filter /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/TablesController.class.php 第 31 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_scoredetail` LIMIT 1   [ RunTime:0.017807s ]
+NOTIC: [8] Undefined variable: filter /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/TablesController.class.php 第 48 行.
+SQL: SELECT * FROM `tp_scoredetail` ORDER BY id desc LIMIT 0,30   [ RunTime:0.004836s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000151s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000195s ]
+NOTIC: [8] Undefined index: c_name /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Runtime/Cache/Admin/028392e504fc80bf64506a8dce359984.php 第 119 行.
+NOTIC: [8] Undefined index: s_id /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Runtime/Cache/Admin/028392e504fc80bf64506a8dce359984.php 第 124 行.
+NOTIC: [8] Undefined index: sc_union /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Runtime/Cache/Admin/028392e504fc80bf64506a8dce359984.php 第 129 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011877s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011927s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000106s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000132s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000433s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000476s ]
+
+[ 2016-10-22T15:59:49+08:00 ] ::1 /Integral/index.php/Tables/index/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000423s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000476s ]
+NOTIC: [8] Undefined index: c_name /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/TablesController.class.php 第 14 行.
+NOTIC: [8] Undefined index: s_id /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/TablesController.class.php 第 15 行.
+NOTIC: [8] Undefined index: sc_union /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/TablesController.class.php 第 16 行.
+NOTIC: [8] Undefined variable: filter /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/TablesController.class.php 第 31 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_scoredetail` LIMIT 1   [ RunTime:0.000428s ]
+NOTIC: [8] Undefined variable: filter /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/TablesController.class.php 第 48 行.
+SQL: SELECT * FROM `tp_scoredetail` ORDER BY id desc LIMIT 30,30   [ RunTime:0.000423s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000144s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000181s ]
+NOTIC: [8] Undefined index: c_name /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Runtime/Cache/Admin/028392e504fc80bf64506a8dce359984.php 第 119 行.
+NOTIC: [8] Undefined index: s_id /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Runtime/Cache/Admin/028392e504fc80bf64506a8dce359984.php 第 124 行.
+NOTIC: [8] Undefined index: sc_union /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Runtime/Cache/Admin/028392e504fc80bf64506a8dce359984.php 第 129 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009547s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009599s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000146s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000182s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000606s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000669s ]
+
+[ 2016-10-22T16:00:11+08:00 ] ::1 /Integral/index.php/Admin/Manage/member
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000431s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000604s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000738s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/ManageController.class.php 第 24 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SELECT * FROM `tp_office` WHERE ( o_id not like 10001 )  [ RunTime:0.004725s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000288s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000367s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016866s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016960s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000149s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000180s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000794s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000894s ]
+

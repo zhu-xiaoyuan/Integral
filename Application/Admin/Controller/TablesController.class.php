@@ -1,5 +1,6 @@
 <?php
 namespace Admin\Controller;
+
 class TablesController extends BaseController 
 {
 	//搜索
@@ -32,6 +33,7 @@ class TablesController extends BaseController
 
         if($total){
             $perNum = 30;
+
             $Page = new \Think\Page($total,$perNum);
             $Page->setConfig('prev', "上一页");//上一页
             $Page->setConfig('next', '下一页');//下一页
@@ -99,7 +101,8 @@ class TablesController extends BaseController
         $contact = M('scoredetail');
         $deleteArr = I('post.data');
         for($i=0;$i<count($deleteArr);$i++) {
-            $contact->delete($deleteArr[$i]['value']);
+//            $contact->delete($deleteArr[$i]['value']);
+            $contact->where('id='.$deleteArr[$i]['value'])->delete();
         }
         $this->ajaxReturn(array('message'=>'删除成功！'));
     }

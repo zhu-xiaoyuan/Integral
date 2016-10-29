@@ -1,0 +1,105 @@
+[ 2016-10-29T01:18:02+08:00 ] ::1 /Integral/index.php/Admin/search/20141514111
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001071s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001161s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/ManageController.class.php 第 228 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SELECT * FROM `tp_student` WHERE ( s_id="20141514111" )  [ RunTime:0.002671s ]
+SQL: SELECT * FROM `tp_student` WHERE ( s_id="20141514111" )  [ RunTime:0.000683s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001818s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002130s ]
+
+[ 2016-10-29T01:18:21+08:00 ] ::1 /Integral/index.php/Admin/search/20141514111
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000437s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000453s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000513s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/ManageController.class.php 第 228 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SELECT * FROM `tp_student` WHERE ( s_id="20141514111" )  [ RunTime:0.002958s ]
+SQL: SELECT * FROM `tp_student` WHERE ( s_id="20141514111" )  [ RunTime:0.000404s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005342s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005460s ]
+
+[ 2016-10-29T01:21:34+08:00 ] ::1 /Integral/index.php/Admin/search/20141514111
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000826s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000759s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000830s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/ManageController.class.php 第 228 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SELECT * FROM `tp_student` WHERE ( s_id="20141514111" )  [ RunTime:0.002729s ]
+SQL: SELECT * FROM `tp_student` WHERE ( s_id="20141514111" )  [ RunTime:0.000627s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000989s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001054s ]
+
+[ 2016-10-29T01:27:23+08:00 ] ::1 /Integral/index.php/Admin/search/20141514111
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001071s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001134s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/ManageController.class.php 第 228 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SELECT * FROM `tp_student` WHERE ( s_id="20141514111" )  [ RunTime:0.000485s ]
+SQL: SELECT * FROM `tp_scoredetail` WHERE ( s_id="20141514111" )  [ RunTime:0.010035s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001592s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001671s ]
+
+[ 2016-10-29T08:20:29+08:00 ] ::1 /Integral/index.php/Admin/search/20141514111.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002995s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001122s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001247s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/ManageController.class.php 第 228 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SELECT * FROM `tp_student` WHERE ( s_id="20141514111" )  [ RunTime:0.028193s ]
+SQL: SELECT * FROM `tp_scoredetail` WHERE ( s_id="20141514111" )  [ RunTime:0.008572s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001446s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001522s ]
+
+[ 2016-10-29T08:20:32+08:00 ] ::1 /Integral/index.php/Admin/search/20141514111.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000272s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000305s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/ManageController.class.php 第 228 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SELECT * FROM `tp_student` WHERE ( s_id="20141514111" )  [ RunTime:0.001875s ]
+SQL: SELECT * FROM `tp_scoredetail` WHERE ( s_id="20141514111" )  [ RunTime:0.000695s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000969s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001059s ]
+
+[ 2016-10-29T08:20:35+08:00 ] ::1 /Integral/index.php/Admin/search/20141514111.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000371s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/ManageController.class.php 第 228 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SELECT * FROM `tp_student` WHERE ( s_id="20141514111" )  [ RunTime:0.003112s ]
+SQL: SELECT * FROM `tp_scoredetail` WHERE ( s_id="20141514111" )  [ RunTime:0.000655s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000647s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000706s ]
+
