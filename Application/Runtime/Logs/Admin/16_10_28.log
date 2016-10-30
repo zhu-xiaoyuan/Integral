@@ -1,0 +1,276 @@
+[ 2016-10-28T12:59:30+08:00 ] ::1 /Integral/index.php/Admin/Tables
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000310s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003355s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002084s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002185s ]
+NOTIC: [8] Undefined index: c_name /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/TablesController.class.php 第 14 行.
+NOTIC: [8] Undefined index: s_id /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/TablesController.class.php 第 15 行.
+NOTIC: [8] Undefined index: sc_union /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/TablesController.class.php 第 16 行.
+NOTIC: [8] Undefined variable: filter /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/TablesController.class.php 第 31 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_scoredetail` LIMIT 1   [ RunTime:0.046316s ]
+NOTIC: [8] Undefined variable: filter /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/TablesController.class.php 第 49 行.
+SQL: SELECT * FROM `tp_scoredetail` ORDER BY id desc LIMIT 0,30   [ RunTime:0.008335s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000221s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000307s ]
+NOTIC: [8] Undefined index: c_name /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Runtime/Cache/Admin/028392e504fc80bf64506a8dce359984.php 第 119 行.
+NOTIC: [8] Undefined index: s_id /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Runtime/Cache/Admin/028392e504fc80bf64506a8dce359984.php 第 124 行.
+NOTIC: [8] Undefined index: sc_union /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Runtime/Cache/Admin/028392e504fc80bf64506a8dce359984.php 第 129 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035729s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035818s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000476s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000519s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002310s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002396s ]
+
+[ 2016-10-28T13:00:00+08:00 ] ::1 /Integral/index.php/Admin/Tables
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000356s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000358s ]
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 326 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_scoredetail` WHERE `sc_union` LIKE '%自律部%' LIMIT 1   [ RunTime:0.011972s ]
+SQL: SELECT * FROM `tp_scoredetail` WHERE `sc_union` LIKE '%自律部%' ORDER BY id desc LIMIT 0,30   [ RunTime:0.004996s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000171s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020197s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020249s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000115s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000141s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000469s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000519s ]
+
+[ 2016-10-28T21:44:04+08:00 ] ::1 /Integral/index.php/Admin/Search
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009700s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006277s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006387s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007339s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008548s ]
+
+[ 2016-10-28T21:44:10+08:00 ] ::1 /Integral/index.php/Admin/Search
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000536s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000489s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000557s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000753s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000834s ]
+
+[ 2016-10-28T21:44:22+08:00 ] ::1 /Integral/index.php/Admin/search/20141514111
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000614s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000422s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000474s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000690s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000771s ]
+
+[ 2016-10-28T21:45:20+08:00 ] ::1 /Integral/index.php/Admin/search/20141514111
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000918s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000761s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000831s ]
+
+[ 2016-10-28T21:47:18+08:00 ] ::1 /Integral/index.php/Admin/search/20141514111
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000493s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000514s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000582s ]
+
+[ 2016-10-28T21:47:19+08:00 ] ::1 /Integral/index.php/Admin/search/20141514111
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000591s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000683s ]
+
+[ 2016-10-28T21:47:39+08:00 ] ::1 /Integral/index.php/Admin/search/20141514111
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000609s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000688s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000780s ]
+
+[ 2016-10-28T21:47:42+08:00 ] ::1 /Integral/index.php/Admin/search/20141514111
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000206s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000300s ]
+
+[ 2016-10-28T21:47:43+08:00 ] ::1 /Integral/index.php/Admin/search/20141514111
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000563s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000618s ]
+
+[ 2016-10-28T21:47:44+08:00 ] ::1 /Integral/index.php/Admin/search/20141514111
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000336s ]
+
+[ 2016-10-28T21:47:48+08:00 ] ::1 /Integral/index.php/Admin/search/20141514111
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000483s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000532s ]
+
+[ 2016-10-28T21:47:49+08:00 ] ::1 /Integral/index.php/Admin/search/20141514111
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000212s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000271s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000314s ]
+
+[ 2016-10-28T21:47:49+08:00 ] ::1 /Integral/index.php/Admin/search/20141514111
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000502s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000562s ]
+
+[ 2016-10-28T21:47:50+08:00 ] ::1 /Integral/index.php/Admin/search/20141514111
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000356s ]
+
+[ 2016-10-28T21:47:55+08:00 ] ::1 /Integral/index.php/Admin/search/20141514111
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000294s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SELECT * FROM `tp_student` WHERE ( s_id="20141514111" )  [ RunTime:0.010239s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006034s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006158s ]
+
+[ 2016-10-28T21:48:17+08:00 ] ::1 /Integral/index.php/Admin/search/20141514111
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001038s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001112s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001202s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SELECT * FROM `tp_student` WHERE ( s_id="20141514111" )  [ RunTime:0.001448s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001113s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001204s ]
+
+[ 2016-10-28T21:48:44+08:00 ] ::1 /Integral/index.php/Admin/search/20141514111
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001060s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002467s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SELECT * FROM `tp_student` WHERE ( s_id="20141514111" )  [ RunTime:0.000466s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001278s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001369s ]
+
+[ 2016-10-28T21:49:22+08:00 ] ::1 /Integral/index.php/Admin/search/20141514111
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006189s ]
+
+[ 2016-10-28T21:49:33+08:00 ] ::1 /Integral/index.php/Admin/search/20141514111
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000416s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000485s ]
+
+[ 2016-10-28T21:49:58+08:00 ] ::1 /Integral/index.php/Admin/search/20141514111
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001974s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000439s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000494s ]
+
+[ 2016-10-28T21:50:07+08:00 ] ::1 /Integral/index.php/Admin/search/20141514111
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000419s ]
+
+[ 2016-10-28T21:50:15+08:00 ] ::1 /Integral/index.php/Admin/search/20141514111
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000659s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000741s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/ManageController.class.php 第 228 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SELECT * FROM `tp_student` WHERE ( s_id="20141514111" )  [ RunTime:0.000512s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005401s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005497s ]
+
+[ 2016-10-28T21:50:22+08:00 ] ::1 /Integral/index.php/Admin/search/20141514111
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000333s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/ManageController.class.php 第 228 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SELECT * FROM `tp_student` WHERE ( s_id="20141514111" )  [ RunTime:0.000584s ]
+SQL: SELECT * FROM `tp_student` WHERE ( s_id="20141514111" )  [ RunTime:0.000556s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000816s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000956s ]
+

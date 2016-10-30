@@ -2,8 +2,8 @@
 namespace Admin\Controller;
 class TablesController extends BaseController 
 {
-	//搜索
-	public function _empty($action='tables')
+    //搜索
+    public function _empty($action='tables')
     {
         $tables = M('scoredetail');
 

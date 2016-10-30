@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [ 2016-10-24T22:19:56+08:00 ] ::1 /Integral/index.php/admin/Tables/tables.html
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
@@ -151,3 +152,1969 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002704s ]
 INFO: [ app_end ] --END-- [ RunTime:0.002763s ]
 
+=======
+[ 2016-10-24T12:48:52+08:00 ] ::1 /Integral/index.php/Admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002627s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002513s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002646s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000239s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000553s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017511s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017620s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000533s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000597s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001301s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001407s ]
+
+[ 2016-10-24T12:48:59+08:00 ] ::1 /Integral/index.php/Admin/login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000692s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000609s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000678s ]
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 326 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SELECT * FROM `tp_office` WHERE `o_id` = '10001' LIMIT 1   [ RunTime:0.035270s ]
+SQL: SELECT `o_name`,`o_ispower` FROM `tp_office` WHERE `o_id` = '10001' LIMIT 1   [ RunTime:0.001372s ]
+
+[ 2016-10-24T12:48:59+08:00 ] ::1 /Integral/index.php/Admin/Tables
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000336s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000389s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000435s ]
+NOTIC: [8] Undefined index: c_name /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/TablesController.class.php 第 14 行.
+NOTIC: [8] Undefined index: s_id /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/TablesController.class.php 第 15 行.
+NOTIC: [8] Undefined index: sc_union /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/TablesController.class.php 第 16 行.
+NOTIC: [8] Undefined variable: filter /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/TablesController.class.php 第 31 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_scoredetail` LIMIT 1   [ RunTime:0.006066s ]
+NOTIC: [8] Undefined variable: filter /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/TablesController.class.php 第 48 行.
+SQL: SELECT * FROM `tp_scoredetail` ORDER BY id desc LIMIT 0,30   [ RunTime:0.002878s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000195s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000253s ]
+NOTIC: [8] Undefined index: c_name /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Runtime/Cache/Admin/028392e504fc80bf64506a8dce359984.php 第 119 行.
+NOTIC: [8] Undefined index: s_id /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Runtime/Cache/Admin/028392e504fc80bf64506a8dce359984.php 第 124 行.
+NOTIC: [8] Undefined index: sc_union /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Runtime/Cache/Admin/028392e504fc80bf64506a8dce359984.php 第 129 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022848s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022909s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000148s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000179s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000481s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000537s ]
+
+[ 2016-10-24T12:49:05+08:00 ] ::1 /Integral/index.php/Admin/Manage/member
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000476s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000526s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000598s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/ManageController.class.php 第 24 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SELECT * FROM `tp_office` WHERE ( o_id not like 10001 )  [ RunTime:0.006461s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000154s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000210s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013596s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013661s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000147s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000183s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000581s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000627s ]
+
+[ 2016-10-24T12:49:22+08:00 ] ::1 /Integral/index.php/Admin/Manage/jfifj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000456s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000594s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000666s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/ManageController.class.php 第 24 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000566s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000613s ]
+
+[ 2016-10-24T12:49:29+08:00 ] ::1 /Integral/index.php/Admin/Manage/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000857s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001066s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001177s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/ManageController.class.php 第 24 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000928s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001079s ]
+
+[ 2016-10-24T12:49:37+08:00 ] ::1 /Integral/index.php/Admin/Manage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001634s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000702s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000787s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/ManageController.class.php 第 24 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000566s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000633s ]
+
+[ 2016-10-24T12:49:44+08:00 ] ::1 /Integral/index.php/Admin/Manage/member
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000340s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000413s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000469s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/ManageController.class.php 第 24 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SELECT * FROM `tp_office` WHERE ( o_id not like 10001 )  [ RunTime:0.000463s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000175s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012554s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012605s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000457s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000558s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000473s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000539s ]
+
+[ 2016-10-24T12:50:59+08:00 ] ::1 /Integral/index.php/Admin/Manage/memb
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000973s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001007s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001111s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/ManageController.class.php 第 24 行.
+ERR: 模板不存在:./Application/Admin/View/Tables/index.html
+
+[ 2016-10-24T12:52:19+08:00 ] ::1 /Integral/index.php/Admin/login/logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000830s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000991s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001095s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000162s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000278s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011197s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011301s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000527s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000613s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001046s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001116s ]
+
+[ 2016-10-24T12:52:29+08:00 ] ::1 /Integral/index.php/Admin/Manage/mem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000342s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000559s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000616s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/ManageController.class.php 第 24 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000149s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007892s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007981s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000162s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000195s ]
+
+[ 2016-10-24T12:52:31+08:00 ] ::1 /Integral/index.php/Admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000413s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000452s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000223s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000391s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007564s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007619s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000149s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000183s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000549s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000583s ]
+
+[ 2016-10-24T12:53:27+08:00 ] ::1 /Integral/index.php/Admin/login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000807s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000885s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000980s ]
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 326 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SELECT * FROM `tp_office` WHERE `o_id` = '10001' LIMIT 1   [ RunTime:0.001246s ]
+SQL: SELECT `o_name`,`o_ispower` FROM `tp_office` WHERE `o_id` = '10001' LIMIT 1   [ RunTime:0.000677s ]
+
+[ 2016-10-24T12:53:27+08:00 ] ::1 /Integral/index.php/Admin/Tables
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000401s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000327s ]
+NOTIC: [8] Undefined index: c_name /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/TablesController.class.php 第 14 行.
+NOTIC: [8] Undefined index: s_id /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/TablesController.class.php 第 15 行.
+NOTIC: [8] Undefined index: sc_union /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/TablesController.class.php 第 16 行.
+NOTIC: [8] Undefined variable: filter /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/TablesController.class.php 第 31 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_scoredetail` LIMIT 1   [ RunTime:0.000563s ]
+NOTIC: [8] Undefined variable: filter /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/TablesController.class.php 第 49 行.
+SQL: SELECT * FROM `tp_scoredetail` ORDER BY id desc LIMIT 0,30   [ RunTime:0.000731s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000151s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000199s ]
+NOTIC: [8] Undefined index: c_name /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Runtime/Cache/Admin/028392e504fc80bf64506a8dce359984.php 第 119 行.
+NOTIC: [8] Undefined index: s_id /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Runtime/Cache/Admin/028392e504fc80bf64506a8dce359984.php 第 124 行.
+NOTIC: [8] Undefined index: sc_union /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Runtime/Cache/Admin/028392e504fc80bf64506a8dce359984.php 第 129 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024077s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002405s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002565s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002705s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002806s ]
+
+[ 2016-10-24T12:53:29+08:00 ] ::1 /Integral/index.php/Admin/Manage/member
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000274s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000308s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/ManageController.class.php 第 24 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SELECT * FROM `tp_office` WHERE ( o_id not like 10001 )  [ RunTime:0.000414s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000128s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011450s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011496s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000136s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000173s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000724s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000778s ]
+
+[ 2016-10-24T12:53:33+08:00 ] ::1 /Integral/index.php/Admin/Manage/memb
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000301s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000371s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000414s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/ManageController.class.php 第 24 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000154s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000222s ]
+NOTIC: [8] Undefined variable: list /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Runtime/Cache/Admin/3e4018ac462feec5fd7dccd3c5f89a60.php 第 114 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009926s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009969s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000146s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000173s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000493s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000545s ]
+
+[ 2016-10-24T12:53:41+08:00 ] ::1 /Integral/index.php/Admin/Manage/member
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000490s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000516s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000583s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/ManageController.class.php 第 24 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SELECT * FROM `tp_office` WHERE ( o_id not like 10001 )  [ RunTime:0.001583s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000132s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000175s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012905s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013035s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000262s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000343s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001006s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001136s ]
+
+[ 2016-10-24T12:54:23+08:00 ] ::1 /Integral/index.php/Admin/Manage/memb
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000957s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001481s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001605s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/ManageController.class.php 第 24 行.
+
+[ 2016-10-24T12:54:23+08:00 ] ::1 /Integral/index.php/Manage/member.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000580s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001114s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001248s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/ManageController.class.php 第 24 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SELECT * FROM `tp_office` WHERE ( o_id not like 10001 )  [ RunTime:0.004253s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000181s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000235s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018362s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018502s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001016s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001148s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001062s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001134s ]
+
+[ 2016-10-24T12:54:29+08:00 ] ::1 /Integral/index.php/Manage/member.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000355s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000365s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/ManageController.class.php 第 24 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SELECT * FROM `tp_office` WHERE ( o_id not like 10001 )  [ RunTime:0.000397s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000156s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000202s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014323s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000144s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000183s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000522s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000581s ]
+
+[ 2016-10-24T12:54:40+08:00 ] ::1 /Integral/index.php/Manage/delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000275s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000308s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/ManageController.class.php 第 24 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: DELETE FROM `tp_office` WHERE ( o_id=20141514122 ) [ RunTime:0.022402s ]
+SQL: SELECT * FROM `tp_office` WHERE ( o_id not like 10001 )  [ RunTime:0.000506s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000727s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000787s ]
+
+[ 2016-10-24T12:54:45+08:00 ] ::1 /Integral/index.php/Manage/mem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000409s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000470s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/ManageController.class.php 第 24 行.
+
+[ 2016-10-24T12:54:45+08:00 ] ::1 /Integral/index.php/Manage/member.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000272s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000303s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/ManageController.class.php 第 24 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SELECT * FROM `tp_office` WHERE ( o_id not like 10001 )  [ RunTime:0.000351s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000141s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014614s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014683s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000482s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000542s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000567s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000626s ]
+
+[ 2016-10-24T12:57:56+08:00 ] ::1 /Integral/index.php/Admin/login/logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000916s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001147s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001256s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000214s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000384s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008710s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008786s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000494s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000559s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001018s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001104s ]
+
+[ 2016-10-24T12:58:00+08:00 ] ::1 /Integral/index.php/Admin/login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000358s ]
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 326 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SELECT * FROM `tp_office` WHERE `o_id` = '10001' LIMIT 1   [ RunTime:0.000738s ]
+SQL: SELECT `o_name`,`o_ispower` FROM `tp_office` WHERE `o_id` = '10001' LIMIT 1   [ RunTime:0.000272s ]
+
+[ 2016-10-24T12:58:00+08:00 ] ::1 /Integral/index.php/Admin/Tables
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000370s ]
+NOTIC: [8] Undefined index: c_name /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/TablesController.class.php 第 14 行.
+NOTIC: [8] Undefined index: s_id /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/TablesController.class.php 第 15 行.
+NOTIC: [8] Undefined index: sc_union /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/TablesController.class.php 第 16 行.
+NOTIC: [8] Undefined variable: filter /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/TablesController.class.php 第 31 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_scoredetail` LIMIT 1   [ RunTime:0.000517s ]
+NOTIC: [8] Undefined variable: filter /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/TablesController.class.php 第 49 行.
+SQL: SELECT * FROM `tp_scoredetail` ORDER BY id desc LIMIT 0,30   [ RunTime:0.001119s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000201s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000268s ]
+NOTIC: [8] Undefined index: c_name /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Runtime/Cache/Admin/028392e504fc80bf64506a8dce359984.php 第 119 行.
+NOTIC: [8] Undefined index: s_id /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Runtime/Cache/Admin/028392e504fc80bf64506a8dce359984.php 第 124 行.
+NOTIC: [8] Undefined index: sc_union /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Runtime/Cache/Admin/028392e504fc80bf64506a8dce359984.php 第 129 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013783s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013834s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000106s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000130s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000520s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000572s ]
+
+[ 2016-10-24T12:58:03+08:00 ] ::1 /Integral/index.php/Admin/Manage/member
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000083s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001811s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000547s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000612s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/ManageController.class.php 第 24 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SELECT * FROM `tp_office` WHERE ( o_id not like 10001 )  [ RunTime:0.000496s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000198s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011103s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011156s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000141s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000177s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000494s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000538s ]
+
+[ 2016-10-24T13:20:19+08:00 ] ::1 /Integral/index.php/Admin/Search/ee
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000979s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001508s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001610s ]
+ERR: 无法加载控制器:Search
+
+[ 2016-10-24T13:25:08+08:00 ] ::1 /Integral/index.php/Admin/Search
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000850s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000819s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000899s ]
+ERR: 无法加载控制器:Search
+
+[ 2016-10-24T13:25:19+08:00 ] ::1 /Integral/index.php/Admin/search
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000470s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000568s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000642s ]
+ERR: 无法加载控制器:Search
+
+[ 2016-10-24T13:25:32+08:00 ] ::1 /Integral/index.php/Admin/searchd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000812s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000947s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001041s ]
+ERR: 无法加载控制器:Searchd
+
+[ 2016-10-24T13:25:37+08:00 ] ::1 /Integral/index.php/Admin/search
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001066s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000560s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000608s ]
+ERR: 无法加载控制器:Search
+
+[ 2016-10-24T13:26:46+08:00 ] ::1 /Integral/index.php/Admin/search
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000955s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001479s ]
+ERR: 无法加载控制器:Search
+
+[ 2016-10-24T13:26:52+08:00 ] ::1 /Integral/index.php/Admin/search
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000369s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000396s ]
+ERR: 无法加载控制器:Search
+
+[ 2016-10-24T13:26:53+08:00 ] ::1 /Integral/index.php/Admin/search
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000415s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000457s ]
+ERR: 无法加载控制器:Search
+
+[ 2016-10-24T13:26:53+08:00 ] ::1 /Integral/index.php/Admin/search
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000432s ]
+ERR: 无法加载控制器:Search
+
+[ 2016-10-24T13:26:53+08:00 ] ::1 /Integral/index.php/Admin/search
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000402s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000568s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000648s ]
+ERR: 无法加载控制器:Search
+
+[ 2016-10-24T13:27:41+08:00 ] ::1 /Integral/index.php/Admin/search
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000856s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000790s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000860s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001738s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001829s ]
+
+[ 2016-10-24T13:28:26+08:00 ] ::1 /Integral/index.php/Admin/search
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000737s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000731s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000801s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000811s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000880s ]
+
+[ 2016-10-24T13:29:26+08:00 ] ::1 /Integral/index.php/Admin/search/20141514111
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000915s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000895s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001148s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001254s ]
+
+[ 2016-10-24T13:30:20+08:00 ] ::1 /Integral/index.php/Admin/search/20141514111
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001033s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001246s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001358s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001059s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001156s ]
+
+[ 2016-10-24T13:30:22+08:00 ] ::1 /Integral/index.php/Admin/search/20141514111
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000263s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000272s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000302s ]
+
+[ 2016-10-24T13:30:27+08:00 ] ::1 /Integral/index.php/Admin/search/2014151411e
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000388s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000497s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000460s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000512s ]
+
+[ 2016-10-24T13:32:12+08:00 ] ::1 /Integral/index.php/Admin/search/2014151411e
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001521s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001191s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001303s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001821s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001992s ]
+
+[ 2016-10-24T13:32:12+08:00 ] ::1 /Integral/index.php/Admin/search/2014151411e
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000403s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000459s ]
+
+[ 2016-10-24T13:32:21+08:00 ] ::1 /Integral/index.php/Admin/search/2014151411
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000423s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000574s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000718s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000528s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000591s ]
+
+[ 2016-10-24T13:34:40+08:00 ] ::1 /Integral/index.php/Admin/search/2014151411r
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000982s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000856s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000936s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001214s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001324s ]
+
+[ 2016-10-24T13:34:45+08:00 ] ::1 /Integral/index.php/Admin/search/2014151411r
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000322s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000697s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000766s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000616s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000694s ]
+
+[ 2016-10-24T14:05:44+08:00 ] ::1 /Integral/index.php/Admin/search/2014151411r
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000885s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004429s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001556s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001690s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001963s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002115s ]
+
+[ 2016-10-24T14:06:03+08:00 ] ::1 /Integral/index.php/Admin/search/2014151411r
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000993s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001137s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001268s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004482s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004673s ]
+
+[ 2016-10-24T14:06:04+08:00 ] ::1 /Integral/index.php/Admin/search/2014151411r
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000298s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000329s ]
+
+[ 2016-10-24T16:37:33+08:00 ] ::1 /Integral/index.php/Admin/Manage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001827s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002509s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/ManageController.class.php 第 20 行.
+
+[ 2016-10-24T16:37:34+08:00 ] ::1 /Integral/index.php/Manage/member.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000485s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000396s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000484s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/ManageController.class.php 第 20 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SELECT * FROM `tp_office` WHERE ( o_id not like 10001 )  [ RunTime:0.030801s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000191s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000248s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045763s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000490s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000562s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001138s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001237s ]
+
+[ 2016-10-24T16:37:36+08:00 ] ::1 /Integral/index.php/Manage/member.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000480s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000566s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000649s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/ManageController.class.php 第 20 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SELECT * FROM `tp_office` WHERE ( o_id not like 10001 )  [ RunTime:0.004696s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000201s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000266s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041447s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041552s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000240s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000288s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001831s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001990s ]
+
+[ 2016-10-24T16:37:57+08:00 ] ::1 /Integral/index.php/Manage/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000527s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004742s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/ManageController.class.php 第 20 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 326 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 326 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 326 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: INSERT INTO `tp_office` (`o_id`,`o_name`,`o_psd`,`o_ispower`) VALUES ('王飞','王飞','e10adc3949ba59abbe56e057f20f883e',0) [ RunTime:0.028672s ]
+SQL: SELECT * FROM `tp_office` WHERE ( o_id not like 10001 )  [ RunTime:0.006959s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002877s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003311s ]
+
+[ 2016-10-24T16:38:03+08:00 ] ::1 /Integral/index.php/Manage/delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000461s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000482s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000563s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/ManageController.class.php 第 20 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: DELETE FROM `tp_office` WHERE ( o_id=王飞 ) [ RunTime:0.006718s ]
+ERR: 1054:Unknown column '王飞' in 'where clause'
+ [ SQL语句 ] : DELETE FROM `tp_office` WHERE ( o_id=王飞 )
+
+[ 2016-10-24T16:38:06+08:00 ] ::1 /Integral/index.php/Manage/member.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000206s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000259s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000291s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/ManageController.class.php 第 20 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SELECT * FROM `tp_office` WHERE ( o_id not like 10001 )  [ RunTime:0.000381s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000328s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000423s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028206s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028319s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000423s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000536s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000763s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000865s ]
+
+[ 2016-10-24T16:39:40+08:00 ] ::1 /Integral/index.php/Manage/delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002385s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001480s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/ManageController.class.php 第 20 行.
+
+[ 2016-10-24T16:42:28+08:00 ] ::1 /Integral/index.php/Manage/member.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001024s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001087s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001222s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/ManageController.class.php 第 20 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SELECT * FROM `tp_office` WHERE ( o_id not like 10001 )  [ RunTime:0.004687s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000271s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000344s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022409s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022484s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000670s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000768s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000988s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001079s ]
+
+[ 2016-10-24T16:42:36+08:00 ] ::1 /Integral/index.php/Manage/delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000730s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000659s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000762s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/ManageController.class.php 第 20 行.
+
+[ 2016-10-24T16:45:28+08:00 ] ::1 /Integral/index.php/Manage/member.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000997s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000842s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000921s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/ManageController.class.php 第 20 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SELECT * FROM `tp_office` WHERE ( o_id not like 10001 )  [ RunTime:0.000919s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015417s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015471s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000429s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000475s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002254s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002336s ]
+
+[ 2016-10-24T16:45:31+08:00 ] ::1 /Integral/index.php/Manage/delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000708s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000704s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000823s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/ManageController.class.php 第 20 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: DELETE FROM `tp_office` WHERE ( o_id=王飞 ) [ RunTime:0.000402s ]
+ERR: 1054:Unknown column '王飞' in 'where clause'
+ [ SQL语句 ] : DELETE FROM `tp_office` WHERE ( o_id=王飞 )
+
+[ 2016-10-24T16:46:11+08:00 ] ::1 /Integral/index.php/Manage/member.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000771s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001128s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/ManageController.class.php 第 20 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SELECT * FROM `tp_office` WHERE ( o_id not like 10001 )  [ RunTime:0.000575s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000268s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000343s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020350s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020450s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000631s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000729s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001275s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001393s ]
+
+[ 2016-10-24T16:46:14+08:00 ] ::1 /Integral/index.php/Manage/delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000402s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000434s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/ManageController.class.php 第 20 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: DELETE FROM `tp_office` WHERE ( o_id=王飞 ) [ RunTime:0.000289s ]
+ERR: 1054:Unknown column '王飞' in 'where clause'
+ [ SQL语句 ] : DELETE FROM `tp_office` WHERE ( o_id=王飞 )
+
+[ 2016-10-24T16:46:29+08:00 ] ::1 /Integral/index.php/Manage/member.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000854s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000704s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000765s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/ManageController.class.php 第 20 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SELECT * FROM `tp_office` WHERE ( o_id not like 10001 )  [ RunTime:0.000327s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000389s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000584s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017009s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017080s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002949s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003028s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001682s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001760s ]
+
+[ 2016-10-24T16:46:33+08:00 ] ::1 /Integral/index.php/Manage/delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000363s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000441s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000509s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/ManageController.class.php 第 20 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: DELETE FROM `tp_office` WHERE ( o_id="$arr[$i]" ) [ RunTime:0.005680s ]
+SQL: SELECT * FROM `tp_office` WHERE ( o_id not like 10001 )  [ RunTime:0.001506s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001987s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002079s ]
+
+[ 2016-10-24T16:46:35+08:00 ] ::1 /Integral/index.php/Manage/member.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000355s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000390s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000465s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/ManageController.class.php 第 20 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SELECT * FROM `tp_office` WHERE ( o_id not like 10001 )  [ RunTime:0.000407s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000195s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000244s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018213s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018254s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000113s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000140s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000564s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000622s ]
+
+[ 2016-10-24T16:46:48+08:00 ] ::1 /Integral/index.php/Manage/delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000365s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/ManageController.class.php 第 20 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: DELETE FROM `tp_office` WHERE ( o_id="$arr[$i]" ) [ RunTime:0.000295s ]
+SQL: SELECT * FROM `tp_office` WHERE ( o_id not like 10001 )  [ RunTime:0.000389s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000537s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000616s ]
+
+[ 2016-10-24T16:47:12+08:00 ] ::1 /Integral/index.php/Manage/member.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000920s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000751s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000822s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/ManageController.class.php 第 20 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SELECT * FROM `tp_office` WHERE ( o_id not like 10001 )  [ RunTime:0.000352s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000160s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012270s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012326s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000406s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000440s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000786s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000876s ]
+
+[ 2016-10-24T16:47:15+08:00 ] ::1 /Integral/index.php/Manage/delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000272s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000306s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/ManageController.class.php 第 20 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: DELETE FROM `tp_office` WHERE ( o_id="$arr[$i]" ) [ RunTime:0.000306s ]
+
+[ 2016-10-24T16:47:40+08:00 ] ::1 /Integral/index.php/Manage/member.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000848s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000766s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000831s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/ManageController.class.php 第 20 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SELECT * FROM `tp_office` WHERE ( o_id not like 10001 )  [ RunTime:0.000415s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000146s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000203s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017619s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017685s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000480s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000527s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001009s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001101s ]
+
+[ 2016-10-24T16:47:43+08:00 ] ::1 /Integral/index.php/Manage/delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000371s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000401s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000496s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/ManageController.class.php 第 20 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: DELETE FROM `tp_office` WHERE ( o_id="$arr[$i]" ) [ RunTime:0.000368s ]
+
+[ 2016-10-24T16:48:09+08:00 ] ::1 /Integral/index.php/Manage/member.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000666s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000846s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000930s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/ManageController.class.php 第 20 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SELECT * FROM `tp_office` WHERE ( o_id not like 10001 )  [ RunTime:0.000490s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000169s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000256s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015320s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015398s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000426s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000468s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001046s ]
+
+[ 2016-10-24T16:48:12+08:00 ] ::1 /Integral/index.php/Manage/delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000373s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000574s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000643s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/ManageController.class.php 第 20 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: DELETE FROM `tp_office` WHERE ( o_id="$arr[$i]" ) [ RunTime:0.001850s ]
+
+[ 2016-10-24T16:48:31+08:00 ] ::1 /Integral/index.php/Manage/member.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000810s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000739s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000806s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/ManageController.class.php 第 20 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SELECT * FROM `tp_office` WHERE ( o_id not like 10001 )  [ RunTime:0.000376s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000135s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000182s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018409s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018485s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000533s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000604s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001723s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001827s ]
+
+[ 2016-10-24T16:48:33+08:00 ] ::1 /Integral/index.php/Manage/delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000613s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000581s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000638s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/ManageController.class.php 第 20 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: DELETE FROM `tp_office` WHERE ( o_id="王飞" ) [ RunTime:0.004305s ]
+SQL: SELECT * FROM `tp_office` WHERE ( o_id not like 10001 )  [ RunTime:0.000494s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000657s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000719s ]
+
+[ 2016-10-24T16:48:36+08:00 ] ::1 /Integral/index.php/Manage/member.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000469s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000370s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/ManageController.class.php 第 20 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SELECT * FROM `tp_office` WHERE ( o_id not like 10001 )  [ RunTime:0.000351s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000393s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000485s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016779s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016842s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000141s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000182s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000579s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000638s ]
+
+[ 2016-10-24T16:48:45+08:00 ] ::1 /Integral/index.php/Manage/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000322s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000481s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/ManageController.class.php 第 20 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 326 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 326 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 326 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: INSERT INTO `tp_office` (`o_id`,`o_name`,`o_psd`,`o_ispower`) VALUES ('292920','ff','e10adc3949ba59abbe56e057f20f883e',0) [ RunTime:0.002323s ]
+SQL: SELECT * FROM `tp_office` WHERE ( o_id not like 10001 )  [ RunTime:0.000518s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000746s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000816s ]
+
+[ 2016-10-24T16:48:48+08:00 ] ::1 /Integral/index.php/Manage/delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000853s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000947s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/ManageController.class.php 第 20 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: DELETE FROM `tp_office` WHERE ( o_id="292920" ) [ RunTime:0.000580s ]
+SQL: SELECT * FROM `tp_office` WHERE ( o_id not like 10001 )  [ RunTime:0.000360s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000462s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000508s ]
+
+[ 2016-10-24T17:02:03+08:00 ] ::1 /Integral/index.php/Class/input.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001795s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008019s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006833s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006965s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SELECT * FROM `tp_class` LIMIT 1   [ RunTime:0.028999s ]
+SQL: INSERT INTO `tp_class` (`c_id`,`c_name`,`leader_id`,`c_score`,`c_psd`) VALUES ('201515141','计科151','20151514107',0,'123456') [ RunTime:0.008659s ]
+ERR: 1062:Duplicate entry '201515141' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `tp_class` (`c_id`,`c_name`,`leader_id`,`c_score`,`c_psd`) VALUES ('201515141','计科151','20151514107',0,'123456')
+
+[ 2016-10-24T17:02:05+08:00 ] ::1 /Integral/index.php/Class/input.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000563s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000323s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000362s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SELECT * FROM `tp_class` LIMIT 1   [ RunTime:0.000305s ]
+SQL: INSERT INTO `tp_class` (`c_id`,`c_name`,`leader_id`,`c_score`,`c_psd`) VALUES ('201515141','计科151','20151514107',0,'123456') [ RunTime:0.000337s ]
+ERR: 1062:Duplicate entry '201515141' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `tp_class` (`c_id`,`c_name`,`leader_id`,`c_score`,`c_psd`) VALUES ('201515141','计科151','20151514107',0,'123456')
+
+[ 2016-10-24T17:02:31+08:00 ] ::1 /Integral/index.php/Class/input.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000673s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000482s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000546s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SELECT * FROM `tp_class` LIMIT 1   [ RunTime:0.000271s ]
+SQL: INSERT INTO `tp_class` (`c_id`,`c_name`,`leader_id`,`c_score`,`c_psd`) VALUES ('201515141','计科151','20151514107',0,'123456') [ RunTime:0.000415s ]
+ERR: 1062:Duplicate entry '201515141' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `tp_class` (`c_id`,`c_name`,`leader_id`,`c_score`,`c_psd`) VALUES ('201515141','计科151','20151514107',0,'123456')
+
+[ 2016-10-24T17:02:32+08:00 ] ::1 /Integral/index.php/Class/input.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000393s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000450s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SELECT * FROM `tp_class` LIMIT 1   [ RunTime:0.000366s ]
+SQL: INSERT INTO `tp_class` (`c_id`,`c_name`,`leader_id`,`c_score`,`c_psd`) VALUES ('201515141','计科151','20151514107',0,'123456') [ RunTime:0.000353s ]
+ERR: 1062:Duplicate entry '201515141' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `tp_class` (`c_id`,`c_name`,`leader_id`,`c_score`,`c_psd`) VALUES ('201515141','计科151','20151514107',0,'123456')
+
+[ 2016-10-24T17:04:50+08:00 ] ::1 /Integral/index.php/Admin/input/upload/table/student
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001004s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001936s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002060s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+NOTIC: [8] Undefined variable: options /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Vendor/Classes/PHPExcel/Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Vendor/Classes/PHPExcel/Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Vendor/Classes/PHPExcel/Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Vendor/Classes/PHPExcel/Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Vendor/Classes/PHPExcel/Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Vendor/Classes/PHPExcel/Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Vendor/Classes/PHPExcel/Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Vendor/Classes/PHPExcel/Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Vendor/Classes/PHPExcel/Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Vendor/Classes/PHPExcel/Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Vendor/Classes/PHPExcel/Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Vendor/Classes/PHPExcel/Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Vendor/Classes/PHPExcel/Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Vendor/Classes/PHPExcel/Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Vendor/Classes/PHPExcel/Settings.php 第 384 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 326 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 326 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 326 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 326 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 326 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES ('20161515301             ','常飞','201615153','2015','20161515301             ') [ RunTime:0.019970s ]
+ERR: 1452:Cannot add or update a child row: a foreign key constraint fails (`integration`.`tp_student`, CONSTRAINT `delete` FOREIGN KEY (`c_id`) REFERENCES `tp_class` (`c_id`) ON DELETE CASCADE)
+ [ SQL语句 ] : INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES ('20161515301             ','常飞','201615153','2015','20161515301             ')
+SQL: INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES ('20161515302','武新雨',201615153,2015,'20161515302') [ RunTime:0.004354s ]
+ERR: 1452:Cannot add or update a child row: a foreign key constraint fails (`integration`.`tp_student`, CONSTRAINT `delete` FOREIGN KEY (`c_id`) REFERENCES `tp_class` (`c_id`) ON DELETE CASCADE)
+ [ SQL语句 ] : INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES ('20161515302','武新雨',201615153,2015,'20161515302')
+SQL: INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES ('20161515303','李楷杭',201615153,2015,'20161515303') [ RunTime:0.001899s ]
+ERR: 1452:Cannot add or update a child row: a foreign key constraint fails (`integration`.`tp_student`, CONSTRAINT `delete` FOREIGN KEY (`c_id`) REFERENCES `tp_class` (`c_id`) ON DELETE CASCADE)
+ [ SQL语句 ] : INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES ('20161515303','李楷杭',201615153,2015,'20161515303')
+SQL: INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES ('20161515304','李文保',201615153,2015,'20161515304') [ RunTime:0.001025s ]
+ERR: 1452:Cannot add or update a child row: a foreign key constraint fails (`integration`.`tp_student`, CONSTRAINT `delete` FOREIGN KEY (`c_id`) REFERENCES `tp_class` (`c_id`) ON DELETE CASCADE)
+ [ SQL语句 ] : INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES ('20161515304','李文保',201615153,2015,'20161515304')
+SQL: INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES ('20161515305','周超辉',201615153,2015,'20161515305') [ RunTime:0.001183s ]
+ERR: 1452:Cannot add or update a child row: a foreign key constraint fails (`integration`.`tp_student`, CONSTRAINT `delete` FOREIGN KEY (`c_id`) REFERENCES `tp_class` (`c_id`) ON DELETE CASCADE)
+ [ SQL语句 ] : INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES ('20161515305','周超辉',201615153,2015,'20161515305')
+SQL: INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES ('20161515306','孟航宇',201615153,'2015','20161515306') [ RunTime:0.001282s ]
+ERR: 1452:Cannot add or update a child row: a foreign key constraint fails (`integration`.`tp_student`, CONSTRAINT `delete` FOREIGN KEY (`c_id`) REFERENCES `tp_class` (`c_id`) ON DELETE CASCADE)
+ [ SQL语句 ] : INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES ('20161515306','孟航宇',201615153,'2015','20161515306')
+SQL: INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES (20161515307,'潘中超',201615153,'2015',20161515307) [ RunTime:0.001362s ]
+ERR: 1452:Cannot add or update a child row: a foreign key constraint fails (`integration`.`tp_student`, CONSTRAINT `delete` FOREIGN KEY (`c_id`) REFERENCES `tp_class` (`c_id`) ON DELETE CASCADE)
+ [ SQL语句 ] : INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES (20161515307,'潘中超',201615153,'2015',20161515307)
+SQL: INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES (20161515308,'孔旭',201615153,'2015',20161515308) [ RunTime:0.001615s ]
+ERR: 1452:Cannot add or update a child row: a foreign key constraint fails (`integration`.`tp_student`, CONSTRAINT `delete` FOREIGN KEY (`c_id`) REFERENCES `tp_class` (`c_id`) ON DELETE CASCADE)
+ [ SQL语句 ] : INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES (20161515308,'孔旭',201615153,'2015',20161515308)
+SQL: INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES (20161515309,'陈金金',201615153,'2015',20161515309) [ RunTime:0.001345s ]
+ERR: 1452:Cannot add or update a child row: a foreign key constraint fails (`integration`.`tp_student`, CONSTRAINT `delete` FOREIGN KEY (`c_id`) REFERENCES `tp_class` (`c_id`) ON DELETE CASCADE)
+ [ SQL语句 ] : INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES (20161515309,'陈金金',201615153,'2015',20161515309)
+SQL: INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES (20161515310,'王景',201615153,'2015',20161515310) [ RunTime:0.001256s ]
+ERR: 1452:Cannot add or update a child row: a foreign key constraint fails (`integration`.`tp_student`, CONSTRAINT `delete` FOREIGN KEY (`c_id`) REFERENCES `tp_class` (`c_id`) ON DELETE CASCADE)
+ [ SQL语句 ] : INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES (20161515310,'王景',201615153,'2015',20161515310)
+SQL: INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES (20161515311,'李小换',201615153,'2015',20161515311) [ RunTime:0.001436s ]
+ERR: 1452:Cannot add or update a child row: a foreign key constraint fails (`integration`.`tp_student`, CONSTRAINT `delete` FOREIGN KEY (`c_id`) REFERENCES `tp_class` (`c_id`) ON DELETE CASCADE)
+ [ SQL语句 ] : INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES (20161515311,'李小换',201615153,'2015',20161515311)
+SQL: INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES ('20161515312','姜凡',201615153,'2015','20161515312') [ RunTime:0.001407s ]
+ERR: 1452:Cannot add or update a child row: a foreign key constraint fails (`integration`.`tp_student`, CONSTRAINT `delete` FOREIGN KEY (`c_id`) REFERENCES `tp_class` (`c_id`) ON DELETE CASCADE)
+ [ SQL语句 ] : INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES ('20161515312','姜凡',201615153,'2015','20161515312')
+SQL: INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES (20161515313,'王玲',201615153,'2015',20161515313) [ RunTime:0.001108s ]
+ERR: 1452:Cannot add or update a child row: a foreign key constraint fails (`integration`.`tp_student`, CONSTRAINT `delete` FOREIGN KEY (`c_id`) REFERENCES `tp_class` (`c_id`) ON DELETE CASCADE)
+ [ SQL语句 ] : INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES (20161515313,'王玲',201615153,'2015',20161515313)
+SQL: INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES (20161515314,'王永静',201615153,'2015',20161515314) [ RunTime:0.001419s ]
+ERR: 1452:Cannot add or update a child row: a foreign key constraint fails (`integration`.`tp_student`, CONSTRAINT `delete` FOREIGN KEY (`c_id`) REFERENCES `tp_class` (`c_id`) ON DELETE CASCADE)
+ [ SQL语句 ] : INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES (20161515314,'王永静',201615153,'2015',20161515314)
+SQL: INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES (20161515315,'孔新芳',201615153,'2015',20161515315) [ RunTime:0.001591s ]
+ERR: 1452:Cannot add or update a child row: a foreign key constraint fails (`integration`.`tp_student`, CONSTRAINT `delete` FOREIGN KEY (`c_id`) REFERENCES `tp_class` (`c_id`) ON DELETE CASCADE)
+ [ SQL语句 ] : INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES (20161515315,'孔新芳',201615153,'2015',20161515315)
+SQL: INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES (20161515316,'轩孟柯',201615153,'2015',20161515316) [ RunTime:0.001704s ]
+ERR: 1452:Cannot add or update a child row: a foreign key constraint fails (`integration`.`tp_student`, CONSTRAINT `delete` FOREIGN KEY (`c_id`) REFERENCES `tp_class` (`c_id`) ON DELETE CASCADE)
+ [ SQL语句 ] : INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES (20161515316,'轩孟柯',201615153,'2015',20161515316)
+SQL: INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES (20161515317,'李增琳',201615153,'2015',20161515317) [ RunTime:0.001438s ]
+ERR: 1452:Cannot add or update a child row: a foreign key constraint fails (`integration`.`tp_student`, CONSTRAINT `delete` FOREIGN KEY (`c_id`) REFERENCES `tp_class` (`c_id`) ON DELETE CASCADE)
+ [ SQL语句 ] : INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES (20161515317,'李增琳',201615153,'2015',20161515317)
+SQL: INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES (20161515318,'郭盼盼',201615153,'2015',20161515318) [ RunTime:0.001260s ]
+ERR: 1452:Cannot add or update a child row: a foreign key constraint fails (`integration`.`tp_student`, CONSTRAINT `delete` FOREIGN KEY (`c_id`) REFERENCES `tp_class` (`c_id`) ON DELETE CASCADE)
+ [ SQL语句 ] : INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES (20161515318,'郭盼盼',201615153,'2015',20161515318)
+SQL: INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES (20161515319,'杜文飞',201615153,'2015',20161515319) [ RunTime:0.001209s ]
+ERR: 1452:Cannot add or update a child row: a foreign key constraint fails (`integration`.`tp_student`, CONSTRAINT `delete` FOREIGN KEY (`c_id`) REFERENCES `tp_class` (`c_id`) ON DELETE CASCADE)
+ [ SQL语句 ] : INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES (20161515319,'杜文飞',201615153,'2015',20161515319)
+SQL: INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES (20161515320,'段玉娇',201615153,'2015',20161515320) [ RunTime:0.001260s ]
+ERR: 1452:Cannot add or update a child row: a foreign key constraint fails (`integration`.`tp_student`, CONSTRAINT `delete` FOREIGN KEY (`c_id`) REFERENCES `tp_class` (`c_id`) ON DELETE CASCADE)
+ [ SQL语句 ] : INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES (20161515320,'段玉娇',201615153,'2015',20161515320)
+SQL: INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES (20161515321,'王君君',201615153,'2015',20161515321) [ RunTime:0.001357s ]
+ERR: 1452:Cannot add or update a child row: a foreign key constraint fails (`integration`.`tp_student`, CONSTRAINT `delete` FOREIGN KEY (`c_id`) REFERENCES `tp_class` (`c_id`) ON DELETE CASCADE)
+ [ SQL语句 ] : INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES (20161515321,'王君君',201615153,'2015',20161515321)
+SQL: INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES (20161515322,'高翠丽',201615153,'2015',20161515322) [ RunTime:0.001709s ]
+ERR: 1452:Cannot add or update a child row: a foreign key constraint fails (`integration`.`tp_student`, CONSTRAINT `delete` FOREIGN KEY (`c_id`) REFERENCES `tp_class` (`c_id`) ON DELETE CASCADE)
+ [ SQL语句 ] : INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES (20161515322,'高翠丽',201615153,'2015',20161515322)
+SQL: INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES (20161515323,'李静',201615153,'2015',20161515323) [ RunTime:0.000955s ]
+ERR: 1452:Cannot add or update a child row: a foreign key constraint fails (`integration`.`tp_student`, CONSTRAINT `delete` FOREIGN KEY (`c_id`) REFERENCES `tp_class` (`c_id`) ON DELETE CASCADE)
+ [ SQL语句 ] : INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES (20161515323,'李静',201615153,'2015',20161515323)
+SQL: INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES (20161515324,'周艳艳',201615153,'2015',20161515324) [ RunTime:0.001291s ]
+ERR: 1452:Cannot add or update a child row: a foreign key constraint fails (`integration`.`tp_student`, CONSTRAINT `delete` FOREIGN KEY (`c_id`) REFERENCES `tp_class` (`c_id`) ON DELETE CASCADE)
+ [ SQL语句 ] : INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES (20161515324,'周艳艳',201615153,'2015',20161515324)
+SQL: INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES (20161515325,'刘可可',201615153,'2015',20161515325) [ RunTime:0.001408s ]
+ERR: 1452:Cannot add or update a child row: a foreign key constraint fails (`integration`.`tp_student`, CONSTRAINT `delete` FOREIGN KEY (`c_id`) REFERENCES `tp_class` (`c_id`) ON DELETE CASCADE)
+ [ SQL语句 ] : INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES (20161515325,'刘可可',201615153,'2015',20161515325)
+SQL: INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES (20161515326,'刘寅灵',201615153,'2015',20161515326) [ RunTime:0.001146s ]
+ERR: 1452:Cannot add or update a child row: a foreign key constraint fails (`integration`.`tp_student`, CONSTRAINT `delete` FOREIGN KEY (`c_id`) REFERENCES `tp_class` (`c_id`) ON DELETE CASCADE)
+ [ SQL语句 ] : INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES (20161515326,'刘寅灵',201615153,'2015',20161515326)
+
+[ 2016-10-24T17:05:08+08:00 ] ::1 /Integral/index.php/Admin/input/upload/table/student
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000871s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000727s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000786s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+NOTIC: [8] Undefined variable: options /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Vendor/Classes/PHPExcel/Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Vendor/Classes/PHPExcel/Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Vendor/Classes/PHPExcel/Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Vendor/Classes/PHPExcel/Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Vendor/Classes/PHPExcel/Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Vendor/Classes/PHPExcel/Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Vendor/Classes/PHPExcel/Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Vendor/Classes/PHPExcel/Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Vendor/Classes/PHPExcel/Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Vendor/Classes/PHPExcel/Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Vendor/Classes/PHPExcel/Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Vendor/Classes/PHPExcel/Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Vendor/Classes/PHPExcel/Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Vendor/Classes/PHPExcel/Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Vendor/Classes/PHPExcel/Settings.php 第 384 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 326 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 326 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 326 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 326 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 326 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES ('20161515301             ','常飞','201615153','2015','20161515301             ') [ RunTime:0.001388s ]
+ERR: 1452:Cannot add or update a child row: a foreign key constraint fails (`integration`.`tp_student`, CONSTRAINT `delete` FOREIGN KEY (`c_id`) REFERENCES `tp_class` (`c_id`) ON DELETE CASCADE)
+ [ SQL语句 ] : INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES ('20161515301             ','常飞','201615153','2015','20161515301             ')
+SQL: INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES ('20161515302','武新雨',201615153,2015,'20161515302') [ RunTime:0.001359s ]
+ERR: 1452:Cannot add or update a child row: a foreign key constraint fails (`integration`.`tp_student`, CONSTRAINT `delete` FOREIGN KEY (`c_id`) REFERENCES `tp_class` (`c_id`) ON DELETE CASCADE)
+ [ SQL语句 ] : INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES ('20161515302','武新雨',201615153,2015,'20161515302')
+SQL: INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES ('20161515303','李楷杭',201615153,2015,'20161515303') [ RunTime:0.001203s ]
+ERR: 1452:Cannot add or update a child row: a foreign key constraint fails (`integration`.`tp_student`, CONSTRAINT `delete` FOREIGN KEY (`c_id`) REFERENCES `tp_class` (`c_id`) ON DELETE CASCADE)
+ [ SQL语句 ] : INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES ('20161515303','李楷杭',201615153,2015,'20161515303')
+SQL: INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES ('20161515304','李文保',201615153,2015,'20161515304') [ RunTime:0.001266s ]
+ERR: 1452:Cannot add or update a child row: a foreign key constraint fails (`integration`.`tp_student`, CONSTRAINT `delete` FOREIGN KEY (`c_id`) REFERENCES `tp_class` (`c_id`) ON DELETE CASCADE)
+ [ SQL语句 ] : INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES ('20161515304','李文保',201615153,2015,'20161515304')
+SQL: INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES ('20161515305','周超辉',201615153,2015,'20161515305') [ RunTime:0.002217s ]
+ERR: 1452:Cannot add or update a child row: a foreign key constraint fails (`integration`.`tp_student`, CONSTRAINT `delete` FOREIGN KEY (`c_id`) REFERENCES `tp_class` (`c_id`) ON DELETE CASCADE)
+ [ SQL语句 ] : INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES ('20161515305','周超辉',201615153,2015,'20161515305')
+SQL: INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES ('20161515306','孟航宇',201615153,'2015','20161515306') [ RunTime:0.001504s ]
+ERR: 1452:Cannot add or update a child row: a foreign key constraint fails (`integration`.`tp_student`, CONSTRAINT `delete` FOREIGN KEY (`c_id`) REFERENCES `tp_class` (`c_id`) ON DELETE CASCADE)
+ [ SQL语句 ] : INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES ('20161515306','孟航宇',201615153,'2015','20161515306')
+SQL: INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES (20161515307,'潘中超',201615153,'2015',20161515307) [ RunTime:0.001520s ]
+ERR: 1452:Cannot add or update a child row: a foreign key constraint fails (`integration`.`tp_student`, CONSTRAINT `delete` FOREIGN KEY (`c_id`) REFERENCES `tp_class` (`c_id`) ON DELETE CASCADE)
+ [ SQL语句 ] : INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES (20161515307,'潘中超',201615153,'2015',20161515307)
+SQL: INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES (20161515308,'孔旭',201615153,'2015',20161515308) [ RunTime:0.001458s ]
+ERR: 1452:Cannot add or update a child row: a foreign key constraint fails (`integration`.`tp_student`, CONSTRAINT `delete` FOREIGN KEY (`c_id`) REFERENCES `tp_class` (`c_id`) ON DELETE CASCADE)
+ [ SQL语句 ] : INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES (20161515308,'孔旭',201615153,'2015',20161515308)
+SQL: INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES (20161515309,'陈金金',201615153,'2015',20161515309) [ RunTime:0.001591s ]
+ERR: 1452:Cannot add or update a child row: a foreign key constraint fails (`integration`.`tp_student`, CONSTRAINT `delete` FOREIGN KEY (`c_id`) REFERENCES `tp_class` (`c_id`) ON DELETE CASCADE)
+ [ SQL语句 ] : INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES (20161515309,'陈金金',201615153,'2015',20161515309)
+SQL: INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES (20161515310,'王景',201615153,'2015',20161515310) [ RunTime:0.001363s ]
+ERR: 1452:Cannot add or update a child row: a foreign key constraint fails (`integration`.`tp_student`, CONSTRAINT `delete` FOREIGN KEY (`c_id`) REFERENCES `tp_class` (`c_id`) ON DELETE CASCADE)
+ [ SQL语句 ] : INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES (20161515310,'王景',201615153,'2015',20161515310)
+SQL: INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES (20161515311,'李小换',201615153,'2015',20161515311) [ RunTime:0.001275s ]
+ERR: 1452:Cannot add or update a child row: a foreign key constraint fails (`integration`.`tp_student`, CONSTRAINT `delete` FOREIGN KEY (`c_id`) REFERENCES `tp_class` (`c_id`) ON DELETE CASCADE)
+ [ SQL语句 ] : INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES (20161515311,'李小换',201615153,'2015',20161515311)
+SQL: INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES ('20161515312','姜凡',201615153,'2015','20161515312') [ RunTime:0.001550s ]
+ERR: 1452:Cannot add or update a child row: a foreign key constraint fails (`integration`.`tp_student`, CONSTRAINT `delete` FOREIGN KEY (`c_id`) REFERENCES `tp_class` (`c_id`) ON DELETE CASCADE)
+ [ SQL语句 ] : INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES ('20161515312','姜凡',201615153,'2015','20161515312')
+SQL: INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES (20161515313,'王玲',201615153,'2015',20161515313) [ RunTime:0.000859s ]
+ERR: 1452:Cannot add or update a child row: a foreign key constraint fails (`integration`.`tp_student`, CONSTRAINT `delete` FOREIGN KEY (`c_id`) REFERENCES `tp_class` (`c_id`) ON DELETE CASCADE)
+ [ SQL语句 ] : INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES (20161515313,'王玲',201615153,'2015',20161515313)
+SQL: INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES (20161515314,'王永静',201615153,'2015',20161515314) [ RunTime:0.000902s ]
+ERR: 1452:Cannot add or update a child row: a foreign key constraint fails (`integration`.`tp_student`, CONSTRAINT `delete` FOREIGN KEY (`c_id`) REFERENCES `tp_class` (`c_id`) ON DELETE CASCADE)
+ [ SQL语句 ] : INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES (20161515314,'王永静',201615153,'2015',20161515314)
+SQL: INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES (20161515315,'孔新芳',201615153,'2015',20161515315) [ RunTime:0.000741s ]
+ERR: 1452:Cannot add or update a child row: a foreign key constraint fails (`integration`.`tp_student`, CONSTRAINT `delete` FOREIGN KEY (`c_id`) REFERENCES `tp_class` (`c_id`) ON DELETE CASCADE)
+ [ SQL语句 ] : INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES (20161515315,'孔新芳',201615153,'2015',20161515315)
+SQL: INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES (20161515316,'轩孟柯',201615153,'2015',20161515316) [ RunTime:0.000784s ]
+ERR: 1452:Cannot add or update a child row: a foreign key constraint fails (`integration`.`tp_student`, CONSTRAINT `delete` FOREIGN KEY (`c_id`) REFERENCES `tp_class` (`c_id`) ON DELETE CASCADE)
+ [ SQL语句 ] : INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES (20161515316,'轩孟柯',201615153,'2015',20161515316)
+SQL: INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES (20161515317,'李增琳',201615153,'2015',20161515317) [ RunTime:0.000627s ]
+ERR: 1452:Cannot add or update a child row: a foreign key constraint fails (`integration`.`tp_student`, CONSTRAINT `delete` FOREIGN KEY (`c_id`) REFERENCES `tp_class` (`c_id`) ON DELETE CASCADE)
+ [ SQL语句 ] : INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES (20161515317,'李增琳',201615153,'2015',20161515317)
+SQL: INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES (20161515318,'郭盼盼',201615153,'2015',20161515318) [ RunTime:0.001119s ]
+ERR: 1452:Cannot add or update a child row: a foreign key constraint fails (`integration`.`tp_student`, CONSTRAINT `delete` FOREIGN KEY (`c_id`) REFERENCES `tp_class` (`c_id`) ON DELETE CASCADE)
+ [ SQL语句 ] : INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES (20161515318,'郭盼盼',201615153,'2015',20161515318)
+SQL: INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES (20161515319,'杜文飞',201615153,'2015',20161515319) [ RunTime:0.000828s ]
+ERR: 1452:Cannot add or update a child row: a foreign key constraint fails (`integration`.`tp_student`, CONSTRAINT `delete` FOREIGN KEY (`c_id`) REFERENCES `tp_class` (`c_id`) ON DELETE CASCADE)
+ [ SQL语句 ] : INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES (20161515319,'杜文飞',201615153,'2015',20161515319)
+SQL: INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES (20161515320,'段玉娇',201615153,'2015',20161515320) [ RunTime:0.001413s ]
+ERR: 1452:Cannot add or update a child row: a foreign key constraint fails (`integration`.`tp_student`, CONSTRAINT `delete` FOREIGN KEY (`c_id`) REFERENCES `tp_class` (`c_id`) ON DELETE CASCADE)
+ [ SQL语句 ] : INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES (20161515320,'段玉娇',201615153,'2015',20161515320)
+SQL: INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES (20161515321,'王君君',201615153,'2015',20161515321) [ RunTime:0.001084s ]
+ERR: 1452:Cannot add or update a child row: a foreign key constraint fails (`integration`.`tp_student`, CONSTRAINT `delete` FOREIGN KEY (`c_id`) REFERENCES `tp_class` (`c_id`) ON DELETE CASCADE)
+ [ SQL语句 ] : INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES (20161515321,'王君君',201615153,'2015',20161515321)
+SQL: INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES (20161515322,'高翠丽',201615153,'2015',20161515322) [ RunTime:0.001014s ]
+ERR: 1452:Cannot add or update a child row: a foreign key constraint fails (`integration`.`tp_student`, CONSTRAINT `delete` FOREIGN KEY (`c_id`) REFERENCES `tp_class` (`c_id`) ON DELETE CASCADE)
+ [ SQL语句 ] : INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES (20161515322,'高翠丽',201615153,'2015',20161515322)
+SQL: INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES (20161515323,'李静',201615153,'2015',20161515323) [ RunTime:0.006065s ]
+ERR: 1452:Cannot add or update a child row: a foreign key constraint fails (`integration`.`tp_student`, CONSTRAINT `delete` FOREIGN KEY (`c_id`) REFERENCES `tp_class` (`c_id`) ON DELETE CASCADE)
+ [ SQL语句 ] : INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES (20161515323,'李静',201615153,'2015',20161515323)
+SQL: INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES (20161515324,'周艳艳',201615153,'2015',20161515324) [ RunTime:0.002816s ]
+ERR: 1452:Cannot add or update a child row: a foreign key constraint fails (`integration`.`tp_student`, CONSTRAINT `delete` FOREIGN KEY (`c_id`) REFERENCES `tp_class` (`c_id`) ON DELETE CASCADE)
+ [ SQL语句 ] : INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES (20161515324,'周艳艳',201615153,'2015',20161515324)
+SQL: INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES (20161515325,'刘可可',201615153,'2015',20161515325) [ RunTime:0.000889s ]
+ERR: 1452:Cannot add or update a child row: a foreign key constraint fails (`integration`.`tp_student`, CONSTRAINT `delete` FOREIGN KEY (`c_id`) REFERENCES `tp_class` (`c_id`) ON DELETE CASCADE)
+ [ SQL语句 ] : INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES (20161515325,'刘可可',201615153,'2015',20161515325)
+SQL: INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES (20161515326,'刘寅灵',201615153,'2015',20161515326) [ RunTime:0.000874s ]
+ERR: 1452:Cannot add or update a child row: a foreign key constraint fails (`integration`.`tp_student`, CONSTRAINT `delete` FOREIGN KEY (`c_id`) REFERENCES `tp_class` (`c_id`) ON DELETE CASCADE)
+ [ SQL语句 ] : INSERT INTO `tp_student` (`s_id`,`s_name`,`c_id`,`s_matri`,`s_psd`) VALUES (20161515326,'刘寅灵',201615153,'2015',20161515326)
+
+[ 2016-10-24T20:19:19+08:00 ] ::1 /Integral/index.php/Admin/Manage/student_is_exist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000709s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005404s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001222s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001362s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/ManageController.class.php 第 20 行.
+ERR: 参数错误或者未定义:student_id
+
+[ 2016-10-24T20:40:44+08:00 ] ::1 /Integral/index.php/Admin/Manage/12222
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002475s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/ManageController.class.php 第 20 行.
+
+[ 2016-10-24T20:41:49+08:00 ] ::1 /Integral/index.php/Admin/Manage/12222
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000937s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001140s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/ManageController.class.php 第 20 行.
+
+[ 2016-10-24T20:56:40+08:00 ] ::1 /Integral/index.php/Admin/Manage/20141514111
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000815s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000912s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001031s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/ManageController.class.php 第 20 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SELECT * FROM `tp_student` WHERE ( s_id="20141514111" )  [ RunTime:0.021348s ]
+
+[ 2016-10-24T20:56:49+08:00 ] ::1 /Integral/index.php/Admin/Manage/2014151411
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000338s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/ManageController.class.php 第 20 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SELECT * FROM `tp_student` WHERE ( s_id="2014151411" )  [ RunTime:0.000439s ]
+
+[ 2016-10-24T20:57:08+08:00 ] ::1 /Integral/index.php/Admin/Manage/2014151411rr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000376s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000908s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001031s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/ManageController.class.php 第 20 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SELECT * FROM `tp_student` WHERE ( s_id="2014151411rr" )  [ RunTime:0.002486s ]
+
+[ 2016-10-24T21:02:01+08:00 ] ::1 /Integral/index.php/Admin/Manage/20141514112
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001296s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002179s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/ManageController.class.php 第 20 行.
+
+[ 2016-10-24T21:02:05+08:00 ] ::1 /Integral/index.php/Admin/Manage/20141514113
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000339s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/ManageController.class.php 第 20 行.
+
+[ 2016-10-24T21:02:24+08:00 ] ::1 /Integral/index.php/Admin/Manage/20141514112
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000807s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000877s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000949s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/ManageController.class.php 第 20 行.
+
+[ 2016-10-24T21:02:40+08:00 ] ::1 /Integral/index.php/Admin/Manage/20141514112
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000979s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000980s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001100s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/ManageController.class.php 第 20 行.
+
+[ 2016-10-24T21:03:51+08:00 ] ::1 /Integral/index.php/Admin/Manage/2014151412
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001803s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000842s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000916s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/ManageController.class.php 第 20 行.
+
+[ 2016-10-24T21:04:12+08:00 ] ::1 /Integral/index.php/Admin/Manage/2014151412
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000645s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001068s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001143s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/ManageController.class.php 第 20 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SELECT * FROM `tp_student` WHERE ( s_id="2014151412" )  [ RunTime:0.002360s ]
+
+[ 2016-10-24T21:04:15+08:00 ] ::1 /Integral/index.php/Admin/Manage/20141514112
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000218s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000275s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000308s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/ManageController.class.php 第 20 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SELECT * FROM `tp_student` WHERE ( s_id="20141514112" )  [ RunTime:0.001407s ]
+
+[ 2016-10-24T21:04:17+08:00 ] ::1 /Integral/index.php/Admin/Manage/20141514112
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000223s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000272s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000305s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/ManageController.class.php 第 20 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SELECT * FROM `tp_student` WHERE ( s_id="20141514112" )  [ RunTime:0.001737s ]
+
+[ 2016-10-24T21:14:05+08:00 ] ::1 /Integral/index.php/Admin/Manage/member
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000982s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000848s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000930s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/ManageController.class.php 第 20 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SELECT * FROM `tp_office` WHERE ( o_id not like 10001 )  [ RunTime:0.015762s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000171s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000224s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033512s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033585s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000839s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000888s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001453s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001546s ]
+
+[ 2016-10-24T21:14:09+08:00 ] ::1 /Integral/index.php/Admin/Manage/member
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000417s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000377s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000430s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/ManageController.class.php 第 20 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SELECT * FROM `tp_office` WHERE ( o_id not like 10001 )  [ RunTime:0.000484s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000155s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000209s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011177s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011246s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000195s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000922s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001023s ]
+
+[ 2016-10-24T21:15:10+08:00 ] ::1 /Integral/index.php/Admin/Manage/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001443s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001398s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001523s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/ManageController.class.php 第 20 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SELECT * FROM `tp_student` WHERE ( s_id="3333" )  [ RunTime:0.002590s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001483s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001592s ]
+
+[ 2016-10-24T21:15:18+08:00 ] ::1 /Integral/index.php/Admin/Manage/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000435s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000794s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000893s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/ManageController.class.php 第 20 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SELECT * FROM `tp_student` WHERE ( s_id="3333" )  [ RunTime:0.000453s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002089s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002160s ]
+
+[ 2016-10-24T21:32:13+08:00 ] ::1 /Integral/index.php/Admin/Manage/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000923s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001034s ]
+
+[ 2016-10-24T21:32:14+08:00 ] ::1 /Integral/index.php/Admin/Manage/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000491s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000566s ]
+
+[ 2016-10-24T21:32:15+08:00 ] ::1 /Integral/index.php/Admin/Manage/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000297s ]
+
+[ 2016-10-24T21:32:15+08:00 ] ::1 /Integral/index.php/Admin/Manage/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000372s ]
+
+[ 2016-10-24T21:32:17+08:00 ] ::1 /Integral/index.php/Admin/Manage/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000396s ]
+
+[ 2016-10-24T21:32:53+08:00 ] ::1 /Integral/index.php/Admin/Manage/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001010s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000848s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000931s ]
+
+[ 2016-10-24T21:32:54+08:00 ] ::1 /Integral/index.php/Admin/Manage/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000218s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000263s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000297s ]
+
+[ 2016-10-24T21:32:54+08:00 ] ::1 /Integral/index.php/Admin/Manage/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000274s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000307s ]
+
+[ 2016-10-24T21:32:58+08:00 ] ::1 /Integral/index.php/Admin/Manage/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000405s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000412s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000466s ]
+
+[ 2016-10-24T21:32:59+08:00 ] ::1 /Integral/index.php/Admin/Manage/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000218s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000268s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000302s ]
+
+[ 2016-10-24T21:32:59+08:00 ] ::1 /Integral/index.php/Admin/Manage/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000440s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000359s ]
+
+[ 2016-10-24T21:33:01+08:00 ] ::1 /Integral/index.php/Admin/Manage/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000397s ]
+
+[ 2016-10-24T21:33:01+08:00 ] ::1 /Integral/index.php/Admin/Manage/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000288s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000489s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000554s ]
+
+[ 2016-10-24T21:33:01+08:00 ] ::1 /Integral/index.php/Admin/Manage/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000317s ]
+
+[ 2016-10-24T21:33:02+08:00 ] ::1 /Integral/index.php/Admin/Manage/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000767s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000491s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000560s ]
+
+[ 2016-10-24T21:33:02+08:00 ] ::1 /Integral/index.php/Admin/Manage/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000472s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000532s ]
+
+[ 2016-10-24T21:34:19+08:00 ] ::1 /Integral/index.php/Admin/Manage/20141514112
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001016s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000960s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001057s ]
+
+[ 2016-10-24T22:00:20+08:00 ] ::1 /Integral/index.php/Admin/Manage/20141514112
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001049s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001660s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001828s ]
+
+[ 2016-10-24T22:02:06+08:00 ] ::1 /Integral/index.php/Admin/Manage/20141514112
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001029s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000961s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001070s ]
+
+[ 2016-10-24T22:02:08+08:00 ] ::1 /Integral/index.php/Admin/Manage/20141514112
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000347s ]
+
+[ 2016-10-24T22:02:11+08:00 ] ::1 /Integral/index.php/Admin/Manage/20141514112
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000270s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000301s ]
+
+[ 2016-10-24T22:03:15+08:00 ] ::1 /Integral/index.php/Admin/Manage/20141514112
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000941s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001094s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001190s ]
+
+[ 2016-10-24T22:04:40+08:00 ] ::1 /Integral/index.php/Admin/Manage/20141514112
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000796s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000949s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001039s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/ManageController.class.php 第 20 行.
+
+[ 2016-10-24T22:04:58+08:00 ] ::1 /Integral/index.php/Admin/Manage/20141514112
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000725s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000823s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000904s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/ManageController.class.php 第 20 行.
+NOTIC: [8] Undefined variable: student_id /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/ManageController.class.php 第 70 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SELECT * FROM `tp_student` WHERE ( s_id="" )  [ RunTime:0.001050s ]
+
+[ 2016-10-24T22:05:52+08:00 ] ::1 /Integral/index.php/Admin/Manage/20141514112
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000966s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000912s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000993s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/ManageController.class.php 第 20 行.
+NOTIC: [8] Undefined variable: student_id /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/ManageController.class.php 第 71 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SELECT * FROM `tp_student` WHERE ( s_id="" )  [ RunTime:0.000427s ]
+
+[ 2016-10-24T22:05:54+08:00 ] ::1 /Integral/index.php/Admin/Manage/20141514112
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000365s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/ManageController.class.php 第 20 行.
+NOTIC: [8] Undefined variable: student_id /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/ManageController.class.php 第 71 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SELECT * FROM `tp_student` WHERE ( s_id="" )  [ RunTime:0.000427s ]
+
+[ 2016-10-24T22:06:00+08:00 ] ::1 /Integral/index.php/Admin/Manage/2014151411
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000636s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000696s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000788s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/ManageController.class.php 第 20 行.
+NOTIC: [8] Undefined variable: student_id /Applications/XAMPP/xamppfiles/htdocs/Integral/Application/Admin/Controller/ManageController.class.php 第 71 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/Integral/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SELECT * FROM `tp_student` WHERE ( s_id="" )  [ RunTime:0.000551s ]
+
+>>>>>>> f15453d8d5a58ac0d805e9d73dd696c28f23dbe6

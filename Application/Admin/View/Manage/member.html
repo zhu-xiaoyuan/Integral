@@ -48,7 +48,7 @@
                 </div>
                 <form action="add" method="post">
                     <div class="modal-body">
-                            <input type="text" id="o_id" placeholder="学号" class="form-control mb15" name="s_id">
+                            <input type="text" id="o_id" onkeyup="get_info_by_studentID(this)" placeholder="学号" class="form-control mb15" name="s_id">
                             <input type="text" id="o_name" placeholder="姓名" class="form-control mb15" name="s_name">
                         <p id="add_warning" style="color: red;margin-top: 0px;display: none;"></p><br/>
                     </div>
@@ -86,7 +86,6 @@
 <block name="js_link">
     <script type="text/javascript">
         const MODIFY_PASSWORD_FAILED      = "修改密码失败!";
-        var table = document.getElementById("member_table");
         /*
          * 添加成员
          * */
@@ -98,13 +97,15 @@
             hxr.onreadystatechange = function (){
                 if(hxr.readyState == 4){
                     var table = document.getElementById("member_table");
-                    var  rlt = JSON.parse(hxr.responseText);
+                    var rlst  = hxr.responseText;
+                    var  rlt  = JSON.parse(rlst);
 
-                    if(rlt.status ==1 ){
+                    if(rlt.status == 1 ){
                         table.innerHTML = rlt.data;
                         set_input_null();
                         dismiss_fade_modal();
                     }else{
+                        console.log(rlt);
                         show_add_Warning(rlt.warn);
                     }
 
@@ -202,17 +203,39 @@
         }
         function show_add_Warning(warning){
 
-            var doc = document.getElementById('add_warning');
+            var doc           = document.getElementById('add_warning');
 
-            doc.innerHTML = warning;
+            doc.innerHTML     = warning;
             doc.style.display = "inline";
 
             var time = setTimeout(function (){
-                doc.innerHTML = "";
+                doc.innerHTML     = "";
                 doc.style.display = "none";
                 clearTimeout(time);
                 return 0;
             },5000);
+        }
+        /*
+        
+        */
+        function get_info_by_studentID(ele){
+            
+            var id       = ele.getAttribute('id');
+            var id_input = document.getElementById(id).value;
+            var ajax     = new XMLHttpRequest();
+            ajax.onreadystatechange = function(){
+                if (ajax.readyState == 4) {
+                    var rps = ajax.responseText
+                    var name_input = document.getElementById('o_name');
+                    if (rps != '') {
+                        name_input.value = rps;
+                    };
+                };
+            }
+            var pram = "s_id=" + id_input;
+            ajax.open('post','get_studentinfo_by_id');
+            ajax.setRequestHeader('content-type','application/x-www-form-urlencoded');
+            ajax.send(pram);
         }
         /*
          *消失fade

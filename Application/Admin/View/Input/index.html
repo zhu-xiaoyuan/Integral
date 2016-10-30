@@ -98,7 +98,7 @@
   
       <script>
           var str=new Array();
-          str[0]="上传失败！"
+          str[0]="上传失败！";
           var a =0;
           Dropzone.options.dropzone = {
             //maxFilesize: 2, // MB
@@ -116,19 +116,45 @@
                     });
                     str.splice(0,str.length);
                     a=0;
+                    str[0]="上传失败！";
                   });
                });
               this.on("success", function (file, data) {
-                  str[a++]=file.name+"  "+data.info;
+                  str[a++]=file.name+"    "+data.info;
                });
             }
-
-
           };
 
 
           $("#sc_who").val("{$name}");
 
+          jQuery('#sc_time').datepicker({
+            numberOfMonths: 3,
+            showButtonPanel: true
+          });
+          $("#input").click(function() {
+              $.ajax({
+                  type: 'POST',
+                  url: "{:U('Input/input')}",
+                  data: {
+                      's_id': $('#s_id').val(),
+                      's_name': $('#s_name').val(),
+                      'c_name': $('#c_name').val(),
+                      'sc_number': $('#sc_number').val(),
+                      'sc_reason': $('#sc_reason').val(),
+                      'sc_time': $('#sc_time').val(),
+                      'sc_who': $('#sc_who').val(),
+                      'sc_union': $('#sc_union').val(),
+                  },
+                  success: function (data) {
+                      if (data.status == 0) {
+                          layer.msg(data.info, {icon: 2});
+                      } else {
+                          layer.msg(data.info, {icon: 1});
+                      }
+                  }
+              });
+          });
 
           $("#sub").click(function() {
             $.ajax({
@@ -157,8 +183,9 @@
                 $("#cancel").click();
                 }
               }
-            });
+            })
           });
+
           $("#cancel").click(function() {
             $('#s_id').val("");
             $('#s_name').val("");

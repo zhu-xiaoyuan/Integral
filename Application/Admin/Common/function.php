@@ -1,4 +1,6 @@
 <?php
+use Think\Controller;
+
 /**
  * Created by PhpStorm.
  * User: 孝远
@@ -10,13 +12,14 @@
 function is_login(){
     //判断是否登陆代码
     if (isset($_SESSION['o_id'])) {
-        return true;
+    	return true;
     }else {
-        return false;
+    	return false;
     }
+    	
+
 }
 function is_power(){
     if(1 == $_SESSION["is_power"])
-        return false;
     return true;
 }

@@ -9,18 +9,15 @@ class ClassController extends BaseController {
     public function input(){
 
     	$model=D('class');
-    	if($model->create(I('post.'))){
-            if($model->find()){
-                    if ( $model->add(I('post.'))) {
+    	if($model->create()){
+           
+                    if ( $model->add()) {
 
                        $this->success('录入成功！');
                     } else {
                        $this->error('录入失败！'); 
                     }                   
                     exit;
-            }else{
-                    $this->error($model->getError());   
-                 }
 
     	}else{
     		$this->error($model->getError());
