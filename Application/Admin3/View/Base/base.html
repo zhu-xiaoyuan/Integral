@@ -114,6 +114,11 @@
                                 <li><a href='#'  data-toggle="modal" data-target="#mymodal-data"><i class="glyphicon glyphicon-user"></i>修改密码</a></li>
                                 <li><a href="#" id="logout_a" onclick="logOut()"><i class="glyphicon glyphicon-log-out"></i>退出</a></li>
                             </ul>
+                            <!-- 222 -->
+                            <ul class="dropdown-menu dropdown-menu-usermenu pull-right">
+                                <li><a href='#'  data-toggle="modal" data-target="#mymodal-data"><i class="glyphicon glyphicon-user"></i>修改密码</a></li>
+                                <li><a href="#" id="logout_a" onclick="logOut()"><i class="glyphicon glyphicon-log-out"></i>退出</a></li>
+                            </ul>
                         </div>
                     </li>
 
@@ -130,29 +135,26 @@
 <!-- 模态弹出窗内容 -->
 <div class="modal fade" id="mymodal-data" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
     <div class="modal-dialog">
-        <div class="modal-content" style="background: url(__BRACKET__/images/img/change1.jpg);">
-        <!-- <div class="modal-content"> -->
+        <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" style="margin-left:30%; font-weight: bold;">用户 {$_SESSION['o_name']} 修改密码</h4>
+                <h4 class="modal-title">用户 {$_SESSION['o_name']} 修改密码</h4>
             </div>
             <div class="modal-body">
-                <div class="row" style="border:0px solid red;width:20%;float:left;"><div class="col-md-5" ><br> <br></div></div>
-                <div class="row" style="border:0px solid red;width:70%;float:right;">
+                <div class="row" >
                     <div class="col-md-5" >
                         <form method="post">
                             <br>
                             <p class="form-control changeUName" style="cursor: not-allowed;">{$_SESSION['o_id']}</p>
                             <br>
                             <input type="password" class="form-control " id="oldPsd" placeholder="请输入原密码" /><br>
-                            <input type="password" class="form-control " id="changeNewPsd" placeholder="请输入修改的密码" /><br>
-                            <input type="password" class="form-control " id="changeNewPsdAgain" placeholder="请再次输入密码" /><br>
+                            <input type="password" class="form-control " id="changeNewPsd" placeholder="请输入要修改的密码" /><br>
+                            <input type="password" class="form-control " id="changeNewPsdAgain" placeholder="请再次输入要修改的密码" /><br>
                             <p id="showMsg" style="color:red;height: 21px;"> </p>
                         </form>
                     </div>
                 </div>
             </div>
-            <div style="clear: both;"></div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
                 <button type="button" class="btn btn-primary" onclick="checkBtn()">保存</button>
@@ -162,6 +164,8 @@
 </div>
 
 <script>
+   /* $('#logout_a').on('click',function(e){
+        e.preventDefault();*/
     function logOut(){
         layer.open({
             content: '您确定退出本系统吗?',
@@ -173,12 +177,13 @@
 
             }
         });
+    // })
     }
     document.onkeydown=function(event){
-        var e = event || window.event || arguments.callee.caller.arguments[0];
-        if(e && e.keyCode==13){
-            checkBtn();
-        }
+    var e = event || window.event || arguments.callee.caller.arguments[0];
+    if(e && e.keyCode==13){
+        checkBtn();
+    }
     }; 
     function checkBtn(){
         var oldPsd = $("#oldPsd").val();
@@ -207,7 +212,7 @@
                         c_NewPsdAgain:changeNewPsdAgain
                     },function(data){
                         if(data==5) {
-                            alert("密码修改成功");
+                            alert("密码修改成功okokok");
                             window.location.href="";
                         }else if(data==6) {
                             $("#showMsg").html(checkMsg(6));

@@ -1,84 +1,131 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="shortcut icon" href="__BRACKET__/images/favicon.png" type="image/png">
-    <title>登陆</title>
-    <link href="__BRACKET__/css/style.default.css" rel="stylesheet">
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-    <script src="__BRACKET__/js/html5shiv.js"></script>
-    <script src="__BRACKET__/js/respond.min.js"></script>
-    <![endif]-->
-</head>
-
-<body class="signin">
-
-
-
-
-
-<section>
-
-    <div class="signinpanel">
-
-        <div class="row">
-
-            <div class="col-md-7">
-
-                <div class="signin-info">
-                    <div class="logopanel">
-                        <h1><span>[</span> 积分管理系统 <span>]</span></h1>
-                    </div><!-- logopanel -->
-
-                    <div class="mb20"></div>
-
-                    <h5><strong>Welcome to this management system!</strong></h5>
-                    <ul>
-                        <li><i class="fa fa-arrow-circle-o-right mr5"></i> HTML5/CSS3 Valid</li>
-                        <li><i class="fa fa-arrow-circle-o-right mr5"></i> Retina Ready</li>
-                        <li><i class="fa fa-arrow-circle-o-right mr5"></i> WYSIWYG CKEditor</li>
-                        <li><i class="fa fa-arrow-circle-o-right mr5"></i> and much more...</li>
-                    </ul>
-                    <div class="mb20"></div>
-
-                </div><!-- signin0-info -->
-
-            </div><!-- col-sm-7 -->
-
-            <div class="col-md-5">
-
-                <form method="post" action="index.html">
-                    <h4 class="nomargin">登陆系统</h4>
-
-                    <input type="text" class="form-control uname" placeholder="账号" />
-                    <input type="password" class="form-control pword" placeholder="密码" />
-
-                    <button class="btn btn-success btn-block">Sign In</button>
-
-                </form>
-            </div><!-- col-sm-5 -->
-
-        </div><!-- row -->
-
-        <div class="signup-footer" style="margin-top: 110px">
-            <div class="pull-left">
-                &copy; 2016. 三月软件工作室保留所有权利。
-            </div>
-            <div class="pull-right">
-                Created By: <a href="http://www.marchsoft.cn/index.php/Index/home" target="_blank">三月软件工作室</a>
-            </div>
-        </div>
-
-    </div><!-- signin -->
-
-</section>
-
-
+<META http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+<TITLE>信工学院积分管理系统</TITLE> 
 <script src="__BRACKET__/js/jquery-1.11.1.min.js"></script>
+<link rel="stylesheet" href="__BRACKET__/css/newCss/login.css">
 
-</body>
-</html>
+
+<META name="GENERATOR" content="MSHTML 11.00.9600.17496"></HEAD> 
+<BODY>
+<DIV class="top_div" style="text-align: center;">
+	<h1 style="font-family: '宋体';font-size: 3em;padding-top: 100px;color: white;">信工学院积分管理系统</h1>
+</DIV>
+<DIV style="background: rgb(255, 255, 255); margin: -100px auto auto; border: 1px solid rgb(231, 231, 231); border-image: none; width: 400px; height: 200px; text-align: center;">
+	<DIV style="width: 165px; height: 96px; position: absolute;">
+		<DIV class="tou"></DIV>
+		<DIV class="initial_left_hand" id="left_hand"></DIV>
+		<DIV class="initial_right_hand" id="right_hand"></DIV>
+	</DIV>
+
+	<form method="post">
+		<P style="padding: 30px 0px 10px; position: relative;">
+			<SPAN  class="u_logo"></SPAN>
+			<INPUT class="ipt" type="text" id="uname" name="name" placeholder="请输入用户名" value=""> 
+		</P>
+		<P style="position: relative;"><SPAN class="p_logo"></SPAN>         
+			<INPUT class="ipt" type="password" id="pword" name="psd" placeholder="请输入密码" value="">   
+		</P>
+		<p id="loginMsg" style="height: 23px;color: red;padding-top: 11px;">  </p>
+
+		<DIV style="height: 50px; border-top-color: rgb(231, 231, 231); border-top-width: 1px; border-top-style: solid;">
+			<P style="margin: 0px 35px 20px 35px;padding-top: 10px;">
+				<INPUT type="button" value="Sign In" style="width: 330px;background: rgb(0, 142, 173); padding: 7px 0; border-radius: 4px; border: 1px solid rgb(26, 117, 152); border-image: none; color: rgb(255, 255, 255); font-weight: bold;"  onclick="loginBtn()" />
+		    </P>
+		</DIV>
+	</form>
+</DIV>
+<div style="text-align:center;"></div>
+<SCRIPT type="text/javascript">
+$(function(){
+	//得到焦点
+	$("#pword").focus(function(){
+		$("#left_hand").animate({
+			left: "150",
+			top: " -38"
+		},{step: function(){
+			if(parseInt($("#left_hand").css("left"))>140){
+				$("#left_hand").attr("class","left_hand");
+			}
+		}}, 2000);
+		$("#right_hand").animate({
+			right: "-64",
+			top: "-38px"
+		},{step: function(){
+			if(parseInt($("#right_hand").css("right"))> -70){
+				$("#right_hand").attr("class","right_hand");
+			}
+		}}, 2000);
+	});
+	//失去焦点
+	$("#pword").blur(function(){
+		$("#left_hand").attr("class","initial_left_hand");
+		$("#left_hand").attr("style","left:100px;top:-12px;");
+		$("#right_hand").attr("class","initial_right_hand");
+		$("#right_hand").attr("style","right:-112px;top:-12px");
+	});
+});
+</SCRIPT>
+<script>
+ 	document.onkeydown=function(event){
+        var e = event || window.event || arguments.callee.caller.arguments[0];
+        if(e && e.keyCode==13){
+          loginBtn();
+        }
+    }; 
+    function loginBtn(){
+        var oid = $.trim($("#uname").val());
+        var opsd = $("#pword").val();
+        if ($.trim(oid) == '') {
+            clearPrompt("#loginMsg","#uname",1);
+        }else if(isNaN($.trim(oid))){
+            clearPrompt("#loginMsg","#uname",2);
+        }else{ 
+            if ($.trim(opsd) == '') {
+                clearPrompt("#loginMsg","#pword",3);
+            }else{
+                $.post(
+                    "/Integral/index.php/Admin/login/login",
+                    {
+                        o_id:oid,
+                        o_psd:opsd
+                    },function(data){
+                        if (data==1) {
+                            window.location.href="/Integral/index.php/Admin/index/index";
+                        }else{
+                            wrongPromt("#loginMsg");
+                        }
+                    }
+                );
+            }
+        }
+    }
+    // 清除提示信息
+    function clearPrompt($msg,$p,$k){
+        var msg = $($msg);
+        var p = $($p);
+       if ($k==1) {
+            $(msg).html("账号不能为空  ^_^");
+        }else if($k==2){
+            $(msg).html("账号必须为数字 ^_^");
+        }else if($k==3){
+            $(msg).html("密码不能为空 ^_^");
+        }else{
+            $(msg).html("密码或密码有误 ^_^");
+        }
+        $(p).css("border","1px solid red");
+        setTimeout(function(){
+            $(msg).html(" ");
+            $(p).css("border","1px solid #ccc");
+        },3000);
+    }
+    function wrongPromt($id){
+        var id = $id;
+        $(id).html("账号或密码有误 ^_^");
+        setTimeout(function(){
+            $(id).html(" ");
+        },3000);
+    }
+</script>
+</BODY></HTML>
