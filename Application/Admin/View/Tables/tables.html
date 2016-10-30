@@ -41,8 +41,9 @@
         <div class="panel-body">         
           <div class="table-responsive" id="list">         
           <form style="min-width:1030px;">
-          <a class="btn btn-xs btn-info pull-left mr-5" style="float:left;" id="discard" href="javascript:void(0);">删除</a>        
-          <table class="table table-striped" id="table2">
+
+          <a class="btn btn-xs btn-info pull-left mr-5" style="float:left;" id="discard" href="javascript:;">删除</a>        
+          <table class="table table-striped" id="table2" align="center">
               <thead>
                   <tr>
                     <th><input class="all" type="checkbox"/></th>
@@ -51,7 +52,7 @@
                     <th>班级</th>
                     <th>分数</th>
                     <th>原因</th>
-                    <th>时间</th>
+                    <th width="150px">时间</th>
                     <th>记录者</th>
                     <th>部室</th>
                     <th>操作</th>
@@ -180,11 +181,7 @@ function checkaction(v){
   if(v==0){ 
   document.searchform.action="{:U('Admin/Tables/export')}"; 
   }else{ 
-<<<<<<< HEAD
   document.searchform.action="{:U('Admin/Tables/tables')}"; 
-=======
-  document.searchform.action="{:U('Admin/Tables/index')}"; 
->>>>>>> efe2f90a5b933365da35d6122da0b87e3c85a29e
   } 
   searchform.submit(); 
 } 
@@ -225,18 +222,15 @@ function checkaction(v){
         'sc_union':$("#sc_union").val(),
         'sc_who':$("#sc_who").val()
       },function(msg){
-<<<<<<< HEAD
-        layer.msg('修改成功');
-        setTimeout(function() {
+        // layer.confirm('确定修改吗？',{
+        //   btn: ['确定','取消'],
+        //   shade: false 
+        // });
+        layer.msg("修改成功！");
+        setTimeout(function(){
             location.reload();
-          }, 1500);        
-=======
-        layer.msg('修改成功！');
-        setTimeout(function() {
-            location.reload();
-          }, 1000);        
->>>>>>> efe2f90a5b933365da35d6122da0b87e3c85a29e
-      });
+        },1000);          
+      });      // window.location.href = 'tables';
     });
 </script>
 

@@ -98,7 +98,7 @@
   
       <script>
           var str=new Array();
-          str[0]="上传失败！"
+          str[0]="上传失败！";
           var a =0;
           Dropzone.options.dropzone = {
             //maxFilesize: 2, // MB
@@ -116,16 +116,17 @@
                     });
                     str.splice(0,str.length);
                     a=0;
+                    str[0]="上传失败！";
                   });
                });
               this.on("success", function (file, data) {
-                  str[a++]=file.name+"  "+data.info;
+                  str[a++]=file.name+"    "+data.info;
                });
             }
           };
 
 
-          $("#sc_who").val("Hello World");
+          $("#sc_who").val("{$name}");
 
           jQuery('#sc_time').datepicker({
             numberOfMonths: 3,
@@ -179,9 +180,7 @@
                     icon: 1
                   });
 
-                  setTimeout(function() {
-                    window.location.reload();
-                  }, 2000);
+                $("#cancel").click();
                 }
               }
             })
@@ -190,6 +189,7 @@
           $("#cancel").click(function() {
             $('#s_id').val("");
             $('#s_name').val("");
+            $('#c_name').val("");
             $('#sc_number').val("");
             $('#sc_reason').val("");
             $('#sc_time').val("");

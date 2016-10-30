@@ -1,3 +1,109 @@
+<<<<<<< HEAD
+[ 2016-10-22T11:04:48+08:00 ] ::1 /Integral/index.php/Admin/Tables
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000385s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000411s ]
+NOTIC: [8] Undefined index: c_name G:\AMP\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 13 行.
+NOTIC: [8] Undefined index: s_id G:\AMP\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 14 行.
+NOTIC: [8] Undefined index: sc_union G:\AMP\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 15 行.
+NOTIC: [8] Undefined variable: filter G:\AMP\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 30 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_scoredetail` LIMIT 1   [ RunTime:0.000287s ]
+NOTIC: [8] Undefined variable: filter G:\AMP\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 48 行.
+SQL: SELECT * FROM `tp_scoredetail` ORDER BY id desc LIMIT 0,30   [ RunTime:0.000909s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000186s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000213s ]
+NOTIC: [8] Undefined index: c_name G:\AMP\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 118 行.
+NOTIC: [8] Undefined index: s_id G:\AMP\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 123 行.
+NOTIC: [8] Undefined index: schoolyear G:\AMP\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear G:\AMP\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear G:\AMP\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear G:\AMP\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear G:\AMP\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear G:\AMP\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear G:\AMP\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear G:\AMP\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear G:\AMP\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear G:\AMP\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear G:\AMP\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear G:\AMP\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear G:\AMP\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear G:\AMP\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear G:\AMP\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear G:\AMP\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear G:\AMP\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear G:\AMP\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear G:\AMP\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear G:\AMP\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear G:\AMP\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear G:\AMP\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear G:\AMP\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear G:\AMP\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear G:\AMP\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear G:\AMP\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear G:\AMP\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear G:\AMP\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear G:\AMP\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear G:\AMP\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: sc_union G:\AMP\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007201s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007229s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000301s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000518s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000546s ]
+
+[ 2016-10-22T11:05:06+08:00 ] ::1 /Integral/index.php/Admin/Manage/member
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000274s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000298s ]
+NOTIC: [2] Declaration of Admin\Controller\ManageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') G:\AMP\Apache24\htdocs\Integral\Application\Admin\Controller\ManageController.class.php 第 23 行.
+SQL: SELECT * FROM `tp_office` WHERE ( o_id not like 10001 )  [ RunTime:0.000456s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000207s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000308s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006764s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006792s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000466s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000492s ]
+
+[ 2016-10-22T11:23:21+08:00 ] ::1 /Integral/index.php/Admin/Manage/member
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000387s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000412s ]
+NOTIC: [2] Declaration of Admin\Controller\ManageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') G:\AMP\Apache24\htdocs\Integral\Application\Admin\Controller\ManageController.class.php 第 23 行.
+SQL: SELECT * FROM `tp_office` WHERE ( o_id not like 10001 )  [ RunTime:0.000588s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000180s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000208s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006914s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006948s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000459s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000484s ]
+
+=======
 [ 2016-10-22T12:25:17+08:00 ] ::1 /Integral/index.php/Admin/input
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
@@ -1170,3 +1276,4 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000794s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000894s ]
 
+>>>>>>> 9282b6abfac558f36c5d9691b90e51899f904164

@@ -75,7 +75,7 @@ class TablesController extends BaseController
     {
         $id = I('id');
         $m = M('scoredetail');
-        $info = $m->find($id);
+        $info = $m->where('id='.$id)->find();
         $data['s_id'] = I('s_id', '');
         $data['s_name'] = I('s_name', '');
         $data['c_name'] = I('c_name', '');
@@ -101,7 +101,6 @@ class TablesController extends BaseController
         $contact = M('scoredetail');
         $deleteArr = I('post.data');
         for($i=0;$i<count($deleteArr);$i++) {
-//            $contact->delete($deleteArr[$i]['value']);
             $contact->where('id='.$deleteArr[$i]['value'])->delete();
         }
         $this->ajaxReturn(array('message'=>'删除成功！'));

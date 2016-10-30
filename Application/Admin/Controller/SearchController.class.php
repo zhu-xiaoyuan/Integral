@@ -13,9 +13,6 @@ class SearchController extends  BaseController{
     function _empty($id){
         $is_num = is_numeric($id);
         if($is_num){
-//            echo $id;
-//            $info = $this->get_class_ranking('20141514111','计科141');
-//            dump($info);
         }else{
             echo '非数字';
         }
@@ -25,15 +22,23 @@ class SearchController extends  BaseController{
     }
     function search(){
         $s_id = null;
+        $info = array();
         if(!empty($_POST)){
             $s_id = $_POST['s_id'];
             $info = $this->get_score_by_id($s_id);
-
+            if (!$info) {
+                
+                $this->display();
+                return;
+             } else{
+                $this->assign('ishave',1);
+                $this->assign('list',$info);
+                $this->assign('s_id',$s_id);
+                $this->display();
+                return;
+             }
         }
-
-        $this->assign('list',$info);
-        $this->assign('s_id',$s_id);
-        $this->display();
+        
     }
     function personScoreDetail(){
         $info = null;
@@ -44,6 +49,7 @@ class SearchController extends  BaseController{
         }else{
             $id = $_GET['s_id'];
         }
+
         if(!empty($id)){
             $model = M('scoredetail');
             $manage = new ManageController();
@@ -54,7 +60,6 @@ class SearchController extends  BaseController{
 
         $title = '个人积分详情';
         $this->viewTheDetail($info,$title,1);
-
     }
     function classScoreDetail(){
 
@@ -83,17 +88,23 @@ class SearchController extends  BaseController{
     	if (!empty($id)) {
     		if ($manage->student_is_exist($id)) {
                 $info = $model->where('s_id='.'"'.$id.'"')->select();
-                $class_name = $info[0]['c_name'];
-                $data_class = $this->get_class_ranking($id,$class_name);
-                $major_name = $this->get_major($class_name);
-                $data_major = $this->get_major_ranking($id,$major_name);
+                if (count($info)) {
+                    $class_name = $info[0]['c_name'];
+                    $data_class = $this->get_class_ranking($id,$class_name);
+                    $major_name = $this->get_major($class_name);
+                    $data_major = $this->get_major_ranking($id,$major_name);
 
-                $data['id'] = $data_class['sid'];
-                $data['class_rank'] = $data_class['rank'];
-                $data['major_rank'] = $data_major['rank'];
-                $data['all_score'] = $data_major['all_score'];
-                $data['class_name'] = $class_name;
-    			return $data;
+                    $data['name'] = $info[0]['s_name'];
+                    $data['id'] = $data_class['sid'];
+                    $data['class_rank'] = $data_class['rank'];
+                    $data['major_rank'] = $data_major['rank'];
+                    $data['all_score'] = $data_major['all_score'];
+                    $data['class_name'] = $class_name;
+                    return $data;   
+                }else{
+                    return false;
+                }
+    			
     		}
     	}
     }

@@ -20,7 +20,6 @@
 <block name="js">
     <script>
         function submitForm(ele){
-
             var  val = ele.getAttribute('id');
             var f = document.getElementById('detail');
             if(val == 'person'){
@@ -31,14 +30,14 @@
             f.submit();
         }
     </script>
-
 </block>
 
 <block name="content">
-    <p id="name">王飞</p>
+    <p id="name">{$list['name']}</p>
     <p id="snum">{$s_id}</p>
 
-    <div class="table-responsive" style="margin-top:40px">
+    <if condition="$ishave eq 1" >
+         <div class="table-responsive" style="margin-top:40px">
         <table class="table mb30">
             <thead align="center">
                 <tr>
@@ -55,12 +54,16 @@
                 </tr>
             </tbody>
         </table>
-        <form id="detail" action="personScoreDetail" method="post">
+         <form id="detail" action="personScoreDetail" method="post">
             <input type="hidden" name="s_id" value="{$s_id}">
             <input type="hidden" name="c_name" value="{$list['class_name']}">
             <div class="btn btn-primary" id="person"  onclick="submitForm(this)">个人详情</div>
             <div class="btn btn-primary" id="class" onclick="submitForm(this)">本班详情</div>
         </form>
+         <else/>
+         <h1>没有你的积分数据</h1>
+    </if>
+       
     </div>
 </block>
 
