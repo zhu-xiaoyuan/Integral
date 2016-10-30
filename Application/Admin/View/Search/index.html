@@ -1,0 +1,34 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+    <!--<meta charset="UTF-8">-->
+    <!--<title></title>-->
+<!--</head>-->
+<!--<body>-->
+
+<!--</body>-->
+<!--</html>-->
+<extend name="searchBase" />
+<block name="content">
+    <div class="col-md-6" style="width: 100%">
+
+        <form id="form1" action="search" method="post" class="form-horizontal" style="width: auto">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">个人积分查询</h4>
+                </div>
+                <div class="panel-body">
+                    <div class="form-group" align="center">
+                        <div class="col-sm-8" style="width: 100%">
+                            <input type="text" placeholder="请输入个人的学号" name="s_id" class="form-control">
+                        </div>
+                    </div>
+                </div><!-- panel-body -->
+                <div class="panel-footer">
+                    <input class="btn btn-primary" type="submit" value="查询">
+                </div><!-- panel-footer -->
+            </div><!-- panel-default -->
+        </form>
+
+    </div>
+</block>

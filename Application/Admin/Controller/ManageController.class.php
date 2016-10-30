@@ -9,54 +9,92 @@
 namespace Admin\Controller;
 use Think\Controller;
 
-/*
- *   const ONE_CONTENT_NULL_WARNING    = "输入框不能有空!";
-        const DOUBLE_CONTENT_NULL_WARNING = "两个输入框不能为空!";
-        const TOW_CONTENT_UNEQUAL_WARNING = "内容必须一致!";
-        const MODIFY_PASSWORD_FAILED      = "修改密码失败!";*/
-define('ONE_CONTENT_NULL_WARNING','输入框不能有空!');
+define('ONE_CONTENT_NULL_WARNING',   '输入框不能有空!');
 define('DOUBLE_CONTENT_NULL_WARNING','两个输入框不能为空!');
 define('TOW_CONTENT_UNEQUAL_WARNING','内容必须一致!');
-//define('TOW_CONTENT_UNEQUAL_WARNING','修改密码失败!');
-define('STUDENT_NUM_EXISTED','学号已存在!');
+define('STUDENT_NUM_EXISTED',        '学号已存在!');
+define('STUDENT_UNEXIST',            '这个学生不存在!');
+define('FAIL',                       'fail');
+define('SUCCESS',                    'success');
 
 class ManageController extends  BaseController
 {
     function __construct(){
         parent::__construct();
-
     }
-    function manage(){
-        $data = 'wangfei';
-
-        $this->assign('data',$data);
-        $this->display();
-
+    /*
+        空方法的判断
+    */
+    function _empty($name){
+        // $is_exist = $this->student_is_exist($name);
+        // var_dump($is_exist);
+        // if ($is_exist) {
+        //     echo("存在");
+        // }else{
+        //     echo("不存在");
+        // }
+        // exit();
+        $this->redirect('member');
     }
+    /*
+        判断这个学生是否存在于数据库中
+    */
+    public function student_is_exist($student_id){
+
+        if (is_numeric($student_id) && !is_null($student_id) && !empty($student_id)) {
+            $modal = M('student');
+            if ($modal) {
+                $select_rlst = $modal->where('s_id='.'"'.$student_id.'"')->select();
+                if ($select_rlst) {
+                    return true;
+                }else{
+                    return false;
+                }
+            }
+        }else{
+            return false;
+        }
+    }
+
     function member(){
-
-        $data = D('Office');
-//        $where[o_id] = 10001;
-
-        $list = $data->where('o_id not like '.'10001')->select();
+        
+        $data    = D('Office');
+        $current = $_SESSION['o_id'];
+        $list    = $data->where('o_id not like '.$current)->select();
 
         $this->assign('list',$list);
         $this->display();
     }
+    
+    function get_studentinfo_by_id(){
+        if (!empty($_POST)) {
+            $modal = M('student');
+            $id = $_POST['s_id'];
+            if ($modal) {
+                $select_rlst = $modal->where('s_id='.'"'.$id.'"')->select();
+                if ($select_rlst) {
+                    $name = $select_rlst[0]['s_name'];
+                    echo($name);
+                }
+            }
+        }
+    }
 
     function delete(){
         $off_mdl = D('Office');
-        $arr = array();
+        $arr     = array();
         $err_arr = array();
 
         if($_POST != null){
             $arr = array_values($_POST);
+
             if($arr != null){
                 for($i = 0;$i < count($arr);$i++){
-                    $bo = $off_mdl->where('o_id='.$arr[$i])->delete();
-                    if($bo === false){
+                    $bo = $off_mdl->where('o_id='.'"'.$arr[$i].'"')->delete();
+                    if(!$bo){
                         array_push($err_arr,$arr[$i]);
                     }
+
                 }
             }
         }
@@ -74,21 +112,25 @@ class ManageController extends  BaseController
         if($_POST['s_id'] && $_POST['s_name']){
 
             $insert = Array();
-            $insert['o_id']   =    $_POST['s_id'];
-            $insert['o_name'] =  $_POST['s_name'];
-            $insert['o_psd']  =   md5('123456');
-            $insert['o_ispower'] = 0;
-
-            $bo = $data->add($insert);
-
-            $rtn = array();
-            if($bo){
-                $data = $this->get_HTML();
-                $rtn['status'] = 1;
-                $rtn['data']   = $data;
-            }else{
+            $insert['o_id']      =    $_POST['s_id'];
+            $insert['o_name']    =    $_POST['s_name'];
+            $insert['o_psd']     =    md5('123456');
+            $insert['o_ispower'] =    0;
+            
+            if ($this->student_is_exist($_POST['s_id'])) {
+                $bo  = $data->add($insert);
+                $rtn = array();
+                if($bo){
+                    $data          = $this->get_HTML();
+                    $rtn['status'] = 1;
+                    $rtn['data']   = $data;
+                }else{
+                    $rtn['status'] = 0;
+                    $rtn['warn']   = STUDENT_NUM_EXISTED;
+                }
+            } else {
                 $rtn['status'] = 0;
-                $rtn['warn']   = STUDENT_NUM_EXISTED;
+                $rtn['warn']   = STUDENT_UNEXIST;
             }
         }else{
             $rtn['status'] = 0;
@@ -103,20 +145,20 @@ class ManageController extends  BaseController
         if(!$this->verify($_POST['psd'],$_POST['psd_again'])){
             exit;
         }
-        $off_mdl = M('Office');
 
-        $id  = $_POST['id'];
-        $psd = md5($_POST['psd']);
+        $off_mdl = M('Office');
+        $id      = $_POST['id'];
+        $psd     = md5($_POST['psd']);
 
         $data['o_psd'] = $psd;
-        $bo = $off_mdl->where('o_id='.$id)->save($data);
+        $bo            = $off_mdl->where('o_id='.$id)->save($data);
 
         if($bo === false){
-            echo("fail");
+            echo(FAIL);
             return;
 
         }else{
-            echo("success");
+            echo(SUCCESS);
             return;
         }
     }
@@ -135,12 +177,15 @@ class ManageController extends  BaseController
         }
         return true;
     }
+    
     function get_HTML(){
+        $list    = array();
         $off_mdl = D('Office');
-        $list = $off_mdl->where('o_id not like '.'10001')->select();
-        $data = '';
-        foreach($list as $v){
-            $data = $data.'<tr id="'.$v['o_id'].'">
+        $list    = $off_mdl->where('o_id not like '.$_SESSION['o_id'])->select();
+        $data    = '';
+        if(!empty($list)){
+            foreach($list as $v){
+                $data = $data.'<tr id="'.$v['o_id'].'">
                             <td>
                                 <div class="ckbox ckbox-success">
                                     <input type="checkbox" name="member" value="'.$v['o_id'].'" id="'.($v['o_id']+1).'">
@@ -157,7 +202,9 @@ class ManageController extends  BaseController
                                 <div onclick="exchange(this)" id="'.$v['o_name'].':'.$v['o_id'].'" class="btn btn-primary btn-xs" data-toggle="modal" data-target=".bs-example-modal-sm" style="height: 30px;">修改密码</div>
                             </td>
                         </tr>';
+            }
         }
+
         return $data .' <tr>
                     <td colspan="4" align="center">
                         <input style="width: 100px" class="btn btn-primary" onclick="delete_member()" type="button" value="删除">
@@ -171,4 +218,12 @@ class ManageController extends  BaseController
     function show(){
         echo "holle";
     }
+    function ruturn_wainning($warnning){
+        $data['status'] = 0;
+        if ($warnning) {
+            $data['warn'] = $warnning;
+        }
+        echo(json_encode(data));
+    }
 }
+?>

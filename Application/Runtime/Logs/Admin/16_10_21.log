@@ -1,4 +1,131 @@
+<<<<<<< HEAD
 [ 2016-10-21T16:47:46+08:00 ] ::1 /Integral/index.php/Admin/input/upload/table/scoredetail
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+[ 2016-10-21T16:58:20+08:00 ] ::1 /Integral/index.php/admin/Tables
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000805s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001720s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001767s ]
+NOTIC: [8] Undefined index: c_name E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 14 行.
+NOTIC: [8] Undefined index: s_id E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 15 行.
+NOTIC: [8] Undefined index: sc_union E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 16 行.
+NOTIC: [8] Undefined variable: filter E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 31 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_scoredetail` LIMIT 1   [ RunTime:0.000340s ]
+NOTIC: [8] Undefined variable: filter E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 48 行.
+SQL: SELECT * FROM `tp_scoredetail` ORDER BY id desc LIMIT 0,30   [ RunTime:0.000300s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.008126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.008261s ]
+NOTIC: [8] Undefined index: c_name E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 118 行.
+NOTIC: [8] Undefined index: s_id E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 123 行.
+NOTIC: [8] Undefined index: sc_union E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 128 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.217753s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.217806s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001673s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001725s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001715s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001768s ]
+
+[ 2016-10-21T16:58:29+08:00 ] ::1 /Integral/index.php/Admin/Tables/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001108s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002538s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002604s ]
+NOTIC: [8] Array to string conversion E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\ThinkPHP\Library\Think\Model.class.php 第 594 行.
+ERR: 错误的查询条件:[c_name=>Array]
+
+[ 2016-10-21T17:05:06+08:00 ] ::1 /Integral/index.php/admin/Tables
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000706s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004079s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004152s ]
+NOTIC: [8] Undefined index: c_name E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 14 行.
+NOTIC: [8] Undefined index: s_id E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 15 行.
+NOTIC: [8] Undefined index: sc_union E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 16 行.
+NOTIC: [8] Undefined variable: filter E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 31 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_scoredetail` LIMIT 1   [ RunTime:0.000540s ]
+NOTIC: [8] Undefined variable: filter E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 48 行.
+SQL: SELECT * FROM `tp_scoredetail` ORDER BY id desc LIMIT 0,30   [ RunTime:0.000245s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000251s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000302s ]
+NOTIC: [8] Undefined index: c_name E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 118 行.
+NOTIC: [8] Undefined index: s_id E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 123 行.
+NOTIC: [8] Undefined index: sc_union E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 128 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017207s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017244s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001254s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001290s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010211s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010284s ]
+
+[ 2016-10-21T17:05:30+08:00 ] ::1 /Integral/index.php/Admin/input
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000737s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010095s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000211s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000262s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.171250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.171302s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001190s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001217s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003253s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003880s ]
+
+[ 2016-10-21T17:05:33+08:00 ] ::1 /Integral/index.php/Admin/class
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000515s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001734s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001800s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000182s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000258s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014122s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014174s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001206s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001232s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002388s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002460s ]
+
+[ 2016-10-21T17:05:35+08:00 ] ::1 /Integral/index.php/Input/input.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000944s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002783s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002869s ]
+NOTIC: [2] Declaration of Admin\Model\ScoredetailModel::find() should be compatible with Think\Model::find($options = Array) E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Model\ScoredetailModel.class.php 第 4 行.
+=======
+>>>>>>> a14c98edfd49f7610b4f02b279ae5d21148b2e1c
+[ 2016-10-21T15:13:03+08:00 ] ::1 /Integral/index.php/Admin/input/upload/table/scoredetail
+>>>>>>> 9282b6abfac558f36c5d9691b90e51899f904164
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000265s ]
@@ -7156,6 +7283,7 @@ INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
 INFO: [ app_init ] --END-- [ RunTime:0.001178s ]
 INFO: [ app_begin ] --START--
+<<<<<<< HEAD
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000310s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.000345s ]
 INFO: [ view_parse ] --START--
@@ -7180,4 +7308,122 @@ INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000379s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.000402s ]
 SQL: SELECT * FROM `tp_class` LIMIT 1   [ RunTime:0.001143s ]
 SQL: INSERT INTO `tp_class` (`c_id`,`c_name`) VALUES ('111','111') [ RunTime:0.008557s ]
+=======
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000309s ]
+SQL: SELECT * FROM `tp_class` LIMIT 1   [ RunTime:0.001016s ]
+SQL: INSERT INTO `tp_class` (`c_id`,`c_name`,`leader_id`,`c_score`,`c_psd`) VALUES ('201515141','计科151','20151514107',0,'123456') [ RunTime:0.000263s ]
+ERR: 1062:Duplicate entry '201515141' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `tp_class` (`c_id`,`c_name`,`leader_id`,`c_score`,`c_psd`) VALUES ('201515141','计科151','20151514107',0,'123456')
+<<<<<<< HEAD
+=======
+>>>>>>> a84efa935d893f90ab6b67c42aca09268cbf6c50
+
+[ 2016-10-21T17:06:49+08:00 ] ::1 /Integral/index.php/Admin/input
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001217s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001835s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001934s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000226s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000305s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019757s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019814s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001398s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001437s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004164s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004525s ]
+
+[ 2016-10-21T17:08:20+08:00 ] ::1 /Integral/index.php/admin/Tables/tables.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001025s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001385s ]
+NOTIC: [2] mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 44 行.
+ERR: Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2016-10-21T17:08:37+08:00 ] ::1 /Integral/index.php/admin/Tables/tables.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004455s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_scoredetail` WHERE `c_name` LIKE '%44、%' LIMIT 1   [ RunTime:0.001469s ]
+NOTIC: [8] Undefined variable: Page E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 48 行.
+NOTIC: [8] Trying to get property of non-object E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 48 行.
+NOTIC: [8] Undefined variable: Page E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 48 行.
+NOTIC: [8] Trying to get property of non-object E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 48 行.
+SQL: SELECT * FROM `tp_scoredetail` WHERE `c_name` LIKE '%44、%' ORDER BY id desc  [ RunTime:0.000505s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000465s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000560s ]
+NOTIC: [8] Undefined variable: page E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 181 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021701s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021763s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002031s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002080s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002308s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002382s ]
+
+[ 2016-10-21T17:08:37+08:00 ] ::1 /Integral/index.php/admin/Tables/tables.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001137s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001484s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001536s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_scoredetail` WHERE `c_name` LIKE '%44、%' LIMIT 1   [ RunTime:0.000136s ]
+NOTIC: [8] Undefined variable: Page E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 48 行.
+NOTIC: [8] Trying to get property of non-object E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 48 行.
+NOTIC: [8] Undefined variable: Page E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 48 行.
+NOTIC: [8] Trying to get property of non-object E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 48 行.
+SQL: SELECT * FROM `tp_scoredetail` WHERE `c_name` LIKE '%44、%' ORDER BY id desc  [ RunTime:0.000115s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000248s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000310s ]
+NOTIC: [8] Undefined variable: page E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 181 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016425s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016466s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001262s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001291s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002301s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002345s ]
+
+[ 2016-10-21T17:08:44+08:00 ] ::1 /Integral/index.php/Admin/Tables/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000868s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001894s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001965s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_scoredetail` WHERE `c_name` LIKE '%计科153%' LIMIT 1   [ RunTime:0.000116s ]
+SQL: SELECT * FROM `tp_scoredetail` WHERE `c_name` LIKE '%计科153%' ORDER BY id desc LIMIT 0,30   [ RunTime:0.000683s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000215s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000255s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024922s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001891s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001932s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.012911s ]
+INFO: [ app_end ] --END-- [ RunTime:0.012974s ]
+>>>>>>> a14c98edfd49f7610b4f02b279ae5d21148b2e1c
+>>>>>>> 9282b6abfac558f36c5d9691b90e51899f904164
 
