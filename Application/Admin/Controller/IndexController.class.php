@@ -2,7 +2,7 @@
 namespace Admin\Controller;
 class IndexController extends BaseController {
     public function index(){
-        $this->display();
+        $this->display('Tables/tables');
     }
     // 修改密码
     public function changeInfo(){
@@ -35,5 +35,6 @@ class IndexController extends BaseController {
     	}else{
     		$this->ajaxReturn(9);	// 数据错误
     	}
+
     }
 }

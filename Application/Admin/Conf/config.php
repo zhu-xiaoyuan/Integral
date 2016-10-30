@@ -18,5 +18,6 @@ return array(
         '__CSS__'=>__ROOT__ . '/Public/Admin/css',
         '__IMG__'=>__ROOT__.'/Public/Admin/js',
         '__BRACKET__'=>__ROOT__.'/Public/Admin/bracket'
-    )
+    ),
+       
 );

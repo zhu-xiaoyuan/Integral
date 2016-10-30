@@ -1,0 +1,1 @@
+a:7:{i:0;s:4:"s_id";i:1;s:6:"s_name";i:2;s:4:"c_id";i:3;s:7:"s_matri";i:4;s:5:"s_psd";s:3:"_pk";s:4:"s_id";s:5:"_type";a:5:{s:4:"s_id";s:11:"varchar(11)";s:6:"s_name";s:10:"varchar(4)";s:4:"c_id";s:10:"varchar(9)";s:7:"s_matri";s:10:"varchar(4)";s:5:"s_psd";s:8:"char(16)";}}

@@ -27,13 +27,12 @@ class LoginController extends Controller {
 	    		$this->ajaxReturn(2);//密码错误
 	    	}
 	    }
+        $this->display();
     }
     // 退出
     public function logout(){
     	session(null);
 		$this->display('/login/index');
     }
-
-
 
 }
