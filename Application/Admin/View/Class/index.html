@@ -2,41 +2,7 @@
 <block name="main">
  <div class="contentpanel">
       
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <div class="panel-btns">
-            <a href="" class="minimize">&minus;</a>
-          </div>
-          <h2 class="panel-title">积分录入</h2>
-        </div>
-        <div class="panel-body panel-body-nopadding">
-          
-          <form class="form-horizontal form-bordered">
-            
-            <div class="form-group">
-              <label class="col-sm-3 control-label" > 班级编号 </label>
-              <div class="col-sm-6">
-                <input type="text" placeholder="个人学号前9位为所属班级编号" class="form-control" id="c_id" maxlength="11" />
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="col-sm-3 control-label"> 班级名称 </label>
-              <div class="col-sm-6">
-                <input type="text" placeholder="如 计科151" class="form-control" id="c_name" />
-              </div>
-            </div>    
-          </form>       
-        </div><!-- panel-body -->
-        
-        <div class="panel-footer">
-			 <div class="row">
-				<div class="col-sm-6 col-sm-offset-3">
-				  <button class="btn btn-primary" id="sub"> 录 入 </button>&nbsp;
-				  <button class="btn btn-default" id="cancel"> 取 消 </button>
-				</div>
-			 </div>
-		  </div><!-- panel-footer -->     
-      </div><!-- panel -->
+
 
       <div class="panel panel-default">
         <div class="panel-heading">
@@ -59,18 +25,42 @@
   
       <script>
 
-          Dropzone.options.dropzone = {
-            //maxFilesize: 2, // MB
-            acceptedFiles: ".xlsx,.xls" ,
+      var str=new Array();
+      str[0]="上传失败！"
+      var a =0;
+            
+      Dropzone.options.dropzone = {
+        //maxFilesize: 2, // MB
+        acceptedFiles: ".xlsx,.xls",
+        init: function() {
+          this.on("addedfile", function (file, data) {
+              layer.alert('正在上传！', {
+                skin: 'layui-layer-molv' //样式类名
+                ,closeBtn: 0
+              }, function(){
+                layer.alert(str.join('<br>'), {
+                  skin: 'layui-layer-lan'
+                  ,closeBtn: 0
+                  ,shift: 4 //动画类型
+                });
+                str.splice(0,str.length);
+                a=0;
+                str[0]="上传失败！"
+              });
+           });
+          this.on("success", function (file, data) {
+              str[a++]=file.name+"  "+data.info;
+           });
+        }
 
-          }
+
+      };
 
           $("#sub").click(function(){
           		$.ajax({
           			type:'POST',
           			url:"{:U('Class/input')}",
           			data:{
-          				'c_id':$('#c_id').val(),
           				'c_name':$('#c_name').val(),
           			},
           			success:function(data){
@@ -83,8 +73,7 @@
           		});
           }); 
           $("#cancel").click(function(){
-                  $('#s_id').val("");
-                  $('#s_name').val("");
+                  $('#c_name').val("");
           });         
       </script>
 

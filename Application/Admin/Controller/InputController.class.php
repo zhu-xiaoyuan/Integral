@@ -11,7 +11,7 @@ class InputController extends BaseController {
 
     	$model=D('scoredetail');
 
-    	if($model->create(I('post.'))){
+    	if($model->create()){
             if($model->find()){
                     $model->add(I('post'));
                     $this->success('录入成功！'); 
@@ -83,11 +83,11 @@ class InputController extends BaseController {
 
                 $field[] = $this->order($key);
             }
-                $field[4]='s_psd';
+                $field[3]='s_psd';
             array_shift($arrExcel);
 
             foreach($arrExcel as $v){
-                $v[4]=$v[0];
+                $v[3]=$v[0];
                 $fields[] = array_combine($field,$v);//将excel的一行数据赋值给表的字段
             }
         }

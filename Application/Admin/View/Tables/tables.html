@@ -47,7 +47,7 @@
           <div class="table-responsive" id="list">         
           <form style="min-width:1030px;">
           <a class="btn btn-xs btn-info pull-left mr-5" style="float:left;" id="discard" href="javascript:;">删除</a>        
-          <table class="table table-striped" id="table2">
+          <table class="table table-striped" id="table2" align="center">
               <thead>
                   <tr>
                     <th><input class="all" type="checkbox"/></th>
@@ -56,7 +56,7 @@
                     <th>班级</th>
                     <th>分数</th>
                     <th>原因</th>
-                    <th width="100px">时间</th>
+                    <th width="150px">时间</th>
                     <th>记录者</th>
                     <th>部室</th>
                     <th>操作</th>
@@ -160,7 +160,7 @@
   // 删除操作
   $('#discard').click(function() {
     if($(':checked').size() > 0) {
-      alert($(':checked').size() );
+      // alert($(':checked').size() );
       layer.confirm('确定要删除吗？', {
         btn: ['确定','取消'],
         shade: false 
@@ -235,11 +235,11 @@ function checkaction(v){
         //   btn: ['确定','取消'],
         //   shade: false 
         // });
-        layer.alert(msg);
-          
-      });
-      layer.close();
-      // window.location.href = 'tables';
+        layer.msg("修改成功！");
+        setTimeout(function(){
+            location.reload();
+        },1000);          
+      });      // window.location.href = 'tables';
     });
 </script>
 <script>
