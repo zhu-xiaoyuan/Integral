@@ -6,7 +6,7 @@
           <div class="panel-btns">
             <a href="" class="minimize">&minus;</a>
           </div>
-          <h4 class="panel-title">报表录入</h4>
+          <h4 class="panel-title">积分录入</h4>
         </div>
         <div class="panel-body">
           <h4>报表格式为 .xls或.xlsx</h4>
@@ -127,7 +127,7 @@
           };
 
 
-          $("#sc_who").val("Hello World");
+          $("#sc_who").val("{$name}");
 
 
           $("#sub").click(function() {
@@ -154,9 +154,7 @@
                     icon: 1
                   });
 
-                  setTimeout(function() {
-                    window.location.reload();
-                  }, 2000);
+                $("#cancel").click();
                 }
               }
             });
@@ -164,6 +162,7 @@
           $("#cancel").click(function() {
             $('#s_id').val("");
             $('#s_name').val("");
+            $('#c_name').val("");
             $('#sc_number').val("");
             $('#sc_reason').val("");
             $('#sc_time').val("");

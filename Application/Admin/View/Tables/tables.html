@@ -3,60 +3,47 @@
     <link href="__BRACKET__/css/jquery.datatables.css" rel="stylesheet">
     <link href="__BRACKET__/css/pagelist.css" rel="stylesheet">
 </block>
-<!-- <block name="tables">
-  <li class="active"><a href="../Tables"><i class="fa fa-home"></i> <span>查看积分信息</span></a></li>
-</block> -->
+
 <block name="main">       
       <div class="panel panel-default">
         <div class="panel-heading">
           <div class="panel-btns">
-            <a href="" class="minimize">&minus;</a>
+            <!-- <a href="" class="minimize">&minus;</a> -->
           </div><!-- panel-btns -->
-          <h3 class="panel-title">Data Tables</h3>
-          <div class="search">
+          <h3 class="panel-title">积分表</h3>
+          <div class="panel-body" style="height: auto;">
               <form id="searchForm" name="searchform" class="well form-search" method="post"  onSubmit="check();" enctype="multipart/form-data" style="background-color:white;margin-top:15px;">
-              <div style="float:left;">
-                <span>班级：
-                  <input class="form-control" type="text" name="search[c_name]" value="{$search['c_name']}" placeholder="请输入班级" class="input-medium">
-                </span> 
+              <div style="float:left;margin-left: 20px;">                
+                  <input class="form-control" type="text" name="search[c_name]" value="{$search['c_name']}" placeholder="请输入班级">
               </div>
-              <div style="float:left;">                
-                <span>年级：
-                  <input class="form-control" type="text" name="search[s_id]" value="{$search['s_id']}" placeholder="格式：如 2015" class="input-medium">
-                  <!-- <select name="schoolyear" id="term">
-                  <foreach name="list" item='vo'>
-                    <option value="{$vo.schoolyear}"></option>
-                  </foreach>
-                  </select> -->
-                </span>
+              <div style="float:left;margin-left: 20px;">                
+                  <input class="form-control" type="text" name="search[s_id]" value="{$search['s_id']}" placeholder="格式：如 2015">
               </div>
-              <div style="float:left;">               
-                <span>部室：
-                  <input class="form-control" type="text" name="search[sc_union]" value="{$search['sc_union']}" placeholder="请输入部室" class="input-medium">
-                </span>
+              <div style="float:left;margin-left: 20px;">               
+                  <input class="form-control" type="text" name="search[sc_union]" value="{$search['sc_union']}" placeholder="请输入部室">
               </div>
-                <div style="float:right;">      
-                  <input type="submit" class="btn" value="搜索" onclick="checkaction(1);"/>
-                  <input type="submit" id="btn" class="btn" value="导出" onclick="checkaction(0);"/>
-                </div>     
+                <div style="float:left;margin-left: 40px;">      
+                  <input type="image" src="__BRACKET__/images/search2.png" style="width: 35px;height: 35px;" onclick="checkaction(1);"/>
+                  <input type="image" id="btn" src="__BRACKET__/images/cloud1.png" style="width: 35px;height: 35px;margin-left: 10px;" onclick="checkaction(0);"/>
+                  </div>     
               </form>
         </div>
         <br>
         <hr>
-        <div class="panel-body">         
+        <div class="panel-body" style="overflow: auto;">         
           <div class="table-responsive" id="list">         
-          <form style="min-width:1030px;">
-          <a class="btn btn-xs btn-info pull-left mr-5" style="float:left;" id="discard" href="javascript:;">删除</a>        
-          <table class="table table-striped" id="table2">
+          <form style="min-width:990px;">
+          <a class="btn btn-xs btn-info pull-left mr-5" id="discard" href="javascript:void(0);">删除</a>        
+          <table class="table table-striped" id="table2" align="center">
               <thead>
                   <tr>
-                    <th><input class="all" type="checkbox"/></th>
+                    <th><input class="all" type="checkbox" class="" /></th>
                     <th width="50px">学号</th>
                     <th>姓名</th>
                     <th>班级</th>
                     <th>分数</th>
                     <th>原因</th>
-                    <th width="100px">时间</th>
+                    <th width="150px">时间</th>
                     <th>记录者</th>
                     <th>部室</th>
                     <th>操作</th>
@@ -76,20 +63,18 @@
                       <td class="center">{$vo.sc_who}</td>
                       <td class="center">{$vo.sc_union}</td>
                       <td class="center">
-                        <!-- <a id="edit" class="btn btn-xs btn-info mr-5" href="javascript:;" onclick="edit()">修改</a> -->
                         <a class="btn btn-xs btn-info mr-5" href="javascript:void(0);" data-toggle="modal" data-target="#myModal" onclick="tables(this)" data-id="{$vo.id}">修改</a>
-                        <!-- <a class="btn btn-xs btn-info right mr-5" href="javascript:;" id="discard" data-id="{vo.id}">删除</a> -->
                       </td>
                   </tr>
               </foreach>
                 <else/>
-                  <tr><td colspan="xx" style="">暂无相关信息</td></tr>
+                  <tr><td id="zero" colspan="xx">暂无相关信息</td></tr>
                 </if>            
               </tbody>
            </table>
-          </form> 
+          </form>
           </div><!-- table-responsive -->
-          <div class="pagelist">{$page}</div>
+          <!-- <div class="pagelist">{$page}</div> -->
         </div><!-- panel-body -->
       </div><!-- panel -->        
     </div><!-- contentpanel -->
@@ -149,6 +134,42 @@
 <script src="__BRACKET__/js/jquery.datatables.min.js"></script>
 <script src="__BRACKET__/js/select2.min.js"></script>
 <script>
+  jQuery(document).ready(function() {  
+    // "use strict";  
+    // jQuery('#table1').dataTable();
+    
+    jQuery('#table2').dataTable({
+      "sPaginationType": "full_numbers"
+    });
+    
+    // Select2
+    jQuery('select').select2({
+        minimumResultsForSearch: -1
+    });
+    
+    // jQuery('select').removeClass('form-control');
+    
+    // // Delete row in a table
+    // jQuery('.delete-row').click(function(){
+    //   var c = confirm("Continue delete?");
+    //   if(c)
+    //     jQuery(this).closest('tr').fadeOut(function(){
+    //       jQuery(this).remove();
+    //     });      
+    //     return false;
+    // });
+    
+    // Show aciton upon row hover
+    // jQuery('.table-hidaction tbody tr').hover(function(){
+    //   jQuery(this).find('.table-action-hide a').animate({opacity: 1});
+    // },function(){
+    //   jQuery(this).find('.table-action-hide a').animate({opacity: 0});
+    // });
+  
+  
+  });
+</script>
+<script type="text/javascript">
  $('.all').click(function() {
     if($(this).is(':checked')) {
       $(':checkbox').attr('checked', 'checked');
@@ -160,7 +181,7 @@
   // 删除操作
   $('#discard').click(function() {
     if($(':checked').size() > 0) {
-      alert($(':checked').size() );
+      // alert($(':checked').size());
       layer.confirm('确定要删除吗？', {
         btn: ['确定','取消'],
         shade: false 
@@ -185,10 +206,20 @@
   });
 </script>
 
-<script>
+<!-- <script type="text/javascript">
+  $('#btn').click(function(){
+    if ($("#c_name").val() == "" && $("#s_id").val() == "" && $("#sc_union").val() == "") {
+        layer.alert("搜索条件不能为空");
+        return false;
+      }
+  });
+</script> -->
+
+<script type="text/javascript">
 function checkaction(v){ 
   if(v==0){ 
-  document.searchform.action="{:U('admin/Tables/export')}"; 
+  document.searchform.action="{:U('admin/Tables/export')}";
+
   }else{ 
   document.searchform.action="{:U('admin/Tables/tables')}"; 
   } 
@@ -203,9 +234,6 @@ function checkaction(v){
       $.post(url,{
         'edit_id':edit_id
       },function(msg){
-        // if (msg != null ) {
-        //   alert(msg);
-        // };
         $("#s_id").val(msg.s_id);
         $("#s_name").val(msg.s_name);
         $("#c_name").val(msg.c_name);
@@ -220,6 +248,22 @@ function checkaction(v){
 
     $("#editform").click(function(){
       var url = "{:U('Tables/save')}";
+      if ($("#sc_number").val() == "") {
+        layer.alert("积分不能为空");
+        return false;
+      }
+      if ($("#sc_reason").val() == "") {
+        layer.alert("积分原因不能为空");
+        return false;
+      }
+      if ($("#sc_time").val() == "") {
+        layer.alert("时间不能为空");
+        return false;
+      }
+      if ($("#sc_who").val() == "") {
+        layer.alert("修改人不能为空");
+        return false;
+      }
       $.post(url,{
         'id':$("#edit_id_update").val(),
         's_id':$("#s_id").val(),
@@ -231,24 +275,13 @@ function checkaction(v){
         'sc_union':$("#sc_union").val(),
         'sc_who':$("#sc_who").val()
       },function(msg){
-        // layer.confirm('确定修改吗？',{
-        //   btn: ['确定','取消'],
-        //   shade: false 
-        // });
-        layer.alert(msg);
-          
-      });
-      layer.close();
-      // window.location.href = 'tables';
+        layer.msg("修改成功！");
+        setTimeout(function(){
+            location.reload();
+        },1000);          
+      });                                                       
     });
 </script>
-<script>
-  // function list (id) {
-  //   var id = id;
-  //     $.get('Tables/_empty', {'p':id}, function(data){ 
-  //       $("#list").replaceWith("<div  id='list'>"+data+"</div>"); //user一定要和tpl中的一致
-  //   });
-  // }
-</script>
+
 
 </block>

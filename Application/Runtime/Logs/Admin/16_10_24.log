@@ -1,0 +1,153 @@
+[ 2016-10-24T22:19:56+08:00 ] ::1 /Integral/index.php/admin/Tables/tables.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001446s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001428s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001485s ]
+NOTIC: [8] Undefined index: c_name E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 13 行.
+NOTIC: [8] Undefined index: s_id E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 14 行.
+NOTIC: [8] Undefined index: sc_union E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 15 行.
+NOTIC: [8] Undefined variable: filter E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 30 行.
+NOTIC: [2] mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 44 行.
+ERR: Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2016-10-24T22:25:21+08:00 ] ::1 /Integral/index.php/admin/Tables/tables.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004061s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004187s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004707s ]
+NOTIC: [8] Undefined index: c_name E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 13 行.
+NOTIC: [8] Undefined index: s_id E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 14 行.
+NOTIC: [8] Undefined index: sc_union E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 15 行.
+NOTIC: [8] Undefined variable: filter E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 30 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_scoredetail` LIMIT 1   [ RunTime:0.009346s ]
+NOTIC: [8] Undefined variable: filter E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 48 行.
+SQL: SELECT * FROM `tp_scoredetail` ORDER BY id desc LIMIT 0,30   [ RunTime:0.001670s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000713s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001120s ]
+NOTIC: [8] Undefined index: c_name E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 118 行.
+NOTIC: [8] Undefined index: s_id E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 123 行.
+NOTIC: [8] Undefined index: schoolyear E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: sc_union E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.111157s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.111363s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.006378s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006469s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009586s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009686s ]
+
+[ 2016-10-24T22:25:36+08:00 ] ::1 /Integral/index.php/Tables/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010513s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005370s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005562s ]
+SQL: SELECT * FROM `tp_scoredetail` WHERE ( id=207 ) LIMIT 1   [ RunTime:0.124510s ]
+
+[ 2016-10-24T22:25:44+08:00 ] ::1 /Integral/index.php/Tables/save.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001187s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003116s ]
+SQL: SELECT * FROM `tp_scoredetail` WHERE ( id=207 ) LIMIT 1   [ RunTime:0.000158s ]
+SQL: UPDATE `tp_scoredetail` SET `s_id`='20151515288',`s_name`='朱银伟',`c_name`='计科141',`sc_number`=-1,`sc_reason`='旷课',`sc_time`='第十四周',`sc_union`='学习部',`sc_who`='管理员' WHERE ( id=207 ) [ RunTime:0.233353s ]
+
+[ 2016-10-24T22:25:46+08:00 ] ::1 /Integral/index.php/admin/Tables/tables.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000754s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001629s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001681s ]
+NOTIC: [8] Undefined index: c_name E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 13 行.
+NOTIC: [8] Undefined index: s_id E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 14 行.
+NOTIC: [8] Undefined index: sc_union E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 15 行.
+NOTIC: [8] Undefined variable: filter E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 30 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_scoredetail` LIMIT 1   [ RunTime:0.000508s ]
+NOTIC: [8] Undefined variable: filter E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Admin\Controller\TablesController.class.php 第 48 行.
+SQL: SELECT * FROM `tp_scoredetail` ORDER BY id desc LIMIT 0,30   [ RunTime:0.000557s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000250s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000312s ]
+NOTIC: [8] Undefined index: c_name E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 118 行.
+NOTIC: [8] Undefined index: s_id E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 123 行.
+NOTIC: [8] Undefined index: schoolyear E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: schoolyear E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 125 行.
+NOTIC: [8] Undefined index: sc_union E:\PHP\httpd-2.4.23-win64-VC14\Apache24\htdocs\Integral\Application\Runtime\Cache\Admin\028392e504fc80bf64506a8dce359984.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019230s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019286s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001300s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001333s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002704s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002763s ]
+

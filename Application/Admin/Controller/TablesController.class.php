@@ -30,7 +30,7 @@ class TablesController extends BaseController
         $total = $tables->where($filter)->count();
 
         if($total){
-            $perNum = 30;
+            // $perNum = 30;
             $Page = new \Think\Page($total,$perNum);
             $Page->setConfig('prev', "上一页");//上一页
             $Page->setConfig('next', '下一页');//下一页
@@ -107,7 +107,7 @@ class TablesController extends BaseController
     //导出数据方法
     protected function export($tables_list=array())
     {
-        //print_r($tables_list);exit;
+        // print_r($tables_list);exit;
         $tables_list = $tables_list;
         $data = array();
         foreach ($tables_list as $k=>$tables_info){
@@ -202,8 +202,8 @@ class TablesController extends BaseController
 
         $fileName = iconv("utf-8", "gb2312", $fileName);
 
-        //重命名表
-        $objPHPExcel->getActiveSheet()->setTitle('j');
+        //重命名表 
+        // $objPHPExcel->getActiveSheet()->setTitle('j');
         //设置活动单指数到第一个表,所以Excel打开这是第一个表
         $objPHPExcel->setActiveSheetIndex(0);
         ob_end_clean();//清除缓冲区,避免乱码
