@@ -230,11 +230,10 @@
     var arrUrl=strUrl.split("/");
     var strPage=arrUrl[arrUrl.length-1];
     var nm = strPage.split('.');
+    nm[0] = nm[0].toLowerCase();
     var ele = document.getElementById(nm[0] + "");
-//    alert(ele);
+
     ele.className = 'active';
-
-
 </script>
 <block name="js_link">
 </block>
