@@ -1,4 +1,7 @@
-﻿
+﻿div #table2_filter {
+	display: none;
+}
+
 .dataTables_wrapper {
 	position: relative;
 	clear: both;
@@ -12,7 +15,7 @@
 }
 
 .dataTables_length {
-	float: left;
+	float: right;
 	margin-bottom: 10px;
 }
 
@@ -24,6 +27,7 @@
 
 .dataTables_length label {
 	display: inline-block;
+	float: right;
 }
 
 .dataTable {
@@ -221,30 +225,30 @@
 /*
  * Sorting
  */
-.sorting {
+/*.sorting {
 	background-image: url('../images/sort_both.png');
 }
-
-.sorting_asc {
+*/
+/*.sorting_asc {
 	background-image: url('../images/sort_asc.png');
 }
 
 .sorting_desc {
 	background-image: url('../images/sort_desc.png');
-}
+}*/
 
-.sorting_asc_disabled {
+/*.sorting_asc_disabled {
 	background-image: url('../images/sort_asc_disabled.png');
 }
 
 .sorting_desc_disabled {
 	background-image: url('../images/sort_desc_disabled.png');
 }
- 
-table.dataTable thead th:active,
+ */
+/*table.dataTable thead th:active,
 table.dataTable thead td:active {
 	outline: none;
-}
+}*/
 
 
 /*

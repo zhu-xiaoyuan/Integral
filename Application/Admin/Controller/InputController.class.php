@@ -18,7 +18,7 @@ class InputController extends BaseController {
                     exit;
             }else{
                     $this->error($model->getError());   
-                 }
+            }
     	}else{
     		$this->error($model->getError());
     	}
@@ -45,8 +45,8 @@ class InputController extends BaseController {
               } else {
                    $this->success($str);
               }
-                
-           
+
+
 
         }
     }
@@ -62,20 +62,19 @@ class InputController extends BaseController {
         //表头部分处理
         
         if ($table=='scoredetail') {
-            // if (sizeof($arrExcel[0])!=7) {
-            //      return '数据类型错误！';
-            // }
+
             foreach ($arrExcel[0] as $key) {
 
                 $field[] = $this->order($key);
                
             }
-
-                $field[7]='sc_who';
+            if (sizeof($field) < 8){
+                $field[0]='xxx';
+            }
+                $field[8]='sc_who';
             array_shift($arrExcel);
-
             foreach($arrExcel as $v){
-                $v[7] = session('o_name');
+                $v[8] = session('o_name');
                 $fields[] = array_combine($field,$v);//将excel的一行数据赋值给表的字段
             } 
         }else{
@@ -91,8 +90,6 @@ class InputController extends BaseController {
                 $fields[] = array_combine($field,$v);//将excel的一行数据赋值给表的字段
             }
         }
-
-
 
         //循环录入
         $str= '共'.sizeof($fields).'条数据！';
@@ -127,7 +124,9 @@ class InputController extends BaseController {
             case '入学年份':
                 return 's_matri';
             case '班级编号':
-                return 'c_id';                              
+                return 'c_id';
+             case '学期':
+                 return 'sc_term';                                   
             default:
                 # code...
                 break;

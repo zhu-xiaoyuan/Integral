@@ -1,14 +1,55 @@
-<!--<!DOCTYPE html>-->
-<!--<html lang="en">-->
-<!--<head>-->
-    <!--<meta charset="UTF-8">-->
-    <!--<title></title>-->
-<!--</head>-->
-<!--<body>-->
-
-<!--</body>-->
-<!--</html>-->
 <extend name="searchBase" />
+<block name="js">
+    <script>
+
+        var select = document.getElementById('slct_term');
+        var dat = new Date();
+        var cur_month = dat.getMonth() + 1;
+        var cur_year  = dat.getFullYear();
+        var ele = "";
+        var de_t = cur_year - 2014;
+        var term_num = 2*de_t;
+        if(cur_month >= 9){
+            de_t += 1;
+        }
+        var ajax = new  XMLHttpRequest();
+        ajax.onreadystatechange = function(){
+            if(ajax.readyState == 4){
+                var rsp = JSON.parse(ajax.responseText);
+
+                console.log(rsp);
+
+                for(var i = 0;i < rsp.length;i++){
+                    ele += "<option value=\""+rsp[i].sc_term+"\">"+rsp[i].sc_term+"</option>";
+                }
+                console.log(ele);
+                select.innerHTML = ele;
+            }
+        }
+        var pram = "term=term";
+        ajax.open('post','getTerm');
+        ajax.setRequestHeader('content-type','application/x-www-form-urlencoded');
+        ajax.send(pram);
+
+        var from = 2014;
+        var to   = 2015;
+
+
+        console.log(cur_month);
+        console.log(de_t);
+
+    </script>
+</block>
+<block name="cssStyle">
+    <style>
+        .select-search{
+            position: fixed;
+            left: 41px;
+            width: auto;
+            margin-top: 6px;
+        }
+    </style>
+</block>
 <block name="content">
     <div class="col-md-6" style="width: 100%">
 
@@ -20,7 +61,11 @@
                 <div class="panel-body">
                     <div class="form-group" align="center">
                         <div class="col-sm-8" style="width: 100%">
-                            <input type="text" placeholder="请输入个人的学号" name="s_id" class="form-control">
+                            <input type="tel" placeholder="请输入个人的学号" name="s_id" class="form-control">
+                            <select class="select-search" name="term" id="slct_term">
+                                <option value="2016-2017学年第一学期" selected>2016-2017学年第一学期</option>
+                            </select>
+
                         </div>
                     </div>
                 </div><!-- panel-body -->
@@ -29,6 +74,6 @@
                 </div><!-- panel-footer -->
             </div><!-- panel-default -->
         </form>
-
     </div>
+
 </block>

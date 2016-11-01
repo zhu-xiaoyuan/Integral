@@ -306,7 +306,8 @@ strong {
 }
 
 .headermenu .dropdown-menu-usermenu:after {
-    right: 95px;
+/*    right: 95px;*/
+    right: 50px;
 }
 
 .headermenu .dropdown-menu li a {
@@ -358,7 +359,8 @@ strong {
 
 .headermenu .dropdown-menu-usermenu {
     background: #1d2939;
-    min-width: 200px;
+/*    min-width: 200px;*/
+    min-width: 116px;
 }
 
 .headermenu .dropdown-menu-head ul {
@@ -472,6 +474,8 @@ strong {
 .logopanel {
     padding: 10px;
     background: #fff;
+    position:fixed;
+    width: 240px;
 }
 
 .logopanel h1 {
@@ -489,6 +493,9 @@ strong {
 
 .leftpanelinner {
     padding: 5px 15px;
+    position: fixed;
+    top: 45px;
+    width: 240px;
 }
 
 .leftpanel .searchform {
@@ -3329,6 +3336,7 @@ div.error label.error:before {
 
 .leftpanel-collapsed .leftpanelinner {
     padding: 0;
+    display: flex;
 }
 
 .leftpanel-collapsed .leftpanelinner .sidebartitle {
@@ -4542,7 +4550,7 @@ div.error label.error:before {
     }
 
     .headermenu li:first-child .dropdown-menu {
-        margin-right: -130px;
+        /*margin-right: -130px;*/
     }
 
     .headermenu li:nth-child(2) .dropdown-menu {

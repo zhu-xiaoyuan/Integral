@@ -8,15 +8,6 @@
 
 namespace Admin\Controller;
 use Think\Controller;
-
-define('ONE_CONTENT_NULL_WARNING',   '输入框不能有空!');
-define('DOUBLE_CONTENT_NULL_WARNING','两个输入框不能为空!');
-define('TOW_CONTENT_UNEQUAL_WARNING','内容必须一致!');
-define('STUDENT_NUM_EXISTED',        '学号已存在!');
-define('STUDENT_UNEXIST',            '这个学生不存在!');
-define('FAIL',                       'fail');
-define('SUCCESS',                    'success');
-
 class ManageController extends  BaseController
 {
     function __construct(){

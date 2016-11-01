@@ -1,11 +1,9 @@
 <extend name="searchBase" />
 <block name="cssStyle">
-    <style>
-
-    </style>
 </block>
 <block name="content">
     <h4>{$title}</h4>
+    <h6>{$term}</h6>
     <if condition="$isPerson eq 1" >
         <div class="table-responsive" style="height: 400px;margin-top:20px;overflow-x: auto;overflow-y: auto">
             <table class="table mb30" style="min-width: 400px;">
@@ -44,13 +42,11 @@
                         <td>{$v.s_name}</td>
                         <td>{$v.all_score}</td>
                         <td>{$k+1}</td>
-                        <td><a href="personScoreDetail?s_id={$v.s_id}">查看详情</a></td>
+                        <td><a href="personScoreDetail?s_id={$v.s_id}&term={$term}">查看详情</a></td>
                     </tr>
                 </foreach>
                 </thead>
             </table>
         </div>
     </if>
-
-
 </block>

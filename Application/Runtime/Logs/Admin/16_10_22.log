@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f15453d8d5a58ac0d805e9d73dd696c28f23dbe6
 [ 2016-10-22T11:04:48+08:00 ] ::1 /Integral/index.php/Admin/Tables
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
@@ -103,6 +106,8 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000459s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000484s ]
 
+<<<<<<< HEAD
+=======
 =======
 [ 2016-10-22T12:25:17+08:00 ] ::1 /Integral/index.php/Admin/input
 INFO: [ app_init ] --START--
@@ -1277,3 +1282,4 @@ INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000794s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000894s ]
 
 >>>>>>> 9282b6abfac558f36c5d9691b90e51899f904164
+>>>>>>> f15453d8d5a58ac0d805e9d73dd696c28f23dbe6

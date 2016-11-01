@@ -1,11 +1,9 @@
 <?php
 namespace Admin\Controller;
-
 class TablesController extends BaseController 
 {
 	//搜索
-
-    public function _empty($action='tables')
+	public function _empty($action='tables')
     {
         $tables = M('scoredetail');
 
@@ -13,15 +11,15 @@ class TablesController extends BaseController
         $search  = I('search', array());
 
         $c_name = $search['c_name'];
-        $s_id = $search['s_id'];
+        $sc_term = $search['sc_term'];
         $sc_union = $search['sc_union'];
 
         if($c_name && isset($c_name)){
             $filter['c_name'] = array('like',"%{$c_name}%");
         }
 
-        if($s_id && isset($s_id)){
-            $filter['s_id'] = array('like',"%{$s_id}%");
+        if($sc_term && isset($sc_term)){
+            $filter['sc_term'] = array('like',"%{$sc_term}%");
         }
 
         if($sc_union && isset($sc_union)){
@@ -32,20 +30,21 @@ class TablesController extends BaseController
         $total = $tables->where($filter)->count();
 
         if($total){
-            $perNum = 30;
-
+//             $perNum = 30;
             $Page = new \Think\Page($total,$perNum);
-            $Page->setConfig('prev', "上一页");//上一页
-            $Page->setConfig('next', '下一页');//下一页
-            $Page->setConfig('first', '首页');//第一页
-            $Page->setConfig('last', "末页");//最后一页
-            $Page->setConfig ( 'theme', '%HEADER% %FIRST% %UP_PAGE% %LINK_PAGE% %DOWN_PAGE% %END%' );
-
             $show = $Page->show();
 
             $this->assign('total',$total);
             $this->assign('page',$show);
+
         }
+
+        //班级
+        $c_name = $tables->group('c_name')->order('c_name asc')->select();
+        //学期
+        $sc_term = $tables->group('sc_term')->order('sc_term desc')->select();
+        //部室
+        $sc_union = $tables->group('sc_union')->order('sc_union asc')->select();
 
         $list = $tables->where($filter)->order('id desc')->limit($Page->firstRow.','.$Page->listRows)->select();
 
@@ -59,9 +58,12 @@ class TablesController extends BaseController
 
         $this->assign('search', $search);
         $this->assign('list', $list);
+        $this->assign('term',$sc_term);
+        $this->assign('c_name',$c_name);
+        $this->assign('union',$sc_union);
         $this->display('tables');
     }
-
+    
     //编辑
     public function edit()
     {
@@ -104,12 +106,13 @@ class TablesController extends BaseController
             $contact->where('id='.$deleteArr[$i]['value'])->delete();
         }
         $this->ajaxReturn(array('message'=>'删除成功！'));
+        $this->ajaxReturn(array('message'=>'删除失败:('));
     }
 
     //导出数据方法
     protected function export($tables_list=array())
     {
-        //print_r($tables_list);exit;
+        // print_r($tables_list);exit;
         $tables_list = $tables_list;
         $data = array();
         foreach ($tables_list as $k=>$tables_info){
@@ -160,6 +163,7 @@ class TablesController extends BaseController
         }
 
         $filename="积分汇总表";
+
         $this->getExcel($filename,$headArr,$data);
     }
 
@@ -169,6 +173,7 @@ class TablesController extends BaseController
         import("Org.Util.PHPExcel");
         import("Org.Util.PHPExcel.Writer.Excel5");
         import("Org.Util.PHPExcel.IOFactory.php");
+
         $date = date("Y-m-d",time());
         $fileName .= "_{$date}.xls";
 
@@ -202,8 +207,8 @@ class TablesController extends BaseController
 
         $fileName = iconv("utf-8", "gb2312", $fileName);
 
-        //重命名表
-        $objPHPExcel->getActiveSheet()->setTitle('积分汇总表');
+        //重命名表 
+        // $objPHPExcel->getActiveSheet()->setTitle('j');
         //设置活动单指数到第一个表,所以Excel打开这是第一个表
         $objPHPExcel->setActiveSheetIndex(0);
         ob_end_clean();//清除缓冲区,避免乱码

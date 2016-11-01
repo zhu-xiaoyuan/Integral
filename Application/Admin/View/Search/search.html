@@ -54,14 +54,19 @@
                 </tr>
             </tbody>
         </table>
-         <form id="detail" action="personScoreDetail" method="post">
+             <br/>
+         <form id="detail" style="border: 0px" action="personScoreDetail" method="post">
             <input type="hidden" name="s_id" value="{$s_id}">
             <input type="hidden" name="c_name" value="{$list['class_name']}">
+            <input type="hidden" name="term" value="{$list['term']}">
             <div class="btn btn-primary" id="person"  onclick="submitForm(this)">个人详情</div>
             <div class="btn btn-primary" id="class" onclick="submitForm(this)">本班详情</div>
         </form>
-         <else/>
-         <h1>没有你的积分数据</h1>
+
+        <elseif condition="$iswarn eq 1"/>
+             <h4 style="color: red">{$warn}</h4>
+             <else/>
+         <h4 style="color: red">本学期没有你的积分数据，可以查看上学期的^_^！</h4>
     </if>
        
     </div>

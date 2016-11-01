@@ -85,22 +85,6 @@ $(function(){
             if ($.trim(opsd) == '') {
                 clearPrompt("#loginMsg","#pword",3);
             }else{
-<<<<<<< HEAD
-                $.post("__ROOT__/index.php/Admin/login/login",
-                        {
-                            o_id:oid,
-                            o_psd:opsd
-                        },function(data){
-                            if (data==1) {
-                                window.location.href="__ROOT__/index.php/Admin/Tables";
-                            }else if(data==2) {
-                                $("#uname").css("border","1px solid red");
-                                clearPrompt("#uname");
-                            }else{
-                                $("#pword").css("border","1px solid red");
-                                clearPrompt("#pword");
-                            }
-=======
                 $.post(
                     "/Integral/index.php/Admin/login/login",
                     {
@@ -111,7 +95,6 @@ $(function(){
                             window.location.href="/Integral/index.php/Admin/Tables/tables";
                         }else{
                             wrongPromt("#loginMsg");
->>>>>>> 9282b6abfac558f36c5d9691b90e51899f904164
                         }
                     }
    
